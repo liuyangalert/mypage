@@ -8,7 +8,7 @@ body{ margin: 0;padding: 0; }
 #hd_2{font-size: 22px;color: #ffffff;padding: 17px 0;float: right;margin-left: 20px;}
 
 #main{width: 900px;height: 600px;margin: 15px auto 0;background: #cccccc}
-#main_1{width: 900px;height: 600px;background: url(desktop.jpg)}
+#main_1{width: 900px;height: 600px;background: url("img/desktop.jpg");}
 #footer{width: 100%;height: 150px;background: #333333;margin: 10px auto 0px;}
 #foot{width: 900px;height: 150px;margin: auto;background: #333333}
 #foot a{color: #999999;text-decoration: none;font-size: 15px}
