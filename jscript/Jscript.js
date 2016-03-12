@@ -16,7 +16,7 @@ window.onload = function(){
 			var menu = document.getElementById("subnav");	
 			clearInterval(menu.time);
 			menu.time=setInterval(function(){
-			menu.style.height = menu.offsetHeight-15+"px";
+			menu.style.height = menu.offsetHeight-2+"px";
 			if(menu.offsetHeight<=0){
 				clearInterval(menu.time);
 			}
@@ -31,7 +31,7 @@ window.onload = function(){
 				var This = osb;
 				clearInterval(This.time);
 				This.time = setInterval(function(){
-					This.style.height = This.offsetHeight+10+"px";
+					This.style.height = This.offsetHeight+20+"px";
 					if(This.offsetHeight>=200){
 						clearInterval(This.time);
 					}
@@ -48,7 +48,7 @@ window.onload = function(){
 				var This = osb;
 				clearInterval(This.time);
 				This.time = setInterval(function(){
-					This.style.height = This.offsetHeight-10+"px";
+					This.style.height = This.offsetHeight-2+"px";
 					if(This.offsetHeight<=0){
 						clearInterval(This.time);
 					}
