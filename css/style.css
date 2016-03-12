@@ -1,6 +1,6 @@
 *{ margin: 0;padding: 0; }
 a{text-decoration: none; }
-#hd{width: 100%;background: #333333;margin: auto;}
+#hd{width: 100%;background: #333333;}
 #hd_main{width: 1200px;height: 60px;margin: auto;}
 #hd_1{font-size: 20px;color: #ffffff;float: left;width: 130px;height: 60px;}
 #hd_x ul{list-style: none;}
@@ -20,7 +20,8 @@ a{text-decoration: none; }
 
 #main{ z-index: -1;position: relative;width: 1200px;margin: 15px auto;border:0px solid #ccc;background: #999}
 #main_1{width: 802px;background: #999;}
-#main_2{width: 360px;background: #ccc;height:800px;position: absolute;margin-left: 820px;top:20px;}
+#main_2{width: 360px;background: #ccc;height:800px;position: absolute;margin-left: 820px;top:20px;z-index: 1px;}
+#mnn{width: 100px;height:300px;background: red;position: fixed;top:100px;left: 250px;}
 
 .people{width: 800px;height:400px;background: #fff;margin:10px 0px;border:1px solid #ccc;}
 .peo{margin: 20px;width: 600;height: 360px;background: #ccc;}
@@ -28,8 +29,8 @@ a{text-decoration: none; }
 #teamifm{width: 760px;height: 30px;background: #000;color: #fff;line-height: 30px;font-size: 20px;text-indent: 1em;}
 .ifm{margin: 20px 0px 0px 20px;padding: 30px;line-height: 25px;font-size: 20px;width: 660px;height: 200px;background: #fff;}
 
-#talk{width: 360px;height: 30px;background: #000;text-align: center;line-height: 30px;font-size: 20px;color: #fff;}
-#sfe_txt{width: 360;text-indent: 1em;margin: 10px;}
+#talk{width: 360px;height: 30px;background: #000;text-align: center;line-height: 30px;font-size: 20px;color: #fff;z-index: 1px;}
+#sfe_txt{width: 360;text-indent: 1em;margin: 10px;z-index: 1px;}
 
 #footer{width: 100%;background: #333333;}
 #foot{width: 1200px;margin: auto;background: #333333;padding-top: 15px;padding-bottom: 15px;}
