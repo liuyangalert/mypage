@@ -18,10 +18,18 @@ a{text-decoration: none; }
 #subnav li a{background: #666;display: block;color: #fff;height: 40px;}
 #subnav li a:hover{background: #ccc;color: #000;}
 
-#main{width: 1200px;margin: 15px auto;background: #CCCC99;border:0px solid #ccc;}
-#main_1{width: 800px;background: #000;}
+#main{ z-index: -1;position: relative;width: 1200px;margin: 15px auto;border:0px solid #ccc;background: #999}
+#main_1{width: 802px;background: #999;}
+#main_2{width: 360px;background: #ccc;height:800px;position: absolute;margin-left: 820px;top:20px;}
 
 .people{width: 800px;height:400px;background: #fff;margin:10px 0px;border:1px solid #ccc;}
+.peo{margin: 20px;width: 600;height: 360px;background: #ccc;}
+.peo ul{list-style: none;display: block;}
+#teamifm{width: 760px;height: 30px;background: #000;color: #fff;line-height: 30px;font-size: 20px;text-indent: 1em;}
+.ifm{margin: 20px 0px 0px 20px;padding: 30px;line-height: 25px;font-size: 20px;width: 660px;height: 200px;background: #fff;}
+
+#talk{width: 360px;height: 30px;background: #000;text-align: center;line-height: 30px;font-size: 20px;color: #fff;}
+#sfe_txt{width: 360;text-indent: 1em;margin: 10px;}
 
 #footer{width: 100%;background: #333333;}
 #foot{width: 1200px;margin: auto;background: #333333;padding-top: 15px;padding-bottom: 15px;}
