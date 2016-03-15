@@ -4,22 +4,24 @@
 <meta charset="utf-8" >
 	<title>任务三：三栏式布局</title>
 	<style type="text/css">
-		body{margin:0px;padding: 0px;font-family: "微软雅黑"}
+		body{margin:0px;padding: 0px;font-family: "微软雅黑";line-height: 28px;}
 		#main{  margin:20px;
 				background:#eee;
 				border: 1px solid #999;
-				position: relative;
-				overflow: hidden;
 				padding: 20px;
-				}
+				height: 100%;}
 		#main_1{float: left;
-				padding: 20px;
 				width: 200px;
 				background: #fff;
-				border: 1px solid #999;}
-		#teamname{float: right;}
-		.img-team{  width: 80px;
+				border: 1px solid #999;
+				position: relative;}
+		#teamname{position: absolute;
+				top: 0px;
+				right: 0px;
+				margin: 20px;}
+		.img-team{width: 80px;
 				height: 80px;
+				margin: 20px;
 				background: #ccc;
 				text-align: center;
 				line-height: 80px;
@@ -33,29 +35,39 @@
 				border: 1px solid #999;}
 		#main_2{background: #fff;
 				border:1px solid #999;
-				margin-left: 240px;
-
-				padding: 20px;}
-		#main_3{float: right;
-				background: #fff;
-				border:1px solid #999;}
-		#fix{clear:both;}
+				margin-left: 220px;
+				margin-right: 140px;
+				padding: 20px;
+				top: 20px;}
+		#main_3{background: #fff;
+				border:1px solid #999;
+				float: right;}
+		#fix{clear: both;}
 	</style>
 </head>
 <body>
 <div id="main">
 	<div id="main_1">
-		<div class="img-team">LOGO</div>
-		<p id="teamname">团队名称</p>
+		<div class="img-team"><img src="./img/lg.png"></div>
+		<p id="teamname"><b>SFE团队</b></p>
 	</div>
+	
+	<div id="main_3">
+		<div class="imgs"><img src="./img/sb.png"></div>
+		<div class="imgs"><img src="./img/tq.png"></div>
+		<div class="imgs"><img src="./img/yq.png"></div>
+		<div class="imgs"><img src="./img/lm.png"></div>
+		<div class="imgs"><img src="./img/zff.png"></div>
+	</div>
+
 	<div id="main_2">
 		<p>SFE(Shanghai Front-End)源于百度前端技术学院所举办的IFE春季班组队环节。因成员都在上海工作而得名。我们致力于攻克IFE任务，精益求精。团队之间也互帮互助，共同进步。期望团队早日成为一支Super Front-End Team。</p>
-	</div>
-	<div id="main_3">
-		<div class="imgs">LOGO</div>
-		<div class="imgs">LOGO</div>
-		<div class="imgs">LOGO</div>
-		<div class="imgs">LOGO</div>
+		<p>团队成员:<br />
+@cnzsb（赵世博）<br />
+@eazyfire（岳强）<br />
+@eve0803（郭丽敏）<br />
+@lilyzff（周芳芳）<br />
+@Taoqun（陶群）</p>
 	</div>
 	<div id="fix"></div>
 </div>
