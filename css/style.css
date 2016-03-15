@@ -1,5 +1,5 @@
-*{ margin: 0;padding: 0; }
-body{background: #009966;}
+*{margin: 0;padding: 0; }
+body{background: #eee;font-family: "微软雅黑"}
 a{text-decoration: none; }
 #hd{width: 100%;background: #fff;top:0px;position: relative;z-index: 99;}
 #hd_main{width: 1200px;height: 60px;margin: auto;}
@@ -9,32 +9,30 @@ a{text-decoration: none; }
 .hd_x a{display: block; }
 .hd_x a:hover{font-size: 23px;}
 .hd_menu{width: 102px;height: 0px;overflow: hidden;line-height: 40px;font-size: 18px;text-align: center;}
-.hd_menu  li{height:40px;width: 100px;background: #000;border:1px solid #000;}
+.hd_menu  li{height:40px;width: 100px;background: #666;}
 .hd_menu  li a{display: block;color: #fff;}
-.hd_menu  li a:hover{background: #fff;color: #000;font-size: 18px;}
+.hd_menu  li a:hover{background: #999;color: #000;font-size: 18px;}
 
-#hd_abouts{font-size: 20px;color: #000;float: right;width: 100px;line-height: 60px;}
-#hd_right ul{list-style: none;display: block;float: right;text-align: center;}
+#hd_abouts{font-size: 20px;color: #999;float: right;width: 100px;line-height: 60px;margin-right: 10px;}
+#hd_right ul{list-style: none;display: block;float: right;text-align: center;margin-right: 10px;}
 
 #subnav{width: 100px;height: 0px;font-size: 18px;text-align: center;overflow:hidden;line-height: 40px;}
-#subnav li a{background: #000;display: block;color: #fff;height: 40px;border:1px solid #000;}
-#subnav li a:hover{background: #fff;color: #000;}
+#subnav li a{background: #666;display: block;color: #fff;height: 40px;}
+#subnav li a:hover{background: #999;color: #000;}
 
-#main{position: relative;width: 1200px;margin: 20px auto 20px;border:0px solid #ccc;background: #999}
-#main_1{width: 802px;background: #999;}
-#main_2{width: 360px;background: #ccc;position: absolute;margin-left: 820px;top:20px;}
-#mnn{width: 80px;height:180px;background: #99CC99;position: fixed;top:100px;left: 250px;font-size: 20px;text-align: center;color: #000}
-#mnn ul{list-style: none;margin:8px;}
-#mnn ul li{margin: 1px;background: #CCFF99;border:1px solid #99CCFF;}
+#main{position: relative;width: 1200px;margin: 20px auto 20px;border:1px solid #ccc;background: #fff;}
+#main_1{width: 800px;background: #fff;border:1px solid #eee;}
+#main_2{width: 360px;position: absolute;top:6px;right:6px;border:1px solid #333;}
+.people{width: 798px;height:400px;background: #fff;border:1px solid #333;margin: 5px;}
+.people a{color: #000;}
+.people a:hover{color: #963;text-decoration: underline;}
+.teamifm{width: 100%;height: 40px;background: #999;color: #fff;line-height: 40px;font-size: 20px;text-indent: 1em;}
+.teamifm a{color: #fff;font-size: 18px;}
+.ifm{line-height: 25px;font-size: 16px;background: #fff;color: #000;padding: 20px;}
+.ifm ul{list-style: none;}
 
-.people{width: 800px;height:400px;background: #fff;margin:10px 0px;border:1px solid #ccc;}
-.peo{margin: 20px;width: 600;height: 360px;background: #ccc;}
-.peo ul{list-style: none;display: block;}
-#teamifm{width: 760px;height: 30px;background: #99CC99;color: #fff;line-height: 30px;font-size: 20px;text-indent: 1em;}
-.ifm{margin: 10px 0px 0px 10px;padding: 30px;line-height: 25px;font-size: 20px;width: 680px;height: 250px;background: #fff;}
-
-#talk{width: 360px;height: 30px;background: #000;text-align: center;line-height: 30px;font-size: 20px;color: #fff;z-index: 1px;}
-#sfe_txt{width: 360;text-indent: 1em;margin: 10px;}
+#talk{width: 360px;height: 40px;background: #999;text-align: center;line-height: 40px;font-size: 20px;color: #fff;}
+#sfe_txt{width: 360;margin:20px;line-height:25px;font-size: 16px;}
 
 #footer{width: 100%;background: #333333;}
 #foot{width: 1200px;margin: auto;background: #333333;padding-top: 15px;padding-bottom: 15px;}
