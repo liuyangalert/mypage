@@ -190,21 +190,76 @@
 		  height:44px;
 		  margin-top: 10px;
 		  text-indent: 0.5em;}
-#btxt{width: 459px;
+#btxt{width: 458px;	
 	  height:318px;
 	  background: #eeeed6;
 	  margin-top: 44px;
 	  position: relative;}
-#btxt ul{list-style:none;
-		 margin:20px;}
-#btxt ul li{font-size: 16px;
+#txt{}
+#txt ul{list-style-image: url("./image/ul.png");}
+#txt ul li{font-size: 16px;
 			color:#5a5b5b;
 			font-family: "宋体";
 			text-align: left;
-			line-height: 26px;}
+			margin-left: 50px;
+			padding-top: 20px;}
+#txt ul li span{font: 12px
+				color:#5a5b5b;
+				font-family: "宋体";
+				font-style: oblique;
+				text-align: right;
+				line-height: 20px;}
 #btxt_2{ width: 260px;
 	  	 height: 160px;
 		 background: #d55d5c; 
 		 position: absolute;
 		 bottom:0px;
-		left:0px;}
+		left:0px;
+		color: #fff;}
+#zero{font-size: 110px;
+	  color: #fff;
+	  font-family: "微软雅黑";
+	  border-right:2px solid #fff;
+	  float: left;
+	  height: 86px;
+	  line-height: 86px;
+	  margin:37px 10px; }
+#one{margin-top:37px; 
+	font-size: 21px;
+	font-family: "黑体";
+	font-style: oblique;
+	line-height: 24px;
+	text-transform: uppercase;}
+#hello{font-size: 12px;
+	font-family: "黑体";
+	line-height: 10px;}
+#btxt_3{position: absolute;
+		right:0px;
+		bottom: 0px;
+		width: 178px;
+		height: 160px;
+		margin-right: 10px;}
+#btxt_3{font-size: 14px;
+		color: #5a5b5b;
+		font-family: "黑体";
+		font-style: oblique;
+		line-height: 16px;
+		text-indent: 3em;}
+#btxt_3 span{font-size: 72px;
+			color: #d45d5c;
+			font-family: "黑体";
+			line-height: 30px;}
+#btxt_3 #ss{position: absolute;
+			bottom: 120px;
+			right: 150px;}
+#btxt_3 #cc{position: absolute;
+			bottom: 45px;
+			right: 0px;}
+#foot{float: left;
+	border-top: 1px solid	#938e8c;
+	width: 892px;
+	margin-top: 24px;
+	text-align: right;
+	font-size: 12px;
+	color:#d45d5c;
+	font-family: "黑体";}
