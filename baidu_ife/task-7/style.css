@@ -107,12 +107,13 @@
 		position: relative;
 		font-family:"微软雅黑";
 		cursor: pointer;}
-
-.select ul{list-style: none;border:1px solid #bf4f48;margin-top: 1px;}
+#sele{border:1px solid #bf4f48;}
+.select ul{list-style: none;width: 200px;border:1px solid #bf4f48;display: none;margin-left: -1px;}
 .select ul li{background:#e3e2e4;position: relative;text-indent: 2em;}
 .select ul li span{background: url("./image/gou.png");
 					width: 11px;
 					height: 11px;
+					display: none;
 					position: absolute;
 					top:13px;
 					left: 10px;}
