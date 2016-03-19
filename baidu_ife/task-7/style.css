@@ -31,7 +31,9 @@
  
 #main_1{margin: 2px auto;
 		width: 1280px;
-		position: relative;}
+		height: 850px;
+		position: relative;
+		background: url("./image/bg.png");}
 #btn{width: 330px;
 	height:60px;
 	background: #e7504d;
