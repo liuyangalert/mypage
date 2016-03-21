@@ -24,10 +24,18 @@ window.onload = function(){
 				ss[i].onmouseover = function(){
 					this.style.background = "#bf4f48";
 					this.style.color = "#fff";
+					var sp = this.getElementsByTagName("span")[0];
+					if(sp){
+						sp.style.display = "block";
+					}
 				}
 				ss[i].onmouseout = function(){
 					this.style.background = "";
 					this.style.color = ""; 
+					var sp = this.getElementsByTagName("span")[0];
+					if(sp){
+						sp.style.display = "none";
+					}
 				}
 			}
 		}}
@@ -44,5 +52,7 @@ window.onload = function(){
 			seach.onmouseout = function(){
 				this.style.background = ""
 			}
+
+
 
 }
