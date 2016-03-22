@@ -1,9 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<title>任务九：使用HTML/CSS实现一个复杂页面</title>
 </head>
 <body>
+<div id="head">
+	<div id="head_left">
+		<img src="./image/logo.png">
+		<div class="clear"></div>
+	</div>
+	<div id="head_right">
+		<div id="hd_btn"><img src="./image/mglass.png"><input type="text"></input></div>
+		<div id="peo"><img src="./image/people.png"><span>登录</span><div class="clear"></div></div>
+		<div class="clear"></div>
+	</div>
+    <div class="clear"></div>
+</div>
 
+<div id="main">
+	<div id="main_left">
+		<div id="left_main">
+			<div id="left_main1">
+				<img src="./image/tuxiang.png">
+				<p>Taoqun</p>
+			</div>
+			<div id="left_main2">
+				<p>110<br /><span>收藏</span></p>
+				<p id="left_main2_border">313<br /><span>粉丝</span></p>
+				<div class="clear"></div>
+			</div>
+			<div id="left_main3">
+				<ul id="left_list">
+					<li><img src="./image/left_icon.png">个人报表
+						<ul id="left_list1">
+							<li><img src="./image/jiantou.png"><img src="./image/wenjian.png">文件一</li>
+							<li class="left_list1_open"><img src="./image/bai_jiantou.png"><img src="./image/bai_wenjian.png">文件二
+							<ul>
+								<li><img src="./image/bai_wendang.png">文档一</li>
+								<li class="left_list1_close"><img src="./image/hei_wendang.png">文档二</li>
+							</ul>
+							</li>
+							<li><img src="./image/jiantou.png"><img src="./image/wenjian.png">文件三</li>
+						</ul>
+					</li>
+					<li><img src="./image/left_icon2.png">个人收藏</li>
+					<li><img src="./image/left_icon3.png">我的分享</li>
+					<li><img src="./image/left_icon2.png">图库</li>
+					<li><img src="./image/left_icon2.png">成长记录</li>
+					<li><img src="./image/left_icon4.png">账户信息</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="main_right">
+		<div id="right_top">
+			<p>C站 / 个人报表 / 文件一 / <span>文档一</span></p>
+		</div>
+		<div id="right_main">
+			<div id="right_main1">
+				<div class="right_main1_1">
+					<p>查询项</p>
+					<select>
+						<option value="第一项">第一项</option>
+						<option value="第一项">第二项</option>
+					</select>
+					<div class="clear"></div>
+				</div>
+				<div class="right_mainx"></div>
+				<div class="right_mainx"></div>
+				<div class="right_mainx"></div>
+				<div class="right_mainx"></div>
+			</div>
+		</div>
+	</div>
+<div class="clear"></div>
+</div>
+<div></div>
 </body>
 </html>

@@ -1,0 +1,116 @@
+*{margin: 0;padding: 0;font-family: "黑体";}
+.clear{clear: both;}
+#head{height: 55px;
+	  width: 100%;
+	  background: #228abf;}
+#head_left{margin-left:50px;
+		  float: left;}
+#head_right{margin: 12px 70px 0px;
+			float: right;}
+#hd_btn{width: 300px;
+		  height: 30px;
+		  border-radius:50px;
+		  background: #fff;
+		 float: left;
+		}
+#hd_btn img{margin-left:10px;}
+#hd_btn input{width: 230px;
+			  height: 30px;
+			  margin:0px 15px;
+			  float: right;
+			  background: #fff;
+			  border:0px solid #000;}
+#peo{float: right;
+	width: 100px;}
+#peo img{float: left;
+		margin-left: 10px;}
+#peo span{color: #fff;
+		font-size: 12px;
+		font-family: "黑体";
+		line-height: 30px;
+		float: left;}
+#main{background: #2a2e3d;
+	  width: 100%;
+	  height: 100%;
+	  margin: 0px auto;}
+#main_left{height:100%;
+			width:25%;
+			float: left;
+			background: #2a2e3d;}
+#left_main{margin: 0px auto;
+			width: 150px;}
+#main_right{height:1000px;
+			width: 75%;
+			background: #eeeeed;
+			float: right;}
+#left_main1{height:120px;
+		  width: 150px;}
+#left_main1 img{float: left;
+			  margin:25px 10px;}
+#left_main1 p{float: left;
+			color: #fff;
+			font-size: 16px;
+			line-height: 120px;}
+#left_main2	{width: 150px;}	
+#left_main2 p{color: #6e8095;
+			  text-align: center;
+			  float: left;
+			  font-size: 13px;
+			  padding: 0px 20px;}
+#left_main2_border{border-left:2px solid #313545;}
+#left_main3{width: 150px;
+			color: #6e8095;}
+#left_main3 ul{list-style: none;
+				width: 150px;
+				margin-top: 20px;
+				font-size: 12px;}
+#left_list li{width: 150px;
+			  margin-bottom:20px;}
+#left_list li img{margin-right:15px;}
+
+#left_list1 li{margin-left:30px;}
+
+#left_list1 li img{margin-right:5px;}
+.left_list1_open{color:#fff;}
+.left_list1_close{color:#6e8095;}
+
+#right_top{color:#aaaaaa;
+			height:35px;
+			background: #fff;
+			line-height: 35px;
+			text-indent: 2em;
+			font-size: 13px;}
+#right_top span{color: #6898c2;}
+
+#right_main{width: 890px;
+			margin:0 auto;}
+
+#right_main1{width: 850px;
+			height: 55px;
+			background: #fff;
+			margin: 20px 0;
+			border:1px solid #dddfe1;
+			padding:20px 30px;
+			color: #b0b0b0;
+			font-size: 12px;}
+.right_main1_1{width: 150px;}
+.right_main1_1 p{float: left;line-height: 24px;}
+.right_main1_1 select{float: left;
+					  margin: 0 10px;
+					  padding: 3px 5px;
+					  font-size: 12px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
