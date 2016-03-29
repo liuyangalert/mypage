@@ -1,0 +1,25 @@
+body{margin:0;padding: 50px;}
+*{font-family: "微软雅黑";}
+th{background: #000;
+	color:#fff;}
+table{font-weight:bold;}
+tr:nth-of-type(odd){
+	background: #ccc;
+}
+tr:nth-of-type(-n+4){color:red;}
+
+#main_2{margin-top: 30px;}
+
+#pt{width: 150px;
+	transition:all 1s ease-in .1s;
+}
+#pt:focus{
+	width: 300px;
+}
+
+
+
+
+
+
+
