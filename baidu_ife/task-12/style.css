@@ -16,10 +16,19 @@ tr:nth-of-type(-n+4){color:red;}
 #pt:focus{
 	width: 300px;
 }
+#main_3{margin-top: 50px;width: 300px;height:150px;background: blue;border:1px solid #000;position: relative;}
+#m3{position: absolute;
+		right: 0px;
+		bottom:0px;}
 
-
-
-
-
-
-
+#m3 ul{list-style: none;}
+#m3 ul li{float: left;
+		  margin-left: 2px;
+		  width: 30px;
+		  height:30px;
+		  background: rgba(255,255,255,0.5);
+		  line-height: 30px;text-align: center;color:#fff;}
+#mm1:target{
+	background: green;
+	width: 300px;height:150px;
+	}
