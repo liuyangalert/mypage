@@ -20,16 +20,8 @@ a{text-decoration: none; }
 #subnav li a{background: #666;display: block;color: #fff;height: 40px;}
 #subnav li a:hover{background: #999;color: #000;}
 
-#main{width: 1200px;margin: 20px auto 20px;border:1px solid #ccc;background: #fff;}
-#main_1{width: 800px;background: #fff;border:1px solid #eee;}
-
-.people{width: 798px;background: #fff;border:1px solid #369;margin: 5px;}
-.people a{color: #000;}
-.people a:hover{color: #963;text-decoration: underline;}
-.teamifm{width: 100%;height: 40px;background: #999;color: #fff;line-height: 40px;font-size: 20px;text-indent: 1em;}
-.teamifm a{color: #fff;font-size: 18px;}
-.ifm{line-height: 25px;font-size: 16px;background: #fff;color: #000;padding: 20px;}
-.ifm ul{list-style: none;}
+#main{width: 1200px;height:800px;margin: 20px auto 20px;border:1px solid #ccc;background: #fff;}
+#main p{text-align: center;line-height: 800px;font-size: 200px;color: #999;}
 #footer{width: 100%;background: #333333;}
 #foot{width: 1200px;margin: auto;background: #333333;padding-top: 15px;padding-bottom: 15px;}
 #foot a{color: #999999;text-decoration: none;font-size: 15px}
