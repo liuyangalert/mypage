@@ -1,4 +1,4 @@
-body{margin:0;padding: 50px;}
+/*body{margin:0;padding: 50px;}
 *{font-family: "微软雅黑";}
 th{background: #000;
 	color:#fff;}
@@ -16,19 +16,69 @@ tr:nth-of-type(-n+4){color:red;}
 #pt:focus{
 	width: 300px;
 }
-#main_3{margin-top: 50px;width: 300px;height:150px;background: blue;border:1px solid #000;position: relative;}
-#m3{position: absolute;
-		right: 0px;
-		bottom:0px;}
-
-#m3 ul{list-style: none;}
-#m3 ul li{float: left;
-		  margin-left: 2px;
-		  width: 30px;
-		  height:30px;
-		  background: rgba(255,255,255,0.5);
-		  line-height: 30px;text-align: center;color:#fff;}
-#mm1:target{
-	background: green;
-	width: 300px;height:150px;
+*/
+#demo3{width: 300px;
+		height:150px;
+		border:1px solid #ccc;
+		position:relative;
+		overflow:hidden;}
+.banner{width:900px;
+	height:150px;
+	list-style:none;
+	z-index: 20;
 	}
+.banner div{width: 300px;
+	float: left;
+	height:150px;
+	text-align:center;
+	line-height:150px;
+	color:#fff;
+	font-size:50px;
+	position: absolute;
+	animation-timing-function: forwards;}
+.banner div:nth-child(1){background: red;}
+.banner div:nth-child(2){background: blue;}
+.banner div:nth-child(3){background: green;}
+
+.tab{margin:0;
+	padding: 0;
+	position: absolute;
+	right:3px;
+	bottom:3px;
+	list-style: none;
+	text-align: center;
+	line-height: 30px;
+	font-size: 15px;
+	z-index: 100;}
+.tab li{width: 30px;
+	height:30px;
+	background: #fff;
+	opacity:0.5;
+	float: left;
+	margin-right: 2px;
+	cursor:pointer;}
+.tab li:hover{
+	opacity:0.8;
+}
+
+@keyframes move{
+	0%{left:-100%;}
+	100%{left:0%;}
+}
+
+#banner1:target{
+	animation:move 1s ease forwards;
+}
+#banner2:target{
+	animation:move 1s ease forwards;
+}
+#banner3:target{
+	animation:move 1s ease forwards;
+}
+.banner div:not(:target){
+	animation: nomove 1s ease forwards;
+}
+@keyframes nomove{
+	0%{z-index: -5}
+	100%{z-index: -5}
+}
