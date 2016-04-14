@@ -1,11 +1,9 @@
 function addEventHandler(ele,event,handler){
     if( ele.addEventListener){
        ele.addEventListener(event,handler,false);
-    }
-    else if(ele.attachEvent) {
+    }else if(ele.attachEvent) {
       ele.attachEvent('on'+event,handler);
-    }
-    else {
+    }else {
       ele['on'+event] = handler;
     }
 }
@@ -17,7 +15,7 @@ function getDateStr(dat){
   d = d < 10 ? '0' + d : d;
   return y + '-' + m + '-' + d;
 }
-function randomBuilData(seed){
+function randomBuildData(seed){
   var returnData = {};
   var dat = new Date("2016-01-01");
   var datStr = "";
@@ -29,13 +27,15 @@ function randomBuilData(seed){
   return returnData;
 }
 var aqiSourceData = {
-  "北京":randomBuilData(500),
-  "上海":randomBuilData(300),
-  "南京":randomBuilData(200),
-  "广州":randomBuilData(100),
-  "深圳":randomBuilData(300),
-  "成都":randomBuilData(100),
-  "西安":randomBuilData(400)
+  "北京": randomBuildData(500),
+  "上海": randomBuildData(300),
+  "南京": randomBuildData(200),
+  "广州": randomBuildData(100),
+  "深圳": randomBuildData(300),
+  "成都": randomBuildData(100),
+  "西安": randomBuildData(400),
+  "厦门": randomBuildData(100),
+  "沈阳": randomBuildData(500)
 }
 var chartData = {};
 var pageState = {
@@ -56,10 +56,9 @@ function renderChart(){
 }
 
 function graTimeChange(){
-  if(pageState.nowGraTime = this.value){
+  if(pageState.nowGraTime == this.value){
     return;
-  }
-  else{
+  } else {
     pageState.nowGraTime = this.value;
   }
   initAqiChartData();
@@ -67,10 +66,9 @@ function graTimeChange(){
 }
 
 function citySelectChange(){
-  if(pageState.nowSelectCity = this.value){
+  if(pageState.nowSelectCity == this.value){
     return;
-  }
-  else{
+  }else{
     pageState.nowSelectCity = this.value;
   }
   initAqiChartData();
@@ -79,7 +77,7 @@ function citySelectChange(){
 
 function initGraTimeForm(){
   var pageRadio = formGraTime.getElementsByTagName("input");
-  for(var i=0;i<pageRadio.length;i++){
+  for(var i=0;i < pageRadio.length;i++){
     addEventHandler(pageRadio[i],'click',graTimeChange);
   }
 }
@@ -95,10 +93,10 @@ function initCitySelector(){
 
 function initAqiChartData(){
   var nowCityData = aqiSourceData[pageState.nowSelectCity];
-  if(pageState.nowGraTime = 'day'){
+  if(pageState.nowGraTime == 'day'){
     chartData = nowCityData;
   }
-  if(pageState.nowGraTime = 'week'){
+  if(pageState.nowGraTime == 'week'){
     chartData = {};
     var countSum=0,daySum=0,week=0;
     for( var item in nowCityData ){
@@ -117,13 +115,13 @@ function initAqiChartData(){
     }
   }
 
-  if ( pageState.nowGraTime = 'month' ){
+  if ( pageState.nowGraTime == 'month' ){
     chartData = {};
-    var countSum = 0,daySum = 0,month = 0;
+    var countSum = 0 , daySum = 0 , month = 0;
     for( var item in nowCityData ){
       countSum += nowCityData[item];
       daySum++;
-      if((new Date(item)).getMonth() != month){
+      if((new Date(item)).getMonth() !== month){
         month ++;
         chartData['第'+month+'月'] = Math.floor(countSum/daySum);
         countSum = 0;
