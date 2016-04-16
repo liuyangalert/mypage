@@ -37,7 +37,7 @@ function insert(){
 	}
 	insert[4].onclick = function(){
 		var x = content.childNodes;
-		content.removeChild(x[x.length-1]);
+		content.removeChild(lastChild);
 		del();
 	}
 	function del(){
