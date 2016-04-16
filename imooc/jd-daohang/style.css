@@ -1,0 +1,205 @@
+ul{
+	list-style:none;
+	width: 210px;
+	padding:0;
+	margin:0;
+	color:#fff;
+	background: rgb(220,22,35);
+	position: relative;
+	}
+ul a{
+	text-decoration: none;
+	text-transform: none;
+	color:#fff;
+	}
+#main_top{
+	background: rgb(177,25,26);
+	height:44px;
+	line-height:45px;
+	font-size:20px;
+	font-family: "微软雅黑";
+	text-indent: 10px;
+	}
+ul li{
+	width: 210px;
+	height:31px;
+	line-height: 31px;
+	text-indent:10px;
+	font-size: 14px;
+	position: relative;
+	border-left:1px solid rgb(220,22,35);
+	}
+.nav_span{
+	position:absolute;
+	right:10px;
+	font-size: 5px;
+	font-width:bolder;
+	}
+ul li:hover{
+	width: 210px;
+	background: #fff;
+	color:#666;
+	height:30px;
+	border-left: 1px solid rgb(220,22,35);
+	border-bottom: 1px solid rgb(220,22,35);
+
+	}
+ul li:hover a{
+	color:rgb(198,29,29);
+	}
+ul li:hover	.nav_span{
+	display:none;
+	}
+.nav{
+	display: none;
+	width: 1000px;
+	height:394px;
+	border:1px solid rgb(220,22,35);
+	position: absolute;
+	top:-1px;
+	left:209px;
+	padding:20px;
+	}
+ul li:hover .nav{
+	display:block;
+	}
+.nav_tab{
+	width: 5px;
+	height:	30px;
+	background: #fff;
+	display: none;
+	position: absolute;
+	right:-2px;
+	top:0px;
+	z-index:999;
+	}
+ul li:hover .nav_tab{
+	display:block;
+	}
+
+.nav ul {
+	display: block;
+	list-style: none;
+	width: 1000px;
+	}
+.nav ul li{
+	float:left;
+	background: rgb(124,133,133);
+	color:#fff;
+	width: auto;
+	border:0;
+	height:25px;
+	line-height: 25px;
+	margin-right: 20px;
+	font-size: 10px;
+	}
+.nav ul li span{
+	display:inline-block;
+	width: 25px;
+	height:25px;
+	line-height: 25px;
+	background: rgb(92,82,81);
+	margin-left: 5px;
+	}
+.nav ul li:hover{
+	background: rgb(220,22,35);
+	cursor:pointer;
+	}
+.nav ul li span:hover{
+	background: rgb(177,25,26);
+	cursor:pointer;
+	}
+.nav_dl{
+	width: 700px;
+	float:left;
+	margin:5px 0px;
+	padding: 0;
+	}
+.nav_dl dl{
+	display: block;
+	margin: 0px;
+	padding:0;
+	}
+.nav_dl dl dt{
+	width: 70px;
+	float: left;
+	display: block;
+	text-align:right;
+	height:22px;
+	font-size:13px;
+	font-weight: bold;
+	line-height: 22px;
+	overflow: hidden;
+	}
+.nav_dl dt,dd{
+	color:#666;
+	display: block;
+	overflow: hidden;	
+	}
+.nav_dl dl dd{
+	border-bottom:1px solid #eee;
+	}
+.nav_dl dl dd a{
+	display: block;
+	float: left;
+	height:12px;
+	color:#666;
+	font-size: 12px;
+	line-height: 12px;
+	border-left:1px solid #999;
+	padding:0 3px;
+	margin: 5px 0px 5px 10px;
+	}
+.nav_dl dl dt:hover{
+	color:rgb(177,25,26);
+	cursor:pointer;
+	}
+.nav_dl dl dd a:hover{
+	color:rgb(177,25,26);
+	}
+.banner{
+	width: 200px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	}
+.banner ul{
+	width: 200px;
+	list-style: none;
+	}
+.banner ul li{
+	margin:0;
+	padding: 0;
+	width: 100px;
+	height:40px;
+	background: #666;
+	float: left;
+	line-height: 40px;
+	text-align: center;
+	}
+.nav_left{
+	position: relative;
+	}
+.banner_btm{
+	width: 200px;
+	position: absolute;
+	top:200px;
+	right:0px;
+}
+.banner_btm ul{
+	list-style: none;
+	width: 200px;
+	}
+.banner_btm ul li{
+	width: 200px;
+	height:100px;
+	margin:0;
+	padding: 0;
+	background: rgb(220,22,35);
+	float: left;
+	line-height: 100px;
+	text-align: center;
+	border-bottom:1px solid #333;
+}
+
