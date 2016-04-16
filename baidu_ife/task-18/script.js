@@ -9,11 +9,10 @@ function insert(){
 	var insert = document.getElementsByTagName("input");
 	insert[1].onclick = function(){
 		getnum();
-		var x = content.getElementsByTagName("div")[0];
 		var n = document.createElement("div");
 		if (re.test(num)) {
 	 		n.innerHTML = num;
-			content.insertBefore(n,x);
+			content.insertBefore(n,content.firstChild);
 			del();
 		}else{
 			alert("请输入数字！");
@@ -37,7 +36,7 @@ function insert(){
 	}
 	insert[4].onclick = function(){
 		var x = content.childNodes;
-		content.removeChild(lastChild);
+		content.removeChild(content.lastChild);
 		del();
 	}
 	function del(){
