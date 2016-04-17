@@ -31,7 +31,7 @@ function insert(){
 	}
 	insert[3].onclick = function(){
 		var x = content.childNodes;
-		content.removeChild(x[0]);
+		content.removeChild(content.firstChild);
 		del();
 	}
 	insert[4].onclick = function(){
@@ -43,12 +43,13 @@ function insert(){
 	 	var dd = content.getElementsByTagName("div");
 	 	for(var i=0;i<dd.length;i++){
 	 		dd[i].onclick = function(){
-	 			var x = this.parentNode;
-	 			x.removeChild(this);
+				var x = this.parentNode;
+       			x.removeChild(this);
 				del();
 	 		}
 	 	}
-	 }
+	}
+
 	}
 window.onload = function(){
 	insert();
