@@ -5,36 +5,43 @@
 	<title>任务十九：基础JavaScript练习（二）</title>
 
 <style type="text/css">
-
+.cc{
+	border:1px solid #999;
+	margin:10px auto;
+	padding:30px;
+	display:flex;
+	justify-content: center;
+	align-items:flex-end;
+}
+div input{margin: 3px;}
+#content{height:150px;}
 #content div{
-	margin:10px 5px;
-	height: 50px;
-	background: #ccc;
-	line-height: 50px;
+	margin:1px;
+	padding:0;
+	width: 20px;
+	background: red;
 	text-align: center;
 	color:#000;
-	font-size: 20px;
-	float: left;
+	font-size: 10px;
 	overflow: hidden;
-	padding: 5px;
 	cursor:pointer;
 	}
-#content div:hover{
-	background: red;
-}	
+}
 </style>
 
 </head>
 <body>
 
-<input type="text" id="num"></input>
+<div class="cc">
+<input type="text" id="num" placeholder="请输入10~100之间的数字"></input>
 <input type="button" value="左侧入"></input>
 <input type="button" value="右侧入"></input>
 <input type="button" value="左侧出"></input>
 <input type="button" value="右侧出"></input>
-
-<div id="=sheet"></div>
-<div id="content"></div>
+<input type="button" value="随机生成"></input>
+<input type="button" value="排序"></input>
+</div>
+<div id="content" class="cc"></div>
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
