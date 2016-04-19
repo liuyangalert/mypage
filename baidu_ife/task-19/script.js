@@ -2,7 +2,7 @@
 function insert(){
 	var content = document.getElementById("content");
 	var insert = document.getElementsByTagName("input");
-	
+	var dd = content.getElementsByTagName("div");
 	var num = 0;
 	var re = /^[0-9]+.?[0-9]*$/;
 
@@ -59,17 +59,49 @@ function insert(){
 			del();
 		}
 	}
+	insert[6].onclick = function(){
+
+		var eleHeight = [];
+		for(var i=0;i<dd.length;i++){
+			eleHeight.push(dd[i].offsetHeight);
+		}
+		var i=0,j=1,timer = null;
+		timer = setInterval(run,3);
+		function run(){
+			if( i < eleHeight.length ) {
+				if( j < eleHeight.length ) {
+					if( eleHeight[i] > eleHeight[j] ){
+						var temp = eleHeight[i];
+						eleHeight[i] = eleHeight[j];
+						eleHeight[j] = temp;
+						dd[i].style.height = eleHeight[i]+"px";
+						dd[i].innerText = eleHeight[i]
+						dd[j].style.height = temp+"px";
+						dd[j].innerText = temp;
+					}
+					j++;
+				} else {
+					i++;
+					j = i+1;
+				}
+			}else {
+				clearInterval(timer);
+				return;
+			}
+		}
+
+	}
 	function del(){
-	 	var dd = content.getElementsByTagName("div");
+	 	var d = content.getElementsByTagName("div");
 	 	for(var i=0;i<dd.length;i++){
-	 		dd[i].onclick = function(){
+	 		d[i].onclick = function(){
        			this.parentNode.removeChild(this);
 	 		}
 	 	}
 	}
 	function pan(){
-		var dd = content.childNodes.length;
-		if (dd>60) {
+		var d = content.childNodes.length;
+		if (d>60) {
 			alert("超过60了");
 		}
 	}
