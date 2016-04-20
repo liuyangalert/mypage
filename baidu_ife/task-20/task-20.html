@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>任务二十：基础JavaScript练习（三）</title>
+
+<style type="text/css">
+.cc{
+	border:1px solid #999;
+	margin:10px auto;
+	padding:30px;
+	display:flex;
+	justify-content: center;
+	align-items:flex-end;
+}
+div input{margin: 3px;}
+#content{height:150px;}
+#content div{
+	margin:1px;
+	padding:0;
+	width: 20px;
+	background: #666699;
+	text-align: center;
+	color:#000;
+	font-size: 10px;
+	overflow: hidden;
+	cursor:pointer;
+	}
+input{
+	box-shadow: 0 0 9px #CCCCCC;
+	padding:3px;
+	cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div class="cc">
+<textarea id="num" placeholder="请输入10~100之间的数字"></textarea>
+<input type="button" value="左侧入"></input>
+<input type="button" value="右侧入"></input>
+<input type="button" value="左侧出"></input>
+<input type="button" value="右侧出"></input>
+<input type="button" value="随机生成"></input>
+<input type="button" value="排序"></input>
+<input type="button" value="查询"></input>
+<input type="button" value="清空"></input>
+</div>
+<div id="content" class="cc">
+	<!-- <div style="height:45px">45</div>
+	<div style="height:20px">20</div>
+	<div style="height:70px">70</div> -->
+</div>
+<script src="script.js"></script>
+</body>
+</html>
