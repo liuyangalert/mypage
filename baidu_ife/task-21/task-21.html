@@ -29,13 +29,36 @@
 	padding:5px;
 	font-size: 20px;
 	float: left;
-	background:rgb(137,200,253); ;
+	background:rgb(137,200,253);
+}
+.area{
+	width: 300px;
+	margin:5px auto;
+	border:1px solid #eee;
+}
+.area textarea{
+	width:300px;
+}
+.area input{
+	width: 300px;
+	margin-top: 10px;
+}
+#tag_list{
+	width: 300px;
+}
+#tag_list div{
+	float:left;
+	margin:5px;
+	padding:5px;
+	background: #eee;
+	font-size: 20px;
+	border:1px solid #999;
 }
 </style>
 
 </head>
 <body>
-
+<h3>暂时不会去重</h3>
 <div class="cc">
 	<div class="text">
 		<label>请输入：<input type="text" id="num" placeholder="请输入...."></input></label>
@@ -46,9 +69,9 @@
 	</div>
 </div>
 <div class="cc">
-	<div class="text">
-		<textarea></textarea>
-		<input type="button" value="确认"></input>
+	<div class="area">
+		<textarea id="area">吃；喝；拉；撒</textarea>
+		<input id="btn" type="button" value="确认"></input>
 		<div id="tag_list"></div>
 	</div>
 </div>

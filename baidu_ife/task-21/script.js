@@ -5,7 +5,6 @@ document.onkeyup = function(event){
 }
 
 function getvalue(){
-
 	var value = document.getElementById("num");
 	var ul = document.getElementById("tag_ul");
 	var li = document.createElement("li");
@@ -22,32 +21,50 @@ function getvalue(){
 		}	
 	}
 	del();	
-function ifvalue(tag,txt){
-	var li = tag.getElementsByTagName("li");
-	for(var i=0;i<li.length;i++){
-		if( li[i].innerText == txt ){
-			return true;
-		} else{
-			return false;
+	function ifvalue(tag,txt){
+		var li = tag.getElementsByTagName("li");
+		for(var i=0;i<li.length;i++){
+			if( li[i].innerText == txt ){
+				return true;
+			} else{
+				return false;
+			}
+		}
+	}
+	function del(){
+		var ul = document.getElementById("tag_ul");
+		var li = ul.getElementsByTagName("li");
+		for( var i=0;i<li.length;i++ ){
+			var s = "";
+			li[i].onclick = function(){
+				ul.removeChild(this);
+			}
+			li[i].onmouseover = function(){
+				s = this.innerText;
+				this.innerText = "删除 "+this.innerText;
+			}
+			li[i].onmouseout = function(){
+				this.innerText = s;
+			}
 		}
 	}
 }
-function del(){
-	var ul = document.getElementById("tag_ul");
-	var li = ul.getElementsByTagName("li");
-	for( var i=0;i<li.length;i++ ){
-		var s = "";
-		li[i].onclick = function(){
-			ul.removeChild(this);
-		}
-		li[i].onmouseover = function(){
-			s = this.innerText;
-			this.innerText = "删除 "+this.innerText;
-		}
-		li[i].onmouseout = function(){
-			this.innerText = s;
-		}
+	function gethobby(){
+		btn.onclick = function(){
+			var list = document.getElementById("area").value;
+			var re = /[,，;；、。.\s\n]+/
+			var text = list.split(re);
+			var btn = document.getElementById("btn");
+			var tag_list = document.getElementById("tag_list");
+			for(var i=0;i<text.length;i++){
+				var div = document.createElement("div");
+				div.innerText = text[i];
+				tag_list.appendChild(div);
+			}
+			list= '';
+			}
 	}
-}
-	
+window.onload = function(){
+	gethobby();
+	getvalue();
 }
