@@ -11,7 +11,7 @@
 	border:1px solid #eee;
 	padding:50px;
 }
-#text{
+.text{
 	width: 500px;
 	margin:0px auto;
 }
@@ -37,14 +37,20 @@
 <body>
 
 <div class="cc">
-	<div id="text">
+	<div class="text">
 		<label>请输入：<input type="text" id="num" placeholder="请输入...."></input></label>
 		<div id="tag">
 			<ul id="tag_ul">
 			</ul>
 		</div>
 	</div>
-	
+</div>
+<div class="cc">
+	<div class="text">
+		<textarea></textarea>
+		<input type="button" value="确认"></input>
+		<div id="tag_list"></div>
+	</div>
 </div>
 <script src="script.js"></script>
 </body>
