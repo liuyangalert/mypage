@@ -18,9 +18,9 @@ function getvalue(){
 			if(leng.length > 9){
 				ul.removeChild(ul.firstChild);
 			}
-		}	
+		}
 	}
-	del();	
+	del();
 	function ifvalue(tag,txt){
 		var li = tag.getElementsByTagName("li");
 		for(var i=0;i<li.length;i++){
