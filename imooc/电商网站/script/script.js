@@ -11,6 +11,7 @@ function banner_show(){
 		if( $("#banner").css("left") == "-"+(banner_w-811)+"px"){
 			$("#banner").animate({
 				left:"0px",
+				
 			},1000)
 		} else {
 			$("#banner").animate({
