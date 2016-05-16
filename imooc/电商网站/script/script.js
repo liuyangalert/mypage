@@ -5,30 +5,26 @@ window.onload=function(){
 function banner_show(){
 	var left_btn = $("#banner_tag_left");
 	var right_btn = $("#banner_tag_right");
+	var Owidth = $("#banner ul li").width();
+	var Oindex = $("#banner ul li");
 	var banner_w = $("#banner").width();
-
+ 	var index = 0;
 	$(left_btn).bind("click",function(){
-		if( $("#banner").css("left") == "-"+(banner_w-811)+"px"){
-			$("#banner").animate({
-				left:"0px",
-				
-			},1000)
-		} else {
-			$("#banner").animate({
-				left:"-=811px"
-			},300)
+		index++;
+		if( index>(Oindex.length-1)){
+			index = 0;
 		}
+		$("#banner").animate({
+			left:-Owidth*index+"px",
+		},300)
 	});
-
 	$(right_btn).bind("click",function(){
-		if($("#banner").css("left") == "0px"){
-			$("#banner").animate({
-				left:"-"+(banner_w-811)+"px"
-			},1000)
-		} else {
-			$("#banner").animate({
-				left:"+=811px"
-			},300)
+		index--;
+		if( index<0){
+			index=Oindex.length-1;
 		}
+		$("#banner").animate({
+			left:-Owidth*index+"px",
+		},300)
 	});
 }
