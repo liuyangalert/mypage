@@ -213,15 +213,17 @@ dt,dl,dd{
 	float:left;
 }
 #banner{
-	width:1622px;
+	width:3244px;
 	height:325px;
 	position: relative;
+	left:0px;
 }
 .banner_tag{
 	width:30px;
 	height:70px;
-	background:#ccc;
+	background:#666;
 	position:absolute;
+	opacity:0.8;
 	top:122px;
 	opacity:0;
 	font-size:30px;
