@@ -27,4 +27,16 @@ function banner_show(){
 			left:-Owidth*index+"px",
 		},300)
 	});
+	setInterval(function(){
+		index++;
+		if( index>(Oindex.length-1)){
+			index = 0;
+		}
+		if( index<0){
+			index=Oindex.length-1;
+		}
+		$("#banner").animate({
+			left:-Owidth*index+"px",
+		},300)
+	},3000)
 }
