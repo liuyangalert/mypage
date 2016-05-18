@@ -90,6 +90,15 @@ ul,li{list-style:none;margin:0;padding:0;}
 	color:#fff;
 	cursor:pointer;
 }
+#seach_btn:hover{
+	background:#FF9933;
+}
+#shopcar:hover{
+	background:url(../images/shopcar.jpg) #FF9933 no-repeat 3px center; 
+}
+#shopcar_num:hover{
+	background:url(../images/shopcar_num.jpg) #FF9933 no-repeat 35px center;
+}
 #shopcar{
 	height:35px;
 	width:82px;
@@ -174,7 +183,7 @@ dt,dl,dd{
 #main dl{
 	width:168px;
 	background: url(../images/menu_list_dl.jpg) #4693ff no-repeat 175px center;
-	padding:11px 10px;
+	padding:10px 10px 11px;
 	border-left:1px solid #3487f2;
 	border-bottom:1px solid #3487f2;
 	float: left;
@@ -206,7 +215,6 @@ dt,dl,dd{
 }
 /*轮播图*/
 #main_banner{
-	margin-top: 6px;
 	width:811px;
 	height:325px;
 	float:right;
@@ -288,7 +296,7 @@ dt,dl,dd{
 .content_list{
 	width:1000px;
 	height:475px;
-	margin:50px auto 0;
+	margin:0px auto;
 	position: relative;
 }
 .content_top{
@@ -322,7 +330,40 @@ dt,dl,dd{
 }
 .content_left{
 	width:189px;
+	height:400px;
 	float:left;
+	position: relative;
+}
+.content_left_ad li{
+	position: absolute;
+	left: 0;
+	top:0;
+}
+.content_left_index{
+	position: absolute;
+	width:100%;
+	height:10px;
+	bottom:10px;
+
+}
+.content_left_center{
+	margin:0 auto;
+	width:100%;
+	height:10px;
+	text-align: center;
+
+}
+.content_left_icon{
+	width:20px;
+	height:10px;
+	display: inline-block;
+	background-color:#333;
+	border:1px solid #FFFFFF;
+
+}
+.content_left_icon:hover,.content_left_icon_active{
+	background:#FF0033;
+	border:1px solid #FFFFFF;
 }
 .content_right{
 	float:left;
