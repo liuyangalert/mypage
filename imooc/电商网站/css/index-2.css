@@ -96,13 +96,13 @@ ul,li{list-style:none;margin:0;padding:0;}
 	color:#fff;
 	text-decoration: none;
 }
-#banner_tag_left{
+#prev{
 	left:0;
 }
-#banner_tag_right{
+#next{
 	right:0;
 }
-#main_banner:hover #banner_tag_left,#main_banner:hover #banner_tag_right{
+#main_banner:hover #prev,#main_banner:hover #next{
 	opacity:1;
 }
 

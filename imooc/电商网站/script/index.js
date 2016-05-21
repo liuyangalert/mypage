@@ -5,8 +5,8 @@ window.onload=function(){
 }
 
 function banner_show(){
-	var left_btn = $("#banner_tag_left");
-	var right_btn = $("#banner_tag_right");
+	var left_btn = $("#prev");
+	var right_btn = $("#next");
 	var Owidth = $("#banner ul li").width();
 	var Oindex = $("#banner ul li");
 	var banner_w = $("#banner").width();
@@ -46,7 +46,7 @@ function banner_show(){
 						left:-Owidth*num+"px",
 					},300)
 					banner_icon();
-				},3000)
+				},1000)
 
 	$("#main_banner").hover(function(){
 			clearInterval(timer);
