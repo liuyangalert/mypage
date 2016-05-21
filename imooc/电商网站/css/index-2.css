@@ -1,0 +1,235 @@
+@charset "utf-8";
+body,ul,li,p,input{margin:0;padding:0;}
+ul,li{list-style:none;margin:0;padding:0;}
+.header_top_fc dl a{
+	font-size:14px;
+	line-height:16px;
+}
+.main_menu dt,dl,dd{
+	margin:0;
+	padding:0;
+}
+#main_menu {
+	width:180px;
+	border:1px dotted #d7d7d7;
+	background-color:#f3f3f3 ;
+	float:left;
+}
+#main_menu dl{
+	width:180px;
+	border-bottom:1px dotted #d7d7d7;
+	float: left;
+}
+#main_menu dl a{
+	color:#555555;
+	padding-left: 10px;
+	
+}
+.list_name{
+	color:#555555;
+	width:170px;
+	font-size:14px;
+	line-height:35px;
+	font-family:"宋体";
+	font-weight:bolder;
+	padding-left:10px;
+	border-bottom:1px dotted #d7d7d7;
+}
+.menu_side_dt{
+	font-weight:bolder;
+	width:180px;
+	font-size:12px;
+	line-height:35px;
+	font-family:"宋体";
+	text-decoration: none;
+}
+.menu_side_dd{
+	font-size:12px;
+	line-height:30px;
+	font-family:"宋体";
+	width:80px;
+	float:left;
+	text-decoration: none;
+}
+#main dl:hover,.list_name:hover{
+	background:#fff;
+}
+#main,.main_center{
+	width:1000px;
+	margin:17px auto;
+}
+/*轮播图*/
+#main_banner{
+	width:811px;
+	height:325px;
+	float:right;
+	overflow:hidden;
+	position:relative;
+}
+
+#main_banner li{
+	width:811px;
+	height:325px;
+	list-style:none;
+	float:left;
+}
+#banner{
+	width:3244px;
+	height:325px;
+	position: relative;
+	left:0px;
+}
+.banner_tag{
+	width:30px;
+	height:70px;
+	background:#666;
+	position:absolute;
+	opacity:0.8;
+	top:122px;
+	opacity:0;
+	font-size:30px;
+	color:#fff;
+	line-height: 70px;
+	text-align:center;
+}
+.banner_tag a{
+	color:#fff;
+	text-decoration: none;
+}
+#banner_tag_left{
+	left:0;
+}
+#banner_tag_right{
+	right:0;
+}
+#main_banner:hover #banner_tag_left,#main_banner:hover #banner_tag_right{
+	opacity:1;
+}
+
+.banner_index{
+	position: absolute;
+	width:100%;
+	height:30px;
+	bottom:10px;
+
+}
+.banner_index_center{
+	margin:0 auto;
+	width:200px;
+	height:30px;
+	text-align: center;
+
+}
+.banner_icon{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	border-radius:50%;
+	background-color:#333;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	color:#fff;
+}
+.banner_icon:hover,.banner_icon_active{
+	background:#FF0033;
+	color:#ccc;
+
+}
+.content_list{
+	width:811px;
+	float:right;
+	position: relative;
+}
+.content_right_title{
+	border-bottom: 3px solid #cccccc;
+	font-size: 16px;
+	line-height: 40px;
+	color:#454545;
+	font-weight:bold;
+}
+.content_right_title p{
+	display: inline-block;
+	width:180px;
+	padding-left: 10px;
+	border-bottom:3px solid #096dba;
+	margin-bottom: -3px;
+
+}
+.content_right{
+	float:left;
+	width:810px;
+	margin-left: 1px;
+}
+.content_right{
+	float:left;
+	width:810px;
+	margin-left: 1px;
+}
+.content_right_list{
+	float:left;
+}
+.list_ad{
+	border-left:none;
+	width:201.5px;
+	height:240px;
+	background:#fff;
+	float: left;
+	position: relative;
+}
+.list_ad a{
+	text-decoration:none;
+	text-align:center;
+}
+.list_ad .camera{
+	position: absolute;
+	top:40px;
+	right:20px;
+}
+.list_ad .ibody{
+	position: absolute;
+	top:20px;
+	right:70px;
+}
+.price p{
+	position: absolute;
+	left:0;
+	right:0;
+	bottom:50px;
+	margin:auto;
+	color:#000;
+	font-size:12px;
+	text-align:left;
+	width:90%;
+	height:30px;
+	overflow:hidden;
+}
+.price span{
+	position: absolute;
+	bottom:25px;
+	left:10px;	
+	font-family:"微软雅黑";
+	font-weight:bold;
+	color:#d4105a;
+	font-size:15px;
+}
+.list_ad .camera:hover{
+	top:35px;
+}
+.list_ad .ibody:hover{
+	right:60px;
+}
+.comments{
+	position: absolute;
+	bottom:5px;
+	font-size: 13px;
+	color:#000;
+}
+.comments span{
+	margin:0;
+	padding:0;
+	display: inline-block;
+	width:12px ;
+	height: 13px;
+	background:url(../images/star.jpg) no-repeat center center;
+}
