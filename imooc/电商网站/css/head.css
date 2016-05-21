@@ -166,10 +166,11 @@ ul,li{list-style:none;margin:0;padding:0;}
 	display:inline-block;
 	text-indent: 40px;
 	color:#fff;
+	cursor:pointer;
 	background: url(../images/menu_list.jpg) #1369c0 no-repeat 148px center;
 }
 .menu_side h3:hover{
-	background: url(../images/menu_list.jpg) #1369c0 no-repeat 148px center;
+	background: url(../images/menu_list2.jpg) #005ab5 no-repeat 148px center;
 	color:#fff;
 }
 /*导航菜单结束*/
