@@ -1,36 +1,36 @@
 @charset "utf-8";
-body,ul,li,p,input{margin:0;padding:0;}
-ul,li{list-style:none;margin:0;padding:0;}
-
-dl a{
-	font-size:14px;
-	line-height:16px;
-}
-dt,dl,dd{
-	margin:0;
-	padding:0;
-}
+body,ul,li,p,input,dt,dl,dd{margin:0;padding:0;}
+*{margin:0;padding:0;}
+ul,li{list-style:none;}
 .menu_side_dd{
 	color:#c2d9f8;
 	font-family: "宋体";
 	text-decoration: none;
+	margin:0;
+	padding:0 2px;
+	float:left;
+	font-size:12px;
 }
 #main dl{
 	width:168px;
+	height:45px;
 	background: url(../images/menu_list_dl.jpg) #4693ff no-repeat 175px center;
-	padding:10px 10px 11px;
+	padding:10px;
 	border-left:1px solid #3487f2;
 	border-bottom:1px solid #3487f2;
 	float: left;
 }
 .menu_side_dt{
 	color:#fff;
+	font-size: 14px;
 	font-family:"微软雅黑";
 	text-decoration: none;
 }
 .menu_point{
+	font-size: 14px;
+	font-family:"微软雅黑";
 	color:#fff;
-	padding:2px;
+	padding:0 2px;
 	background:#106ac0;
 	border-radius:5px;
 }
@@ -47,11 +47,15 @@ dt,dl,dd{
 #main_menu{
 	width: 189px;
 	float:left;
+	height:323px;
+	background:#4693ff;
+	overflow:hidden;
+	border-bottom:1px solid #3487f2;
 }
 /*轮播图*/
 #main_banner{
 	width:811px;
-	height:325px;
+	height:324px;
 	float:right;
 	overflow:hidden;
 	position:relative;
@@ -84,15 +88,16 @@ dt,dl,dd{
 }
 .banner_tag a{
 	color:#fff;
+	color:"宋体";
 	text-decoration: none;
 }
-#banner_tag_left{
+#prev{
 	left:0;
 }
-#banner_tag_right{
+#next{
 	right:0;
 }
-#main_banner:hover #banner_tag_left,#main_banner:hover #banner_tag_right{
+#main_banner:hover #prev,#main_banner:hover #next{
 	opacity:1;
 }
 
@@ -226,6 +231,7 @@ dt,dl,dd{
 	position: absolute;
 	top:40px;
 	right:40px;
+	border:0;
 }
 .list_ad h3{
 	position: absolute;
@@ -253,6 +259,7 @@ dt,dl,dd{
 	position:absolute;
 	top:30px;
 	left: 10px;
+	border:0;
 }
 .list_ad_mini img:hover{
 	left:15px;
