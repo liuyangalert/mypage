@@ -1,0 +1,102 @@
+body,html,img,p,input,label{margin:0;padding: 0;}
+.head{
+	height:85px;
+	width:100%;
+	background-color:#1d7ad9;
+}
+.head_top{
+	width:750px;
+	margin:0 auto;
+}
+.head_top div{
+	background: url(../images/logo.png) no-repeat left center ;
+	padding-left:125px ;
+	display: inline-block;
+	font-size: 25px;
+	line-height: 85px;
+	color:#fff;
+}
+.main{
+	width:610px;
+	margin: 10px auto;
+	padding:40px 70px;
+	border:1px solid #ccc;
+	position: relative;
+}
+.labe{
+	display:block;
+	color:#999999;
+	font-size: 12px;
+	
+}
+
+.labe input{
+	width:257px;
+	height:35px;
+	margin-top:5px;
+	margin-bottom: 15px;
+	padding:0 33px 0 10px;
+}
+#name{
+	background:url(../images/name.jpg) no-repeat 270px center;
+	border:1px solid #ccc;
+}
+#pwd{
+	background:url(../images/name.jpg) no-repeat 270px center;
+	border:1px solid #ccc;
+}
+.check{
+	color:#333;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.check input{
+	width:12px;
+	height:12px;
+	margin-right: 3px;
+	border:1px solid #8e8f8f;
+}
+#btn{
+	display: block;
+	text-align: center;
+	line-height: 34px;
+	cursor:pointer;
+	width:310px;
+	height:34px;
+	margin:30px 0;
+	background: url(../images/btn-bg.jpg);
+	border:1px solid #cee3f8;
+}
+.other_login a{
+	text-decoration: none;
+	font-size:12px;
+	color:#666666;
+	float:left;
+	margin-top: 3px;
+	padding:0 3px;
+	border-right:1px solid #dbdbdb;
+}
+.other_login a:last-child{
+	border:0px;
+}
+.more{
+	background: url(../images/more.jpg) no-repeat right center;
+	display:inline-block;
+	width:10px;
+	height:10px;
+}
+.login{
+	position: absolute;
+	width:115px;
+	height:30px;
+	line-height: 30px;
+	font-size: 15px;
+	background-color:#7cbe56;
+	text-align:center;
+	right:50px;
+	bottom:-30px;
+}
+.login a{
+	text-decoration: none;
+	color:#fff;
+}
