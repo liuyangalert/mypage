@@ -1,0 +1,104 @@
+body,html,img,p,input,label{margin:0;padding: 0;}
+.clear{zoom:1;}
+.clear:after{
+	content:"";
+	height:0;
+	overflow:hidden;
+	display:block;
+	visibility:hidden;
+	clear:both;
+}
+.head{
+	height:85px;
+	width:100%;
+	background-color:#1d7ad9;
+}
+.head_top{
+	width:950px;
+	margin:0 auto;
+}
+.head_top div{
+	background: url(../images/logo.png) no-repeat left center ;
+	padding-left:125px ;
+	display: inline-block;
+	font-size: 25px;
+	line-height: 85px;
+	color:#fff;
+}
+.main{
+	width:810px;
+	margin: 10px auto;
+	padding:40px 70px;
+	border:1px solid #ccc;
+	position: relative;
+}
+
+.table_line{
+	display: block;
+	float: left;
+	width:100%;
+	margin:10px 0;
+}
+.table_name{
+	width:130px;
+	height:35px;
+	line-height: 35px;
+	float:left;
+	text-align: right;
+}
+.table_name span{
+	color:red;
+	margin-right: 5px;
+}
+.table_btn{
+	width:225px;
+	height:35px;
+	float:left;
+	padding:0 35px 0 10px;
+	margin-left: 30px;
+	border:1px solid #ccc;
+}
+.table_check{
+	margin-left: 30px;
+}
+.submit{
+	width:270px;
+	height:35px;
+	margin-left: 30px;
+}
+.login{
+	position: absolute;
+	width:115px;
+	height:30px;
+	line-height: 30px;
+	font-size: 15px;
+	background-color:#7cbe56;
+	text-align:center;
+	right:50px;
+	bottom:-30px;
+}
+.login a{
+	text-decoration: none;
+	color:#fff;
+}
+.table_check{
+	margin:0;
+	padding:0;
+	margin-right: 5px;
+	margin-left: 25px;
+	vertical-align: bottom;
+}
+.read_deal{
+	font-size:12px;
+}
+.read_deal a{
+	color:blue;
+	text-decoration: none;
+}
+.table_account{
+	background:url(../images/name.jpg) no-repeat 240px center;
+}
+.table_pwd{
+	background:url(../images/pwd.jpg) no-repeat 240px center;
+}
+

@@ -5,7 +5,7 @@ body,html,img,p,input,label{margin:0;padding: 0;}
 	background-color:#1d7ad9;
 }
 .head_top{
-	width:750px;
+	width:950px;
 	margin:0 auto;
 }
 .head_top div{
@@ -17,7 +17,7 @@ body,html,img,p,input,label{margin:0;padding: 0;}
 	color:#fff;
 }
 .main{
-	width:610px;
+	width:810px;
 	margin: 10px auto;
 	padding:40px 70px;
 	border:1px solid #ccc;
@@ -53,6 +53,7 @@ body,html,img,p,input,label{margin:0;padding: 0;}
 .check input{
 	width:12px;
 	height:12px;
+	vertical-align:bottom;
 	margin-right: 3px;
 	border:1px solid #8e8f8f;
 }
