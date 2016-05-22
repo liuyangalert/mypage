@@ -66,6 +66,9 @@
 				font-size: 12px;}
 #left_list li{width: 150px;
 			  margin-bottom:20px;}
+#left_list>li:hover{
+	color:#fff;
+}
 #left_list li img{margin-right:15px;}
 
 #left_list1 li{margin-left:30px;}
@@ -401,7 +404,6 @@
 #right_main5_left_div4 table tr td span{color: #c9161d;
 										font-weight: bold;}
 .calendar{border:1px solid #f5c21d;}
-
 #right_main5_right{float: left;
 				  margin-bottom: 250px;
 				  border:1px solid #dadcde;

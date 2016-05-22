@@ -3,7 +3,7 @@ window.onload=function(){
 }
 
 function banner_show(){
-	var left_btn = $("#prev");
+	var left_btn  = $("#prev");
 	var right_btn = $("#next");
 	var Owidth = $("#banner ul li").width();
 	var Oindex = $("#banner ul li");

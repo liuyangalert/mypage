@@ -1,6 +1,7 @@
 @charset "utf-8";
-body,ul,li,p,input{margin:0;padding:0;}
-ul,li{list-style:none;margin:0;padding:0;}
+body,ul,li,p,input,img,dd,dt,dl{margin:0;padding:0;}
+ul,li{list-style:none;}
+img{border:0;}
 /*导航菜单开始*/
 .clearfix{zoom:1;*zoom:1;}
 .clearfix:after{

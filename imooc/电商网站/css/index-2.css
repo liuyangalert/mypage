@@ -99,9 +99,11 @@ img{border:0;}
 }
 #prev{
 	left:0;
+	cursor:pointer;
 }
 #next{
 	right:0;
+	cursor:pointer;
 }
 #main_banner:hover #prev,#main_banner:hover #next{
 	opacity:1;
