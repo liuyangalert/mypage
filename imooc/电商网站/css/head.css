@@ -1,5 +1,5 @@
 @charset "utf-8";
-body,ul,li,p,input,img,dd,dt,dl{margin:0;padding:0;}
+body,ul,li,p,input,img,dd,dt,dl,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
 ul,li{list-style:none;}
 img{border:0;}
 /*导航菜单开始*/
