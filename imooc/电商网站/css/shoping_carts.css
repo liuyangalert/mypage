@@ -1,0 +1,160 @@
+@charset "UTF-8";
+.shopping_show{
+	height: 85px;
+	overflow:hidden;
+	position: absolute;
+	right:0px;
+	top: 20px;
+}
+.shopping_show span {
+	text-align:center;
+	float: left;
+	font-size: 12px;
+	color:#ffef00;
+	margin-right: 50px;
+	z-index:2;
+}
+.shopping_show span div{
+	display: block;
+	width: 20px;
+	height:20px;
+	color:#2381c7;
+	line-height: 20px;
+	border-radius:50%;
+	background-color:#ffef00;
+	margin:0 auto; 
+	margin-bottom: 8px;
+	z-index:2;
+}
+#orders_success{
+	color:#fff;
+}
+#orders_success div{
+	background-color:#80bbf3;
+}
+.xian{
+	width:110px;
+	height:3px;
+	background-color:#ffef00 ;
+	position: absolute;
+	top:10px;
+	right:95px;
+	z-index:1;
+}
+.xian2{
+	width:110px;
+	height:3px;
+	background-color:#ffef00 ;
+	position: absolute;
+	top:10px;
+	right:210px;
+	z-index:1;
+}
+.main{
+	width:1000px;
+	margin:10px auto;
+	border:1px solid #cacaca;
+}
+.main h3{
+	background-color:#f3f3f3;
+	font-size:16px;
+	text-indent:12px;
+	line-height: 31px;
+	border-bottom:1px solid #cacaca;
+
+}
+.main_ifm{
+	margin:15px 30px;
+	font-size: 12px;
+}
+.user_ifm label{
+	display: block;
+	margin-bottom: 15px;
+}
+.user_ifm label p{
+	display: inline-block;
+	width:70px;
+	text-align:right;
+	font-size:12px;
+	line-height: 24px;
+	color:#3b3b3b;
+}
+.user_ifm span{
+	color:red;
+	margin-right: 5px;
+}
+.user_ifm label input[type="text"]{
+	height:20px;
+	width: 110px;
+	margin-left:5px;
+	margin-right:5px;
+}
+#address{
+	width: 390px;
+}
+#quhao{
+	width: 60px;
+}
+#phone_num,#fenji{
+	 width: 97px;
+}
+
+.btn{
+	padding:8px 20px;
+	background-color:#4a93ff;
+	border:1px solid #4878dc;
+	border-bottom:none;
+	outline:none;
+}
+.pay_choise label{
+	display: block;
+	line-height:30px; 
+	vertical-align: bottom;
+}
+.pay_choise p{
+	display: inline-block;
+	margin-left: 15px;
+}
+.pay_choise label input[type="radio"]{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.pay_choise label img{
+	vertical-align:middle;
+}
+.invoice label{
+	display: block;
+	margin-bottom: 15px;
+}
+.invoice input[type="checkbox"]{
+	vertical-align: middle;
+}
+.invoice label p{
+	width:90px;
+	display: inline;
+}
+.invoice label p span{
+	color:red;
+	margin-right: 10px;
+}
+.invoice select{
+	height: 19px;
+	border: solid 1px #999;
+	       appearance:none;
+      -moz-appearance:none;
+   -webkit-appearance:none;
+	background: url(../images/select.jpg) no-repeat right center;
+	padding-right: 20px;
+	outline: none;
+}
+ .invoice input[type="button"]{
+ 	padding:5px 20px;
+}
+ .invoice input[type="button"]:nth-of-type(1){
+ 	background-color: #4a93fc;
+ 	border:1px solid #4378f8;
+ }
+  .invoice input[type="button"]:nth-of-type(2){
+ 	background-color: #f6f6f6;
+ 	border:1px solid #c9c9c9;
+ }

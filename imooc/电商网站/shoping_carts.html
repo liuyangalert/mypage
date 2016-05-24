@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="./images/icon.jpg">
+	<base target="_blank" />
+	<link rel="stylesheet" type="text/css" href="./css/head.css">
+	<link rel="stylesheet" type="text/css" href="./css/foot.css">
+	<link rel="stylesheet" type="text/css" href="./css/shoping_carts.css">
+	<title>购物车</title>
+</head>
+<body>
+
+	<div class="header_top_fc">
+		<div class="top clearfix">
+			<p class="top_left"><span></span><a href="#">收藏慕课</a></p>
+			<p class="top_right"><a href="#">欢迎来到慕课网！</a><a href="login.html">[登陆]</a><a href="register.html">[注册]</a></p>
+		</div>
+	</div><!-- 最顶部 end -->
+
+	<!-- logo部分 start -->
+	<div class="header_logo_fc">
+		<div class="header_logo">
+			<div class="top_logo"><img src="./images/logo.jpg"/></div>
+			<div class="shopping_show">
+				<div class="xian"></div>
+				<div class="xian2"></div>
+				<span class="mycar"><div>1</div>我的购物车</span>
+				<span class="orders"><div>2</div>填写核对订单</span>
+				<span id="orders_success"><div>3</div>订单提交成功</span>
+			</div>
+		</div>
+	</div>
+	<!-- logo部分 end -->
+	<div class="main">
+		<h3>收货信息</h3>
+		<div class="main_ifm user_ifm">
+			<label><p><span>*</span>选择地区:</p>
+				<select>
+					<option>北京市 海淀区 五环内</option>
+					<option>北京市 海淀区 五环内</option>
+					<option>北京市 海淀区 五环内</option>
+				</select>
+			</label>
+			<label><p><span>*</span>详细地址:</p><input type="text" id="address" placeholder="最多输入26个汉字" name=""></label>
+			<label><p><span>*</span>收 货 人:</p><input type="text" placeholder="最多输入10个汉字" name=""></label>
+			<label><p><span>*</span>手 &nbsp; 机:</p><input type="text" placeholder="如:13452525625" name="">或固定电话:<input type="text" placeholder="区号" id="quhao" name="">-<input type="text" value="电话号码" id="phone_num" name="">-<input type="text" value="分机号(可选)" id="fenji" name=""></label>
+			<input type="button" class="btn" value="确认收货地址" name="">
+		</div>
+	</div>
+
+	<div class="main">
+		<h3>支付方式</h3>
+		<div class="main_ifm pay_choise">
+			<label><input type="radio" name="x">微信支付 <p><img src="./images/wechart.jpg"> 用微信扫一扫就能支付</p></label>
+			<label><input type="radio" name="x">货到付款 <p>送货上门后付款，使用现金或刷银行卡</p></label>
+		</div>
+	</div>
+
+	<div class="main">
+		<h3>发票信息</h3>
+		<div class="main_ifm invoice">
+			<label><input type="checkbox" checked="checked" name=""> 需要发票</label>
+			<label><p><span>*</span>发票类型:</p>
+				<select>
+					<option>商业零售发票</option>		
+					<option>个人信息发票</option>		
+				</select>
+			</label>
+			<label><p><span>*</span>发票抬头:</p>
+				<select>
+					<option>个人</option>
+					<option>公司</option>
+				</select>
+				<input type="text" placeholder="阿斯顿" name="">
+			</label>
+			<input type="button" value="保存" name="">
+			<input type="button" value="取消" name="">
+		</div>
+	</div>
+
+
+	<div class="footer">
+	 		<p><a>慕课简介</a>|<a>慕课公告</a>|<a>招贤纳士</a>|<a>联系我们</a>|<a>客服热线：400-675-1234</a></p>
+	 		<p>Copyright © 2006 - 2014 慕课版权所有   京ICP备09037834号京ICP证B1034-8373号   某市公安局XX分局备案编号：123456789123</p>
+	 		<p class="feet_img">
+	 			<img src="./images/kxweb.png">
+	 			<img src="./images/kxweb.png">
+	 			<img src="./images/kxweb.png">
+	 			<img src="./images/kxweb.png">
+	 		</p>
+	</div>
+
+</body>
+</html>

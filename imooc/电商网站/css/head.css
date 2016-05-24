@@ -1,7 +1,8 @@
 @charset "utf-8";
-body,ul,li,p,input,img,dd,dt,dl,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+body,ul,li,p,input,img,dd,dt,dl,h1,h2,h3,h4,h5,h6,select,option{margin:0;padding:0;font-style: normal;font-weight:normal;}
 ul,li{list-style:none;}
 img{border:0;}
+input,a{cursor:pointer;}
 /*导航菜单开始*/
 .clearfix{zoom:1;*zoom:1;}
 .clearfix:after{
@@ -60,8 +61,14 @@ img{border:0;}
 .header_logo{
 	width:1000px;
 	margin:0 auto;
+	height:85px;
+	overflow:hidden;
+	position: relative;
 }
 .top_logo{
+	position: absolute;
+	top:0;
+	left: 0;
 	width:189px;
 	height:85px;
 	display:inline-block;
