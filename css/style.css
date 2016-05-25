@@ -24,7 +24,7 @@ a{text-decoration: none; }
 #main p{text-align: center;line-height: 800px;font-size: 200px;color: #999;}
 #footer{width: 100%;background: #333333;}
 #foot{width: 1200px;margin: auto;background: #333333;padding-top: 15px;padding-bottom: 15px;}
-#foot a{color: #999999;text-decoration: none;font-size: 15px}
-#foot a:hover{color:#cccccc}
+#foot a{color: #999999;text-decoration: none;font-size: 15px;}
+#foot a:hover{color:#cccccc;}
 .foot_body{ padding: 10px 0px;font-size: 20px;line-height:20px;}
 #fet{color: #ccc}

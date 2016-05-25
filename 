@@ -1,0 +1,311 @@
+[33mcommit ef39842d9e8709283ee3e0075edaebb5a7376256[m
+Author: taoqun <793264946@qq.com>
+Date:   Wed May 18 10:26:41 2016 +0800
+
+    text
+
+[33mcommit 9bc8a058a96fb51d03f3fa64a44857a8fefe00cb[m
+Author: 陶群 <793264946@qq.com>
+Date:   Tue May 17 23:08:26 2016 +0800
+
+    完成首页制作，增加自动轮播
+
+[33mcommit 9f59e58e48a1f95342cdd875a811eef7d7aa4f95[m
+Author: 陶群 <793264946@qq.com>
+Date:   Mon May 16 23:28:36 2016 +0800
+
+    轮播图 修bug
+
+[33mcommit 812d05e1f040058bef527d601d0ab1c376ae0d22[m
+Author: 陶群 <793264946@qq.com>
+Date:   Mon May 16 22:32:05 2016 +0800
+
+    轮播图
+
+[33mcommit ca2ce66c85a1f0214198074ecb7414d02da99081[m
+Author: 陶群 <793264946@qq.com>
+Date:   Mon May 16 22:29:00 2016 +0800
+
+    四张轮播图
+
+[33mcommit 8ca41ad6b0f1b2768ffda64daa2f6a38a2e04ce3[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun May 15 23:37:33 2016 +0800
+
+    增加慕课习题入口
+
+[33mcommit eceabbf86788bb8cdeecdc5a9cbbde06f0b9126e[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun May 15 23:34:51 2016 +0800
+
+    增加慕课练习集合页面
+
+[33mcommit 8e53ec83066e3013787166dd03a5df6fff9ab6a3[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun May 15 22:51:05 2016 +0800
+
+    增加练习题，完成 head 部分
+
+[33mcommit fe72d0daa273a726e4961ba66eecb5fbf0daa07d[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun May 8 15:28:22 2016 +0800
+
+    JQ模式完成瀑布流布局
+
+[33mcommit 3ff2c05ff72d82863b20a406c4e4fa91ae9cedbd[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun May 8 12:42:30 2016 +0800
+
+    JS瀑布流完成
+
+[33mcommit 2683b6abc89310123e07d5f3d14c51153245c97a[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun Apr 24 21:17:25 2016 +0800
+
+    还原~
+
+[33mcommit 22d8df8cc581b3efae7a9399f1c43108bd7375a9[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sat Apr 23 23:17:11 2016 +0800
+
+    增加筛选兴趣爱好！
+
+[33mcommit ff746d87f3d2dbc839a7f2249263a77164284744[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sat Apr 23 16:08:08 2016 +0800
+
+    增加点击删除
+
+[33mcommit 13dd98ae3296da01ed0e58bde69f25f365c22ae0[m
+Author: 陶群 <793264946@qq.com>
+Date:   Fri Apr 22 22:54:08 2016 +0800
+
+    增加21题 并 完成键盘事件
+
+[33mcommit 7fbdad335515f61ee9966eb9c6242645e5629485[m
+Author: 陶群 <793264946@qq.com>
+Date:   Thu Apr 21 22:58:14 2016 +0800
+
+    增加 21题
+
+[33mcommit 61fde490a3d25a54b2df012c8092eab08e7f5eb4[m
+Author: 陶群 <793264946@qq.com>
+Date:   Wed Apr 20 23:41:07 2016 +0800
+
+    fix 百度任务页面
+
+[33mcommit a3462d91efc4ccde0552847b46629afe27635c90[m
+Author: 陶群 <793264946@qq.com>
+Date:   Wed Apr 20 23:38:17 2016 +0800
+
+    完成二十题，正则匹配
+
+[33mcommit 9996b0f29677c5df6c1110a59b4f913c8d831fc9[m
+Author: 陶群 <793264946@qq.com>
+Date:   Tue Apr 19 21:40:39 2016 +0800
+
+    更新任务首页链接
+
+[33mcommit 873e6aa7871f4d07bf2f24d422124116f2bb8d04[m
+Author: 陶群 <793264946@qq.com>
+Date:   Tue Apr 19 21:32:10 2016 +0800
+
+    完成19题，冒泡排序
+
+[33mcommit 005c10483430efe0636b73955683b7b8eaab1f1b[m
+Author: 陶群 <793264946@qq.com>
+Date:   Mon Apr 18 22:42:30 2016 +0800
+
+    第19题，还差一个可视化冒泡排序
+
+[33mcommit 40b88c8c301727fd4e46cd068f50987f3bf4baad[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun Apr 17 17:45:44 2016 +0800
+
+    修复子节点，点击删除当前子节点
+
+[33mcommit 17eecd1c130de7a61c2c75530a4caa5f13886b6f[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun Apr 17 00:12:35 2016 +0800
+
+    修改获取第一个节点和最后一个节点的方法
+
+[33mcommit f9a30762a8fe88db32dd21fdcfbff557596e5eae[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sat Apr 16 23:53:14 2016 +0800
+
+    修改x.length-1 改为 lastChild
+
+[33mcommit 148311952c601b320be8f1f68d91202694cccded[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sat Apr 16 23:44:23 2016 +0800
+
+    增加 点击删除，判断输入的是否为数字
+
+[33mcommit 87641258472451c1ee072fae8be6741f864887ae[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sat Apr 16 20:53:26 2016 +0800
+
+    完成第18题
+
+[33mcommit 0e12a18e3a640599e296fc1c23cefc93b9308c67[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sat Apr 16 17:14:31 2016 +0800
+
+    京东导航栏-纯CSS
+
+[33mcommit 7edb861bc4df8ca966654b9530fa292eecc331e3[m
+Author: 陶群 <793264946@qq.com>
+Date:   Thu Apr 14 21:53:28 2016 +0800
+
+    完成第七题
+
+[33mcommit 2f6bb1fd80dce2acbbca919a0add05b30b521ca7[m
+Author: 陶群 <793264946@qq.com>
+Date:   Thu Apr 14 19:41:43 2016 +0800
+
+    抄完第十七题
+
+[33mcommit 6500ab5cbbf08c87d6a1c9f5f637d7a7ee67d531[m
+Author: 陶群 <793264946@qq.com>
+Date:   Tue Apr 12 00:41:17 2016 +0800
+
+    完成第十六题
+
+[33mcommit c445d4546395a83217b096feb123045152d40d6d[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun Apr 10 23:07:59 2016 +0800
+
+    完成第15题
+
+[33mcommit 8a2ca9c31a8912eb9ecc4e0c0a270d983df6ce87[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun Apr 10 18:00:12 2016 +0800
+
+    完成第十四题
+
+[33mcommit 21fae53898d96337dc0e52115d1786d450f22563[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun Apr 10 16:11:19 2016 +0800
+
+    修改百度任务-列表页
+
+[33mcommit a63fbd527bf51c7116ff1cd44e89e1e3efd724ea[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun Apr 10 16:05:27 2016 +0800
+
+    完成第二阶段 第三十三题
+
+[33mcommit 870cb58c9c9bd5c32cbf1599469ec33d5bf8fc89[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun Apr 10 15:32:02 2016 +0800
+
+    增加慕课网动画练习
+
+[33mcommit 1677c055ad3821f5443ebd5e73332f76ddd22f6c[m
+Author: 陶群 <793264946@qq.com>
+Date:   Wed Apr 6 22:54:32 2016 +0800
+
+    修改百度任务页面
+
+[33mcommit a2a4c7d716e8dae501b7fc0367e9145716e25c02[m
+Author: 陶群 <793264946@qq.com>
+Date:   Wed Apr 6 22:51:36 2016 +0800
+
+    完成
+
+[33mcommit 6530c9ce684e9d086a886454560561f4a5ba0776[m
+Author: 陶群 <793264946@qq.com>
+Date:   Wed Apr 6 22:50:43 2016 +0800
+
+    完成第12题，CSS轮播
+
+[33mcommit bf93092ac53cb1a96ceb6fc0e304d5a240f0146c[m
+Author: 陶群 <793264946@qq.com>
+Date:   Mon Apr 4 22:53:20 2016 +0800
+
+    删除
+
+[33mcommit 0a360f2327d6351c130b319ea4eeefd7c79568fa[m
+Author: 陶群 <793264946@qq.com>
+Date:   Thu Mar 31 00:06:44 2016 +0800
+
+    十二题，未完成
+
+[33mcommit 0cdce7d7535834f6c72e116d65d5114f151b05ea[m
+Author: 陶群 <793264946@qq.com>
+Date:   Tue Mar 29 22:33:04 2016 +0800
+
+    增加任务12，完成前两项功能
+
+[33mcommit c37f15f5bdc9a1425e441824ec551230726ce969[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun Mar 27 16:02:06 2016 +0800
+
+    修复一下！
+
+[33mcommit 5832376207b6146d7e750edd9042cfe57aa29f6c[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun Mar 27 15:44:43 2016 +0800
+
+    完成第十一题
+
+[33mcommit 6fbb4aa99fa567a651c8d73fb6d8c1d315758a53[m
+Author: 陶群 <793264946@qq.com>
+Date:   Fri Mar 25 22:01:43 2016 +0800
+
+    完成第十题
+
+[33mcommit 3d8e52d120cc953cf7a52a9e2f12e90137a18f4b[m
+Author: 陶群 <793264946@qq.com>
+Date:   Thu Mar 24 21:00:12 2016 +0800
+
+    修改
+
+[33mcommit 3b5dc7d19384c2e810544ace792ffe970a750b74[m
+Author: 陶群 <793264946@qq.com>
+Date:   Thu Mar 24 20:53:47 2016 +0800
+
+    完成第八题
+
+[33mcommit f56715bbed25800770dac9d8a062c026266cbad6[m
+Author: 陶群 <793264946@qq.com>
+Date:   Wed Mar 23 18:19:13 2016 +0800
+
+    修改
+
+[33mcommit dd0af6db0847d0fd45b00214f86baefe5102bfab[m
+Author: 陶群 <793264946@qq.com>
+Date:   Wed Mar 23 18:17:06 2016 +0800
+
+    第九题完成
+
+[33mcommit 7f3f8093ec8f7d85294992543dee12948b4433f0[m
+Author: 陶群 <793264946@qq.com>
+Date:   Tue Mar 22 23:13:29 2016 +0800
+
+    增加任务9
+
+[33mcommit 988fd3af8a8b35f21da3d9ba2f0b39aadba86c0e[m
+Author: 陶群 <793264946@qq.com>
+Date:   Tue Mar 22 20:26:38 2016 +0800
+
+    修改首页
+
+[33mcommit 669c57151eae275cea34efbdb5f41a9e64f13ac6[m
+Author: 陶群 <793264946@qq.com>
+Date:   Mon Mar 21 22:41:15 2016 +0800
+
+    完成第七题
+
+[33mcommit d12883370c56995d06d406dca7f96e090a9907d0[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun Mar 20 02:25:30 2016 +0800
+
+    修改背景
+
+[33mcommit 086c341c1d269f04f7fc914e9f1e2e5a892dd7e1[m
+Author: 陶群 <793264946@qq.com>
+Date:   Sun Mar 20 02:01:16 2016 +0800
+
+    修复J
