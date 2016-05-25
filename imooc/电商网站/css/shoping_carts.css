@@ -60,7 +60,7 @@
 	font-size:16px;
 	text-indent:12px;
 	line-height: 31px;
-	border-bottom:1px solid #cacaca;
+	border-bottom:1px solid #4878dc#4878dc;
 
 }
 .main_ifm{
@@ -158,3 +158,78 @@
  	background-color: #f6f6f6;
  	border:1px solid #c9c9c9;
  }
+ .buy_list h3 span{
+ 	float: right;
+ 	font-size:12px;
+ 	color:#3e7cf7;
+ 	text-decoration: none; 
+ 	margin-right: 30px;
+ }
+.shop_list{
+  	font-size:12px;
+  }
+.shop_list tr{
+   	display: block;
+   	width:1000px;
+   	margin-left:-2px;
+   	padding:0;
+   	border-bottom:1px solid #cacaca;
+}
+.shop_list tr:last-child{
+	border-bottom:none;
+}
+.shop_list th{
+	line-height:34px; 
+   }
+.shop_list th,  .shop_list td{
+  	vertical-align:top;
+  	text-align: left;
+  	width:130px;
+  }
+.shop_list .shop_title1{
+ 	width:400px;
+ 	position: relative;
+ 	text-align: left;
+ 	padding:0 30px 0 20px;
+ }
+.shop_title1 img{
+  	float: left;
+  }
+.shop_title1 p:nth-of-type(1){
+	position: absolute;
+	top:5px;
+	left: 110px;
+	color:#696969;
+}
+.shop_title1 p:nth-of-type(2){
+	position: absolute;
+	bottom:5px;
+	left: 110px;
+}
+.zj{
+	color:#be0314;
+}
+.submit_order div{
+	float: right;
+	padding:30px 20px;
+}
+.submit_order p{
+	font-size: 12px;
+	color:#8a8a8a;
+	text-align: right;
+	margin-bottom: 10px;
+}
+.submit_order span{
+	color:#d90000;
+	font-size: 22px;
+	font-weight: bold;
+}
+.submit_order input{
+	width:165px;
+	height:33px;
+	background:#e70008;
+	color:#fff;
+	font-size:17px;
+	line-height: 33px;
+	border:none;
+}

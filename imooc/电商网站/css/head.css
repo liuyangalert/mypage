@@ -1,5 +1,5 @@
 @charset "utf-8";
-body,ul,li,p,input,img,dd,dt,dl,h1,h2,h3,h4,h5,h6,select,option{margin:0;padding:0;font-style: normal;font-weight:normal;}
+body,td,th,tr,ul,li,p,input,img,dd,dt,dl,h1,h2,h3,h4,h5,h6,select,option{margin:0;padding:0;font-style: normal;font-weight:normal;}
 ul,li{list-style:none;}
 img{border:0;}
 input[type="button"],a{cursor:pointer;}
