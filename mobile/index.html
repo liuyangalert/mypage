@@ -10,18 +10,23 @@
 	<meta content="telephone=no" name="format-detection">
 	<meta content="email=no" name="format-detaction">
 	<title>移动端网页</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
-<body>
+<body id="bd">
 <div class="register">
-	<h3>开始注册</h3>
-	<div>
-	<label><p>账号</p><input type="text" name=""></label>
-	<label><p>密码</p><input type="text" name=""></label>
-	<label><p>确认密码</p><input type="text" name=""></label>
-	<label><input type="button" name="" value="注册"></label>
-	</div>
+		<h3>注 册</h3>
+		<input type="text" placeholder="请输入与您的手机号" name="">
+		<input type="text" placeholder="请输入与您的密码" name="">
+		<input type="text" placeholder="确认密码" name="">
+		<input type="button" value="立即注册" name="">
+		<img src="./images/luck.png">
 </div>
+<script type="text/javascript">
+	var bd = document.getElementById("bd");
+	var cls = document.getElementsByClassName("register")[0];
+	console.log(cls.clientWidth);
+	console.log(bd.clientWidth);
+</script>
 </body>
 </html>
