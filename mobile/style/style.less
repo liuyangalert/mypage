@@ -3,11 +3,7 @@ html,body,td,th,tr,ul,li,p,input,img,dd,dt,dl,h1,h2,h3,h4,h5,h6,select,option{ma
 ul,li{list-style:none;}
 img{border:0;}
 html,body{
-	width:100%;
-	height:100vh;
-	font-size:100%;
-	background:url(../images/bg.jpg) no-repeat center center;
-	background-size:100vw 100vh;
+	font-size:2.415vw;
 }
 @media screen and (min-width:640px) {
 	html,body{
@@ -15,33 +11,31 @@ html,body{
 	}
 }
 h3{
-	width:100%;
 	text-align: center;
 	color:#fff;
 	font-size:2rem;
-	line-height:5rem;
+	line-height: 4rem;
 	background-color:#c41828;
 	margin-bottom: 5rem;
 }
 .register{
 	width:100%;
-	& img{
-		position: absolute;
-		bottom:3rem;
-		left:0;
-		right:0;
-		margin: 0 auto;
+	height:50rem;
+	background:url(../images/bg.jpg) no-repeat left top;
+	background-size:100% 100%;
+	& div{
+		width:80%;
+		margin:5rem auto;
 	}
 }
 .register input{
-	width:80%;
-	
+	width:100%;
 	height:3rem;
-	font-size:1rem;
+	font-size:1.7rem;
 	border-radius:0.5rem;
 	border:none;
-	margin:0.5rem 7%;
 	outline: none;
+	margin-bottom:1rem;
 }
 .register input[type="text"]{
 	background-color:#fff;
