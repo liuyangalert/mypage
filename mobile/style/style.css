@@ -1,25 +1,16 @@
-@charset "utf-8";
 html,
 body,
-td,
-th,
-tr,
-ul,
-li,
-p,
-input,
-img,
-dd,
-dt,
-dl,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-select,
-option {
+ul,
+li,
+dl,
+dd,
+dt {
   margin: 0;
   padding: 0;
 }
@@ -27,48 +18,33 @@ ul,
 li {
   list-style: none;
 }
-img {
-  border: 0;
-}
 html,
 body {
-  font-size: 2.415vw;
+  font-size: 1.5625vw;
+}
+.main {
+  width: 100%;
+  min-height: 50rem;
+  background-color: #eee;
 }
 h3 {
   text-align: center;
-  color: #fff;
-  font-size: 2rem;
-  line-height: 4rem;
   background-color: #c41828;
-  margin-bottom: 5rem;
+  font-size: 3rem;
+  line-height: 5rem;
+  color: #fff;
+  text-shadow: 0 0 0.1rem #ccc;
 }
-.register {
-  width: 100%;
-  height: 50rem;
-  background: url(../images/bg.jpg) no-repeat left top;
-  background-size: 100% 100%;
-}
-.register div {
-  width: 80%;
-  margin: 5rem auto;
-}
-.register img {
-  width: 100%;
-}
-.register input {
-  width: 100%;
-  height: 4rem;
-  font-size: 1.7rem;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  margin-bottom: 1rem;
-}
-.register input[type="text"] {
+a {
+  padding: 1rem;
+  width: 60%;
+  border-radius: 1rem;
+  text-align: center;
+  display: block;
+  font-size: 4rem;
+  margin: 1rem auto;
+  text-decoration: none;
+  color: #666;
   background-color: #fff;
-  text-indent: 3%;
-}
-.register input[type="button"] {
-  background-color: #c41828;
-  color: #fff;
+  box-shadow: 0 0.2rem 0.2rem #666;
 }
