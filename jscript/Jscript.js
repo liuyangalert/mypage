@@ -1,59 +1,23 @@
-window.onload = function(){
-	var about = document.getElementById("hd_right");
-		about.onmouseover = function(){
-			var menu = document.getElementById("subnav");		
-			clearInterval(menu.time);
-			menu.time=setInterval(function(){
-			menu.style.height = menu.offsetHeight+20+"px";
-			if(menu.offsetHeight>=120){
-				clearInterval(menu.time);
-			}
-		},30)
-	}
 
-	var about = document.getElementById("hd_right");
-		about.onmouseout = function(){
-			var menu = document.getElementById("subnav");	
-			clearInterval(menu.time);
-			menu.time=setInterval(function(){
-			menu.style.height = menu.offsetHeight-10+"px";
-			if(menu.offsetHeight<=0){
-				clearInterval(menu.time);
-			}
-		},30)
-	}
+(function(){
+	wd();
+})();
 
-	var hd_menu = document.getElementsByTagName("li");
-	for(var i=0;i<hd_menu.length;i++){
-		hd_menu[i].onmouseover = function(){
-			var osb = this.getElementsByTagName("ul")[0];
-			if(osb){
-				var This = osb;
-				clearInterval(This.time);
-				This.time = setInterval(function(){
-					This.style.height = This.offsetHeight+20+"px";
-					if(This.offsetHeight>=200){
-						clearInterval(This.time);
-					}
-				},30)
-			}
-		}
-	}
 
-	var hd_menu = document.getElementsByTagName("li");
-	for(var i=0;i<hd_menu.length;i++){
-		hd_menu[i].onmouseout = function(){
-			var osb = this.getElementsByTagName("ul")[0];
-			if(osb){
-				var This = osb;
-				clearInterval(This.time);
-				This.time = setInterval(function(){
-					This.style.height = This.offsetHeight-10+"px";
-					if(This.offsetHeight<=0){
-						clearInterval(This.time);
-					}
-				},30)
-			}
-		}
-	}
+function wd(){
+	var wdt =document.getElementById("wd");
+		wdt.innerText = window.screen.width;
+	var hd =document.getElementById("hd");
+		hd.innerText = window.screen.height;
+	var chrome = document.getElementById("chrome");
+	var u_agent =navigator.userAgent; 
+	var B_name="不是想用的主流浏览器!"; 
+	 if(u_agent.indexOf("Firefox")>-1){ 
+        B_name="Firefox"; 
+    }else if(u_agent.indexOf("Chrome")>-1){ 
+        B_name="Chrome"; 
+    }else if(u_agent.indexOf("MSIE")>-1&&u_agent.indexOf("Trident")>-1){ 
+        B_name="IE(8-10)";  
+    }
+	 chrome.innerText=B_name;
 }
