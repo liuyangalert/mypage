@@ -1,0 +1,503 @@
+text
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/COMMIT_EDITMSG.COMMIT_EDITMSG b/COMMIT_EDITMSG.COMMIT_EDITMSG
+new file mode 100644
+index 0000000..77dfe75
+--- /dev/null
++++ b/COMMIT_EDITMSG.COMMIT_EDITMSG
+@@ -0,0 +1,246 @@
++移动端页面增加交互
++
++# --------------
++# Please enter the commit message for your changes. Everything below
++# this paragraph is ignored, and an empty message aborts the commit.
++# Just close the window to accept your message.
++diff --git a/mobile/webapp/index.html b/mobile/webapp/index.html
++index 9610d42..5dc8afa 100644
++--- a/mobile/webapp/index.html
+++++ b/mobile/webapp/index.html
++@@ -11,7 +11,7 @@
++ 		<div class="head">
++ 			<div><img src="images/userpic.jpg"></div>
++ 			<div><img src="images/user-ifm.png"></div>
++-			<div><img src="images/inform.png"></div>
+++			<div><img src="images/inform.png"><span class="pot"></span></div>
++ 		</div>
++ 		<div class="content">
++ 			<div class="box">
++@@ -56,9 +56,9 @@
++ 			</div>
++ 		</div>
++ 		<footer>
++-			<ul>
+++			<ul id="btn">
++ 				<li><img src="./images/ico_1.jpg">首页</li>
++-				<li><img src="./images/ico_2.jpg">人事</li>
+++				<li class="btnActive"><img src="./images/ico_2.jpg">人事</li>
++ 				<li><img src="./images/ico_3.jpg">财务</li>
++ 				<li><img src="./images/ico_4.jpg">学习</li>
++ 				<li><img src="./images/ico_5.jpg">其他</li>
++diff --git a/mobile/webapp/js/script.js b/mobile/webapp/js/script.js
++index e69de29..be95d14 100644
++--- a/mobile/webapp/js/script.js
+++++ b/mobile/webapp/js/script.js
++@@ -0,0 +1,38 @@
+++window.onload=function(){
+++	touch();
+++	active();
+++	point();
+++}
+++function touch(){
+++	var box = document.getElementsByClassName("box");
+++	for (var i = 0; i < box.length; i++) {
+++		box[i].ontouchstart = function(){
+++			this.style.backgroundColor = "#eee";
+++		}
+++		box[i].ontouchmove = function(){
+++			this.style.backgroundColor = "#ccc";
+++		}
+++		box[i].ontouchend = function(){
+++			this.style.backgroundColor = "";
+++		}
+++	}
+++}
+++function active () {
+++	 var  Oul = document.getElementById("btn");
+++	 var  btn = Oul.getElementsByTagName("li");
+++	 for (var i = 0; i < btn.length; i++) {
+++	 	btn[i].ontouchstart = function  () {
+++	 		for (var i = 0; i < btn.length; i++) {
+++	 			btn[i].className = "";
+++	 		}
+++	 		this.className = "btnActive";
+++	 	}
+++	 }
+++}
+++function point() {
+++	 var point = document.getElementsByClassName("head")[0].getElementsByTagName("div")[2];
+++	 var span = point.getElementsByTagName("span")[0];
+++	 point.ontouchstart = function() {
+++	 	  span.style.display = "none";
+++	 }
+++}
++\ No newline at end of file
++diff --git a/mobile/webapp/style/style.css b/mobile/webapp/style/style.css
++index a8fbc4e..b05d4f1 100644
++--- a/mobile/webapp/style/style.css
+++++ b/mobile/webapp/style/style.css
++@@ -95,6 +95,49 @@ body {
++   line-height: 1.5rem;
++   color: #999;
++ }
+++@media screen and (min-width: 768px) {
+++  html,
+++  body {
+++    font-size: 1.15vw;
+++  }
+++  .box p {
+++    top: 5.5rem;
+++  }
+++}
+++@media screen and (min-width: 1000px) {
+++  html,
+++  body {
+++    font-size: 1.15vw;
+++  }
+++  .box p {
+++    top: 6.5rem;
+++  }
+++}
+++@media screen and (max-width: 375px) {
+++  html,
+++  body {
+++    font-size: 2vw;
+++  }
+++  .box {
+++    height: 7rem;
+++  }
+++  .box img {
+++    width: 3rem;
+++    height: 3rem;
+++    left: 1rem;
+++    top: 2rem;
+++  }
+++  .box h3 {
+++    left: 4.5rem;
+++    font-size: 2rem;
+++    top: 2rem;
+++  }
+++  .box p {
+++    top: 3.4rem;
+++    font-size: 1.5rem ;
+++    left: 4.5rem;
+++  }
+++}
++ .box:nth-of-type(odd) {
++   border-right: 0.1rem solid #ccc;
++   margin-left: -0.1rem;
++@@ -128,21 +171,15 @@ footer ul li img {
++   display: block;
++   margin-bottom: 0.5rem;
++ }
++-@media screen and (min-width: 768px) {
++-  html,
++-  body {
++-    font-size: 1.15vw;
++-  }
++-  .box p {
++-    top: 5.5rem;
++-  }
+++.btnActive {
+++  color: #14b3f4;
++ }
++-@media screen and (min-width: 1000px) {
++-  html,
++-  body {
++-    font-size: 1.15vw;
++-  }
++-  .box p {
++-    top: 6.5rem;
++-  }
+++.pot {
+++  width: 0.8rem;
+++  height: 0.8rem;
+++  border-radius: 50%;
+++  background-color: #CC0033;
+++  position: absolute;
+++  top: 0;
+++  right: 0;
++ }
++diff --git a/mobile/webapp/style/style.less b/mobile/webapp/style/style.less
++index 322ce85..d3dd494 100644
++--- a/mobile/webapp/style/style.less
+++++ b/mobile/webapp/style/style.less
++@@ -75,6 +75,46 @@ html,body{
++ 		color:#999;
++ 	}
++ }
+++@media screen and (min-width:768px){
+++	html,body{
+++		font-size: 1.15vw;
+++	}
+++	.box p{
+++		top:5.5rem;
+++	}
+++}
+++@media screen and (min-width:1000px){
+++	html,body{
+++		font-size: 1.15vw;
+++	}
+++	.box p{
+++		top:6.5rem;
+++	}
+++}
+++@media screen and (max-width:375px){
+++	html,body{
+++		font-size: 2vw;
+++	}
+++	.box{
+++		height:7rem;
+++	}
+++	.box img{
+++		width:3rem;
+++		height:3rem;
+++		left:1rem;
+++		top:2rem;
+++	}
+++	.box h3{
+++		left:4.5rem;
+++		font-size:2rem;
+++		top:2rem;
+++	}
+++	.box p{
+++		top:3.4rem;
+++		font-size:1.5rem ;
+++		left:4.5rem;
+++	}
+++}
++ .box:nth-of-type(odd){
++ 	border-right: 0.1rem solid #ccc;
++ 	margin-left: -0.1rem;
++@@ -108,19 +148,15 @@ footer{
++ 		}
++ 	}
++ }
++-@media screen and (min-width:768px){
++-	html,body{
++-		font-size: 1.15vw;
++-	}
++-	.box p{
++-		top:5.5rem;
++-	}
+++.btnActive{
+++	color:#14b3f4;
+++}
+++.pot{
+++	width:0.8rem;
+++	height:0.8rem;
+++	border-radius: 50%;
+++	background-color: #CC0033;
+++	position: absolute;
+++	top:0;
+++	right:0;
++ }
++-@media screen and (min-width:1000px){
++-	html,body{
++-		font-size: 1.15vw;
++-	}
++-	.box p{
++-		top:6.5rem;
++-	}
++-}
++\ No newline at end of file
++warning: LF will be replaced by CRLF in mobile/webapp/style/style.css.
++The file will have its original line endings in your working directory.
+\ No newline at end of file
+diff --git a/mobile/webapp/index.html b/mobile/webapp/index.html
+index 9610d42..5dc8afa 100644
+--- a/mobile/webapp/index.html
++++ b/mobile/webapp/index.html
+@@ -11,7 +11,7 @@
+ 		<div class="head">
+ 			<div><img src="images/userpic.jpg"></div>
+ 			<div><img src="images/user-ifm.png"></div>
+-			<div><img src="images/inform.png"></div>
++			<div><img src="images/inform.png"><span class="pot"></span></div>
+ 		</div>
+ 		<div class="content">
+ 			<div class="box">
+@@ -56,9 +56,9 @@
+ 			</div>
+ 		</div>
+ 		<footer>
+-			<ul>
++			<ul id="btn">
+ 				<li><img src="./images/ico_1.jpg">首页</li>
+-				<li><img src="./images/ico_2.jpg">人事</li>
++				<li class="btnActive"><img src="./images/ico_2.jpg">人事</li>
+ 				<li><img src="./images/ico_3.jpg">财务</li>
+ 				<li><img src="./images/ico_4.jpg">学习</li>
+ 				<li><img src="./images/ico_5.jpg">其他</li>
+diff --git a/mobile/webapp/js/script.js b/mobile/webapp/js/script.js
+index e69de29..39ae873 100644
+--- a/mobile/webapp/js/script.js
++++ b/mobile/webapp/js/script.js
+@@ -0,0 +1,42 @@
++(function(){
++	touch();
++	active();
++	point();
++})();
++function touch(){
++	var box = document.getElementsByClassName("box");
++	for (var i = 0; i < box.length; i++) {
++		box[i].ontouchstart = function(){
++			this.style.backgroundColor = "#eee";
++		}
++		box[i].ontouchmove = function(){
++			this.style.backgroundColor = "#ccc";
++		}
++		box[i].ontouchend = function(){
++			this.style.backgroundColor = "";
++		}
++	}
++}
++function active () {
++	 var  Oul = document.getElementById("btn");
++	 var  btn = Oul.getElementsByTagName("li");
++	 for (var i = 0; i < btn.length; i++) {
++	 	btn[i].ontouchstart = function  () {
++	 		for (var i = 0; i < btn.length; i++) {
++	 			btn[i].className = "";
++	 		}
++	 		this.className = "btnActive";
++	 	}
++	 }
++}
++function point() {
++	 var point = document.getElementsByClassName("head")[0].getElementsByTagName("div")[2];
++	 var span = point.getElementsByTagName("span")[0];
++	 point.ontouchstart = function() {
++	 	if (span.style.display == "none") {
++	 		span.style.display = "block";
++	 	} else{
++	 		 span.style.display = "none";
++	 	}
++	 }
++}
+\ No newline at end of file
+diff --git a/mobile/webapp/style/style.css b/mobile/webapp/style/style.css
+index a8fbc4e..b05d4f1 100644
+--- a/mobile/webapp/style/style.css
++++ b/mobile/webapp/style/style.css
+@@ -95,6 +95,49 @@ body {
+   line-height: 1.5rem;
+   color: #999;
+ }
++@media screen and (min-width: 768px) {
++  html,
++  body {
++    font-size: 1.15vw;
++  }
++  .box p {
++    top: 5.5rem;
++  }
++}
++@media screen and (min-width: 1000px) {
++  html,
++  body {
++    font-size: 1.15vw;
++  }
++  .box p {
++    top: 6.5rem;
++  }
++}
++@media screen and (max-width: 375px) {
++  html,
++  body {
++    font-size: 2vw;
++  }
++  .box {
++    height: 7rem;
++  }
++  .box img {
++    width: 3rem;
++    height: 3rem;
++    left: 1rem;
++    top: 2rem;
++  }
++  .box h3 {
++    left: 4.5rem;
++    font-size: 2rem;
++    top: 2rem;
++  }
++  .box p {
++    top: 3.4rem;
++    font-size: 1.5rem ;
++    left: 4.5rem;
++  }
++}
+ .box:nth-of-type(odd) {
+   border-right: 0.1rem solid #ccc;
+   margin-left: -0.1rem;
+@@ -128,21 +171,15 @@ footer ul li img {
+   display: block;
+   margin-bottom: 0.5rem;
+ }
+-@media screen and (min-width: 768px) {
+-  html,
+-  body {
+-    font-size: 1.15vw;
+-  }
+-  .box p {
+-    top: 5.5rem;
+-  }
++.btnActive {
++  color: #14b3f4;
+ }
+-@media screen and (min-width: 1000px) {
+-  html,
+-  body {
+-    font-size: 1.15vw;
+-  }
+-  .box p {
+-    top: 6.5rem;
+-  }
++.pot {
++  width: 0.8rem;
++  height: 0.8rem;
++  border-radius: 50%;
++  background-color: #CC0033;
++  position: absolute;
++  top: 0;
++  right: 0;
+ }
+diff --git a/mobile/webapp/style/style.less b/mobile/webapp/style/style.less
+index 322ce85..d3dd494 100644
+--- a/mobile/webapp/style/style.less
++++ b/mobile/webapp/style/style.less
+@@ -75,6 +75,46 @@ html,body{
+ 		color:#999;
+ 	}
+ }
++@media screen and (min-width:768px){
++	html,body{
++		font-size: 1.15vw;
++	}
++	.box p{
++		top:5.5rem;
++	}
++}
++@media screen and (min-width:1000px){
++	html,body{
++		font-size: 1.15vw;
++	}
++	.box p{
++		top:6.5rem;
++	}
++}
++@media screen and (max-width:375px){
++	html,body{
++		font-size: 2vw;
++	}
++	.box{
++		height:7rem;
++	}
++	.box img{
++		width:3rem;
++		height:3rem;
++		left:1rem;
++		top:2rem;
++	}
++	.box h3{
++		left:4.5rem;
++		font-size:2rem;
++		top:2rem;
++	}
++	.box p{
++		top:3.4rem;
++		font-size:1.5rem ;
++		left:4.5rem;
++	}
++}
+ .box:nth-of-type(odd){
+ 	border-right: 0.1rem solid #ccc;
+ 	margin-left: -0.1rem;
+@@ -108,19 +148,15 @@ footer{
+ 		}
+ 	}
+ }
+-@media screen and (min-width:768px){
+-	html,body{
+-		font-size: 1.15vw;
+-	}
+-	.box p{
+-		top:5.5rem;
+-	}
++.btnActive{
++	color:#14b3f4;
++}
++.pot{
++	width:0.8rem;
++	height:0.8rem;
++	border-radius: 50%;
++	background-color: #CC0033;
++	position: absolute;
++	top:0;
++	right:0;
+ }
+-@media screen and (min-width:1000px){
+-	html,body{
+-		font-size: 1.15vw;
+-	}
+-	.box p{
+-		top:6.5rem;
+-	}
+-}
+\ No newline at end of file
+warning: LF will be replaced by CRLF in mobile/webapp/style/style.css.
+The file will have its original line endings in your working directory.

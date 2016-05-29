@@ -75,6 +75,46 @@ html,body{
 		color:#999;
 	}
 }
+@media screen and (min-width:768px){
+	html,body{
+		font-size: 1.15vw;
+	}
+	.box p{
+		top:5.5rem;
+	}
+}
+@media screen and (min-width:1000px){
+	html,body{
+		font-size: 1.15vw;
+	}
+	.box p{
+		top:6.5rem;
+	}
+}
+@media screen and (max-width:375px){
+	html,body{
+		font-size: 2vw;
+	}
+	.box{
+		height:7rem;
+	}
+	.box img{
+		width:3rem;
+		height:3rem;
+		left:1rem;
+		top:2rem;
+	}
+	.box h3{
+		left:4.5rem;
+		font-size:2rem;
+		top:2rem;
+	}
+	.box p{
+		top:3.4rem;
+		font-size:1.5rem ;
+		left:4.5rem;
+	}
+}
 .box:nth-of-type(odd){
 	border-right: 0.1rem solid #ccc;
 	margin-left: -0.1rem;
@@ -108,19 +148,15 @@ footer{
 		}
 	}
 }
-@media screen and (min-width:768px){
-	html,body{
-		font-size: 1.15vw;
-	}
-	.box p{
-		top:5.5rem;
-	}
+.btnActive{
+	color:#14b3f4;
 }
-@media screen and (min-width:1000px){
-	html,body{
-		font-size: 1.15vw;
-	}
-	.box p{
-		top:6.5rem;
-	}
+.pot{
+	width:0.8rem;
+	height:0.8rem;
+	border-radius: 50%;
+	background-color: #CC0033;
+	position: absolute;
+	top:0;
+	right:0;
 }
