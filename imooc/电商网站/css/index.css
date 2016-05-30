@@ -284,3 +284,15 @@ ul,li{list-style:none;}
 	color:#000;
 	font:16px/18px "微软雅黑";
 }
+.top_btn{
+	position: fixed;
+	bottom:30px;
+	right:300px;
+	width:30px;
+	height:30px;
+	border: 1px solid #666;
+	background-color: #ccc;
+}
+.top_btn:hover{
+	
+}

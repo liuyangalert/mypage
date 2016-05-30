@@ -13,7 +13,7 @@ $(window).on('load',function(){
   }
 })
 
- function waterfull(parent,className){
+function waterfull(parent,className){
     var $box = $('#content>div');
     var boxWidth = $box.eq(0).width();
     var num = Math.floor($(window).width()/boxWidth);
@@ -41,10 +41,10 @@ $(window).on('load',function(){
     })
  }
 
- function checkscrollside(){
+function checkscrollside(){
   var $box=$("#content>div");
   var lastboxHeight = $box.last().get(0).offsetTop + Math.floor($box.last().height()/2);
   var scrollTop = $(window).scrollTop();
   var documentHeight = $(document).width();
   return (lastboxHeight < scrollTop+documentHeight) ? true : false;
- }
+}
