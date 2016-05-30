@@ -101,8 +101,9 @@ body {
   body {
     font-size: 1vw;
   }
-  .box p {
-    top: 5.5rem;
+  .box h3 {
+    font-size: 2rem;
+    top: 2.8rem;
   }
 }
 @media screen and (min-width: 1000px) {
