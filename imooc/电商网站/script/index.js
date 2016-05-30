@@ -1,10 +1,13 @@
-window.onload=function(){
+window.onload = function(){
 	banner_show();
 	content_ad("left_ad1");
 	content_ad("left_ad2");
+	top1();
+	immm(".list_ad");
+	immm(".list_ad_mini");
 }
 
-function banner_show(){
+function banner_show () {
 	var left_btn = $("#prev");
 	var right_btn = $("#next");
 	var Owidth = $("#banner ul li").width();
@@ -65,8 +68,8 @@ function banner_show(){
 	})
 
 	function banner_icon(){
-	$(".banner_icon").removeClass("banner_icon_active");
-	$(".banner_icon").eq(num).addClass("banner_icon_active");
+		$(".banner_icon").removeClass("banner_icon_active");
+		$(".banner_icon").eq(num).addClass("banner_icon_active");
 	}
 }
 
@@ -85,4 +88,33 @@ function content_ad(id){
 		
 	}
 		
+}
+function top1(){
+	 var s = $(".top_btn")[0];
+	 var timer = setInterval(
+	 	function(){
+	 	if( $("body").scrollTop()>200){
+	 		$(s).show();
+		 } else {
+	 		$(s).hide();
+		 }
+	 	}
+	 	,300) 
+	 s.onclick=function(){ 
+	 	$("body").animate({scrollTop:0},500);
+	 }
+}
+
+function immm(cls){
+	var img = $(cls+" img");
+	var lf =$(img).position().left;
+	$(img).hover(function(){
+		$(this).animate({
+			left:lf+5+"px"
+		},300); 
+	},function(){
+		$(this).animate({
+			left:lf
+		},300); 
+	});
 }

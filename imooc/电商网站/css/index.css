@@ -233,7 +233,7 @@ ul,li{list-style:none;}
 .list_ad img{
 	position: absolute;
 	top:40px;
-	right:40px;
+	left:30px;
 	border:0;
 }
 .list_ad h3{
@@ -247,9 +247,7 @@ ul,li{list-style:none;}
 	color:#ff680d;
 	font-size:15px;
 }
-.list_ad img:hover{
-	right:35px;
-}
+
 .list_ad_mini{
 	border-right:1px solid #ccc;
 	width:201.5px;
@@ -263,9 +261,6 @@ ul,li{list-style:none;}
 	top:30px;
 	left: 10px;
 	border:0;
-}
-.list_ad_mini img:hover{
-	left:15px;
 }
 .list_ad_mini p{
 	padding:0;
@@ -288,11 +283,20 @@ ul,li{list-style:none;}
 	position: fixed;
 	bottom:30px;
 	right:300px;
+	display: none;
+	
+}
+.top_btn p{
 	width:30px;
 	height:30px;
-	border: 1px solid #666;
-	background-color: #ccc;
+	border: 1px solid #000;
+	background-color: #666;
+	color:#fff;
+	text-align: center;
+	line-height: 30px;
+	cursor:pointer;
+	margin-bottom: 5px;
 }
-.top_btn:hover{
-	
+.top_btn p:hover{
+	background-color: #999;
 }
