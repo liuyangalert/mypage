@@ -72,6 +72,7 @@ body {
   border-bottom: 0.1rem solid #ccc;
   position: relative;
   background-color: #fff;
+  box-sizing: border-box;
 }
 .box img {
   height: 5rem;
@@ -98,7 +99,7 @@ body {
 @media screen and (min-width: 768px) {
   html,
   body {
-    font-size: 1.15vw;
+    font-size: 1vw;
   }
   .box p {
     top: 5.5rem;
