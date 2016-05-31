@@ -76,14 +76,22 @@ function banner_show () {
 function content_ad(id){
 	var id = document.getElementById(id);
 	var x = id.getElementsByClassName("content_left_icon");
+	var ss =0;
 	for(var i=0;i<x.length;i++){
 		x[i].index = i;
 		$(x[i]).bind("click",function(){
 			$this= $(this);
-			$(x).removeClass("content_left_icon_active");
-			$this.addClass("content_left_icon_active");
-			$(id).children(".content_left_ad").children("li").css("z-index","-2");
-			$(id).children(".content_left_ad").children("li").eq(this.index).css("z-index","-1");
+			if(ss != this.index){
+				ss = this.index
+				$(x).removeClass("content_left_icon_active");
+				$this.addClass("content_left_icon_active");
+				$(id).children(".content_left_ad").children("li").css("z-index","-2");
+				$(id).children(".content_left_ad").children("li").eq(this.index).css({"left":"190px","z-index":"-1"});
+				$(id).children(".content_left_ad").children("li").eq(this.index).animate({"left":"0px","z-index":"-1"},300);
+				$(x).css('z-index','396');
+			}
+			
+			
 		});
 		
 	}
@@ -94,7 +102,7 @@ function top1(){
 	 var timer = setInterval(
 	 	function(){
 	 	if( $("body").scrollTop()>200){
-	 		$(s).show();
+	 		$(s).show(200);
 		 } else {
 	 		$(s).hide();
 		 }
@@ -109,10 +117,12 @@ function immm(cls){
 	var img = $(cls+" img");
 	var lf =$(img).position().left;
 	$(img).hover(function(){
+		$(this).stop();
 		$(this).animate({
 			left:lf+5+"px"
 		},300); 
 	},function(){
+		$(this).stop();
 		$(this).animate({
 			left:lf
 		},300); 

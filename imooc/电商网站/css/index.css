@@ -175,12 +175,14 @@ ul,li{list-style:none;}
 	width:189px;
 	height:400px;
 	float:left;
+	overflow: hidden;
 	position: relative;
 }
 .content_left_ad li{
 	position: absolute;
 	left: 0;
 	top:0;
+	z-index:-3;
 }
 .content_left_index{
 	position: absolute;
@@ -199,6 +201,7 @@ ul,li{list-style:none;}
 .content_left_icon{
 	width:20px;
 	height:10px;
+	z-index:9999;
 	display: inline-block;
 	background-color:#333;
 	border:1px solid #FFFFFF;
@@ -282,14 +285,14 @@ ul,li{list-style:none;}
 .top_btn{
 	position: fixed;
 	bottom:30px;
-	right:300px;
+	right:30px;
 	display: none;
 	
 }
 .top_btn p{
 	width:30px;
 	height:30px;
-	border: 1px solid #000;
+	border: 1px solid #eee;
 	background-color: #666;
 	color:#fff;
 	text-align: center;
@@ -298,5 +301,5 @@ ul,li{list-style:none;}
 	margin-bottom: 5px;
 }
 .top_btn p:hover{
-	background-color: #999;
+	background-color: #ce1029;
 }
