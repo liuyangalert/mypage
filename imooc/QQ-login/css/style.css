@@ -1,0 +1,124 @@
+@charset "utf-8";
+html,
+body,
+h3,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style-type: none;
+}
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -190px;
+  margin-top: -125px;
+  width: 380px;
+  height: 250px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  background-color: #f6f6f6;
+  box-shadow: 0 0 15px #999;
+}
+.main > h3 {
+  margin: 25px auto 5px;
+  width: 110px;
+  height: 44px;
+  background: url(../images/login_window_logo.png) no-repeat -240px top;
+}
+.main label {
+  width: 380px;
+  display: block;
+  margin: 15px auto;
+  text-align: center;
+  font-size: 14px;
+}
+.main input {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  height: 20px;
+  margin-left: 10px;
+  padding: 0 5px;
+  background-color: #fff;
+}
+.login {
+  width: 380px;
+  margin-top: 5px;
+  margin-left: 100px;
+}
+.login button {
+  width: 115px;
+  height: 38px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+  display: inline;
+  background: url(../images/login_btn.png) no-repeat -110px top;
+}
+.online {
+  display: inline;
+  font-size: 12px;
+  padding: 1px 0;
+  position: relative;
+}
+.online p {
+  display: inline-block;
+}
+.online_list {
+  border: 1px solid #999;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+.online_list li {
+  text-align: left;
+  background-color: #fff;
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+}
+.online_list li:hover {
+  background-color: #ccc;
+}
+.down {
+  width: 7px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/ptlogin.png) no-repeat left -18px;
+}
+.icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 1px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.online_icon {
+  background: url(../images/ptlogin.png) no-repeat left top;
+}
+.qme_icon {
+  background: url(../images/ptlogin.png) no-repeat -72px top;
+}
+.leave_icon {
+  background: url(../images/ptlogin.png) no-repeat -18px top;
+}
+.busy_icon {
+  background: url(../images/ptlogin.png) no-repeat -36px top;
+}
+.disturb_icon {
+  background: url(../images/ptlogin.png) no-repeat -108px top;
+}
+.hiding_icon {
+  background: url(../images/ptlogin.png) no-repeat -54px top;
+}
