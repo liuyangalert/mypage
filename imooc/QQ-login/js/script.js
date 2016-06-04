@@ -34,31 +34,44 @@ function showOnline(){
 
 function ff(){
 	var tt = document.getElementById("title");
-	var main = document.getElementsByClassName('main')[0];
 	tt.onmousedown = function(event){
 		var  m_left= event.clientX + 'px';
 		var  m_top = event.clientY + 'px';
-
-		document.onmousemove = function(){
-			msmove();
-		
+		var main = document.getElementsByClassName('main')[0];
+		var main_l = event.clientX - main.offsetLeft;
+		var main_t = event.clientY - main.offsetTop;
+		document.onmousemove = function(event){
+			event = event || window.event;
+			msmove(event,main_l,main_t);
 		}
-	
-	}
-	tt.onmouseup =function(event){
-		document.onmousemove =null;
-		tt.onmouseup = null;
-	}
-
+		document.onmouseup =function(event){
+			document.onmousemove =null;
+			document.onmouseup = null;
+		}
+}
 }
 
 
-function msmove(event){
-	event = event || window.event;
+function msmove(event,main_l,main_t){
 	var main = document.getElementsByClassName('main')[0];
-	var  m_left= event.clientX + 'px';
-	var  m_top = event.clientY + 'px';
-	main.style.left = m_left;
-	main.style.top = m_top;
-	document.title = '('+m_left+','+m_top+')';
+	var l = event.clientX - main_l;
+	var t = event.clientY - main_t;
+	var winW=document.documentElement.clientWidth || document.body.clientWidth;
+	var winH=document.documentElement.clientHeight || document.body.clientHeight;
+		winW = winW - main.offsetWidth -10;
+		winH = winH - main.offsetHeight-10;
+
+	if(l<0){
+		l = 10;
+	} else if( l> winW){
+			l = winW;
+	}
+	if(t<0){
+		t = 10;
+	} else if( t> winH){
+			t = winH;
+	}
+
+	main.style.left = l+ 'px';
+	main.style.top = t + 'px';
 }
