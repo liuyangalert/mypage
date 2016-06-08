@@ -45,7 +45,7 @@ function ff(){
 		}
 	
 	}
-	tt.onmouseup =function(event){
+	document.onmouseup =function(event){
 		document.onmousemove =null;
 		tt.onmouseup = null;
 	}
