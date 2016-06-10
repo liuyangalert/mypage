@@ -7,11 +7,13 @@ ul,li{
 html,body{
 	font-size:12px;
 }
+
 .main{
 	width:100%;
 	font-size:100%;
 	padding-bottom:8rem;
-}
+} 
+
 .header{
 	width:100%;
 	position:relative;
@@ -20,13 +22,14 @@ html,body{
 	}
 	.search{
 		width:70%;
-		height:3rem;
+		line-height:3rem;
 		margin:0 auto;
 		position: absolute;
 		left:0;
 		right:0;
 		bottom:1.5rem;
 		font-size:1rem;
+		border:0.5rem solid #fff;
 		border-radius:1rem;
 		padding-left:2.5rem;
 		padding-right:2.5rem;
@@ -143,7 +146,6 @@ html,body{
 	display:flex;
 	justify-content:space-around;
 	width:100%;
-	
 	.foot{
 		width:20%;
 		text-align: center;
@@ -185,6 +187,22 @@ html,body{
 				right:15%;
 				top:35%;
 			}
+		}
+	}
+}
+
+@media screen and (min-width:768px){
+	body{
+		width:768px;
+		margin:0 auto;
+		.footer{
+			width:768px;
+			margin:0 auto;
+		}
+	}
+	.header{
+		.search{
+			bottom:3rem;
 		}
 	}
 }

@@ -43,13 +43,14 @@ body {
 }
 .header .search {
   width: 70%;
-  height: 3rem;
+  line-height: 3rem;
   margin: 0 auto;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 1.5rem;
   font-size: 1rem;
+  border: 0.5rem solid #fff;
   border-radius: 1rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -200,4 +201,17 @@ body {
   position: absolute;
   right: 15%;
   top: 35%;
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
+  body .footer {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .header .search {
+    bottom: 3rem;
+  }
 }
