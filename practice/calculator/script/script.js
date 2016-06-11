@@ -7,6 +7,7 @@ function headCol(){
         var close = $(".header span");
         var main =$(".main")[0];
         close[0].onclick = function(e){
+           e = e || widow.e;
             $(main).hide(1000);
             e.stopPropagation();
         }
