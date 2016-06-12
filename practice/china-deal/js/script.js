@@ -7,7 +7,6 @@
 
 function headMove(){
     document.body.addEventListener('touchmove', function(event){
-        event.preventDefault();
     }, false);
     var timer = null;
     var tt = document.getElementsByClassName("menu")[0];
