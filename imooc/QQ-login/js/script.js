@@ -27,8 +27,8 @@ function showOnline(){
 
 	document.onclick = function(event){
         ul.style.display = "none";
-        
-    }  
+
+    }
 
 }
 
@@ -48,17 +48,7 @@ function ff(){
 			document.onmousemove =null;
 			document.onmouseup = null;
 		}
-<<<<<<< HEAD
-	
 	}
-	document.onmouseup =function(event){
-		document.onmousemove =null;
-		tt.onmouseup = null;
-	}
-
-=======
-}
->>>>>>> 9e2c86f07fd152ccce4caaee7517559a9021bd5d
 }
 
 
