@@ -7,6 +7,6 @@
 #### [慕课网 imooc]
 #### [imooc 慕课网练习](http://taoqun.github.io/mypage/imooc/imooc.html)
 --------------
-### [web小应用](http://taoqun.github.io/mypage/practice/calculator\index.html)
+### [web小应用](http://taoqun.github.io/mypage/practice/calculator/index.html)
 =====================
 #### [博客园](http://www.cnblogs.com/taoquns/)
