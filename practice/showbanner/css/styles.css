@@ -1,0 +1,63 @@
+@charset "utf-8";
+p,
+body,
+input,
+span,
+html,
+h1,
+h2,
+img,
+div,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+dl,
+dd,
+dt {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+  outline: none;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: "";
+  height: 0;
+  clear: both;
+  display: block;
+}
+.main {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  color: red;
+}
+.banner_bg {
+  background-color: #999;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.banner_bg .banner {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  margin-left: -150px;
+  width: 300px;
+  height: 100px;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: center;
+  line-height: 100px;
+}
