@@ -23,24 +23,27 @@ function headCol(){
 
         )
 }
-function screen(e){
-    $(".screen").html(e);
-}
+
 function number(){
     var name = $(".row div");
-    var x=0;
+    var x="";
+    clear(x);
     name.each(function(){
       $(this).bind("click",function(){
+          if(x == 0){x="";}
           x +=  $(this).attr("name");
-          equal();
           screen(x);
       })
     });
 }
-function equal(){
-  $("#equal").bind("click",function(){
-      var number =$(".screen").text();
-      var e = number;
-      screen(e);
-  })
+
+function clear(x){
+    $("#clear").click(function(x){
+        x = 0;
+        screen(x);
+    })
+}
+
+function screen(e){
+    $(".screen").html(e);
 }
