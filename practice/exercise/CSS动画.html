@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>text</title>
+        <style type="text/css">
+        
+        .img1{
+            width:100px;
+            height:100px;
+            background-color:red;
+            transform:2s inherit;
+            float:left;
+            animation:text 1s linear 0s infinite alternate;
+        }
+        .img1:hover{
+           transform:rotate(10deg);
+        }
+
+        @keyframes text{
+            0%{transform:rotate(0deg);}
+            50%{background-color: yellow;transform:rotate(960deg);}
+            100%{margin-left:100px;background-color:blue;transform:rotate(1800deg);}
+        }
+
+        </style>
+    </head>
+    <body>
+
+
+
+    <div class="wrap">
+        <div class="Carousel">
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+            <div class="img1"></div>
+           
+        </div>
+    </div>
+
+
+    </body>
+</html>
