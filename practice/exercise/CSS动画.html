@@ -2,25 +2,45 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>text</title>
+        <title>CSS动画区别</title>
+        <!-- transition tranform animation keyforames  CSS动画区别 -->
         <style type="text/css">
-        
+        .wrap{margin:0 auto;}
+        .Carousel{
+            margin:0 400px 400px;
+        }
         .img1{
             width:100px;
-            height:100px;
+            height:50px;
             background-color:red;
-            transform:2s inherit;
+            transition:all 1s ease-in-out 0s;
             float:left;
-            animation:text 1s linear 0s infinite alternate;
+            
         }
         .img1:hover{
-           transform:rotate(10deg);
+           height:300px;
+           background-color:blue;
         }
 
-        @keyframes text{
-            0%{transform:rotate(0deg);}
-            50%{background-color: yellow;transform:rotate(960deg);}
-            100%{margin-left:100px;background-color:blue;transform:rotate(1800deg);}
+        .anim1{
+            width:100px;
+            height:50px;
+            background-color:red;
+            float:left;
+        }
+
+
+        .anim1:hover{
+            animation:anima 1s ease-in-out 0s 2 alternate ;
+
+        }
+
+        @keyframes anima {
+            0%{height:50px;}
+            100%{height:300px;
+                background-color:blue;
+                
+            }
         }
 
         </style>
@@ -30,14 +50,30 @@
 
 
     <div class="wrap">
+        
         <div class="Carousel">
+            <h3>transition动画</h3>
             <div class="img1"></div>
             <div class="img1"></div>
             <div class="img1"></div>
             <div class="img1"></div>
            
         </div>
+
+
+
+        <div class="Carousel">
+            <h3>animation动画</h3>
+            <div class="anim1"></div>
+            <div class="anim1"></div>
+            <div class="anim1"></div>
+            <div class="anim1"></div>
+           
+        </div>
     </div>
+
+
+
 
 
     </body>
