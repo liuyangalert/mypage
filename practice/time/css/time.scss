@@ -1,0 +1,38 @@
+/*
+* @Author: Administrator
+* @Date:   2016-07-12 10:34:26
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-07-12 11:22:50
+*/
+@import "1";
+.contianer{
+	width:300px;
+	height:200px;
+	margin:100px auto;
+	border:1px solid #333;
+	background-color:#333;
+	// box-sizing:border-box;
+	& > div{
+		float:left;
+		width:100px;
+		height:200px;
+		// background-color:#333;
+		text-align:center;
+		color:#fff;
+		font-size:20px;
+		line-height:200px;
+
+		span {
+			display:inline-block;
+			padding:5px 15px;
+			line-height:20px;
+			margin:10px;
+			color:#000;
+			border:2px solid #666;
+			background-color:#fff;
+			outline:2px solid #ccc; 
+		}
+
+	}
+
+}
