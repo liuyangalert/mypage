@@ -1,0 +1,16 @@
+/*
+* @Author: Administrator
+* @Date:   2016-07-12 13:01:14
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-07-12 13:14:20
+*/
+@import "1";
+.wrap{
+	width:200px;
+	margin:20px auto;
+}
+input[name = "ccc"]{
+	width:100px;
+	height:50px;
+	transition:all 1s ease-in 0s;
+}
