@@ -1,0 +1,90 @@
+/*
+* @Author: Administrator
+* @Date:   2016-07-20 10:33:12
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-07-21 17:29:15
+*/
+/*# sourceMappingURL=style.css.map */
+li, ul, dl, dd, body, input, label, p {
+  padding: 0;
+  margin: 0; }
+
+.main-body {
+  width: 990px;
+  margin: 20px auto; }
+
+.input-top {
+  width: 100%; }
+
+.todo-input {
+  display: block;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px auto;
+  outline: none;
+  font-size: 20px;
+  text-indent: 1em;
+  border: 0;
+  box-shadow: 0px 0px 20px #ccc;
+  transition: all 0.3s ease-in 0s; }
+
+.todo-input:hover {
+  box-shadow: 0px 0px 30px #999; }
+
+.todo-input:focus {
+  border: 1px solid #333;
+  box-shadow: 0px 0px 50px #ccc; }
+
+.todo-list li {
+  list-style: none;
+  width: 50%;
+  height: 30px;
+  font-style: normal;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  position: relative;
+  vertical-align: middle;
+  transition: all 0.3s ease-out 0s; }
+  .todo-list li:hover {
+    background-color: #eee; }
+    .todo-list li:hover .li-close {
+      display: block;
+      background-color: #CC3333;
+      color: #fff; }
+  .todo-list li input[type="checkbox"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 7px;
+    left: 7px; }
+  .todo-list li input[type="text"], .todo-list li p {
+    text-decoration: inherit;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    border: 0;
+    height: 30px;
+    width: 70%;
+    outline: none;
+    font-size: 20px; }
+.todo-list .li-close {
+  display: none;
+  width: 30px;
+  height: 30px;
+  text-indent: 0;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  background-color: #eee;
+  transition: all 0.3s ease-in 0s;
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
