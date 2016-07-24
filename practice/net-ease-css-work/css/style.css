@@ -1,0 +1,205 @@
+body,h1,h3,h4,h2,h6,p,h5{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-weight:normal;
+}
+a{
+	text-decoration:none;
+}
+body{
+	background-color:#f5f5f5;
+}
+.main{
+	width:980px;
+	padding:0 40px;
+	box-sizing:border-box;
+	border:1px solid #ccc;
+	margin:20px auto;
+	background-color:#fff;
+}
+.first-line{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+.wrap{
+	width:70px;
+	height:70px;
+	box-sizing: border-box;
+	border:2px solid transparent;
+	position:relative;
+}
+.icon-list{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	background-image:url(../images/icon-list.png);
+	background-position:-5px -0px;
+	position:absolute;
+	top:15px;
+	left:0px;
+	right:0;
+	margin:0 auto;
+	box-sizing:border-box;
+}
+.list-one{
+}
+.wrap:hover .list-one{
+	background-position:-51px -0px;
+}
+
+.list-two{
+	background-position:-5px -43px;
+}
+.wrap:hover .list-two{
+	background-position:-48px -43px;
+}
+
+.list-three{
+	background-position:-5px -82px;
+}
+.wrap:hover .list-three{
+	background-position:-51px -82px;
+}
+
+.list-19{
+	background-position:-5px -568px;
+}
+.wrap:hover .list-19{
+	background-position:-51px -568px;
+}
+.wrap p{
+	display: inline;
+	position:absolute;
+	top:50px;
+	width:50px;
+	left:0px;
+	color:#333;
+	overflow:hidden;
+	text-align:center;
+	right:0;
+	margin:0 auto;
+}
+.wrap:hover{
+	border:2px solid #db5e5e;
+	border-radius:3px;
+}
+
+.wrap:hover p{
+	color:#db5e5e;
+}
+.second-line{
+	display:flex;
+	justify-content: space-around;
+}
+.hidden{
+	visibility:hidden;
+}
+.radio-wrap{
+	display:flex;
+	justify-content:space-between;
+}
+.radio-title{
+	font:24px/78px "微软雅黑";
+	color:#333333;
+	position: relative;
+	
+}
+.radio-title::after{
+	content:'';
+	position:absolute;
+	width:100%;
+	height:2px;
+	bottom:17px;
+	left:0;
+	background:#c20c0c;
+}
+.new-radio{
+	width:160px;
+	height:225px;
+}
+.new-radio a{
+	text-decoration:none;
+	color:#333333;
+	font:14px/36px  "宋体";
+	font-weight:bold;
+}
+.new-radio a:hover{
+	text-decoration:underline;
+}
+.new-radio p{
+	color:#999999;
+	font:12px/18px  "宋体";
+}
+.hot-wrap{
+	display:flex;
+	justify-content:space-between;
+	padding: 20px 0;
+	border-bottom:1px solid #e7e7e7;
+}
+.hot-radio{
+	width:50%;
+	height:120px;
+	position: relative;
+}
+.hot-radio-ifm{
+	position:absolute;
+	padding:0 20px;
+	top:0;
+	left:120px;
+}
+.hot-radio img{
+	position:absolute;
+	top:0;
+	left:0;
+	width:120px;
+	height:120px;
+}
+.hot-a{
+	display:flex;
+	height:60px;
+	align-items:center;
+	overflow:hidden;
+}
+.hot-a h3{
+	text-decoration:none;
+	color:#333;
+	font:16px/22px  "宋体";
+	font-weight:bold;
+}
+.hot-a h3:hover{
+	text-decoration:underline;
+}
+.hot-radio h5{
+	color:#666666;
+	font:12px/18px  "宋体";
+}
+.hot-radio h5:hover{
+	cursor:pointer;
+	text-decoration:underline;
+}
+.user-info{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	vertical-align:middle;
+	background:url(../images/icon.png);
+	background-position:-5px -6px;
+}
+.plusv{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	vertical-align:middle;
+	background:url(../images/icon.png);
+	background-position:0px -34px;
+}
+.radio-period,.radio-times{
+	font:12px/20px  "宋体";
+	color:#999;
+}
+.radio-times{
+	margin-left:15px;
+}
