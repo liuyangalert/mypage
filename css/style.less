@@ -49,17 +49,20 @@ ul,li{list-style: none;}
 	}
 }
 .head{
-	display: flex;
+	display: block;
+	margin:0 auto;
 	justify-content:center;
 	a{
 		text-decoration: none;
+		behavior: url(jscript/ie-css3.htc);
 		float: left;
+		display:inline-block;
 		padding:5px 10px;
 		background-color:#6E8783 ;
 		color: #F7F7F7;
 		border:1px solid #eee;
 		margin:5px;
-		border-radius: 5px;
+		border-radius:5px;
 	}
 	a:hover{
 		background-color:#C76D52 ;
@@ -69,6 +72,7 @@ ul,li{list-style: none;}
 	a{
 		text-decoration: none;
 		border-radius:10px;
+		behavior: url(jscript/ie-css3.htc);
 		display: block;
 		width:300px;
 		margin:10px auto;

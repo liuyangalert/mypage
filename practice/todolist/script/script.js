@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-07-20 11:39:26
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-07-21 18:12:06
+* @Last Modified time: 2016-07-25 17:56:21
 */
 
 'use strict';
@@ -10,9 +10,31 @@ addlist();
 linedel();
 closeclick();
 changInput();
+changP();
 
+function addevent(element,type,handler){
+	if(element.addEventListener){
+		element.addeventListener(type,handler,flase);
+	} else if(element.attachEvent){
+		element.attachEvent('on'+type,handler);
+	} else{
+		element['on'+type] = handler;
+	}
+}
+function addevent(element,type,handler){
+	if(element.removeEventListener){
+		element.removeEventListener(type,handler,flase);
+	} else if(element.detachEvent){
+		element.detachEvent('on'+type,handler);
+	} else{
+		element['on'+type] = null;
+	}
+}
 
-//创建list任务
+addevent('document','click',function(){
+	changeP();
+});
+//创建add list任务
 function addlist(){
 	var task = document.getElementsByClassName("todo-input")[0];
 	var list = document.getElementsByTagName("ul")[0];
@@ -42,9 +64,11 @@ function addlist(){
 					list.insertBefore(li,list.childNodes[0]);
 					task.value = '';
 					linedel();
-					changInput();
 					closeclick();
+					changInput();
+					changP();
 				}
+
 			}
 
 			
@@ -89,24 +113,50 @@ function linedel(){
 }
 
 
-// 点击变成输入按钮
+//点击的P元素变成输入框
 function changInput(){
 	var list = document.getElementsByClassName("todo-list")[0];
 	var check = list.getElementsByTagName("p");
-
+//绑定每个p元素
 	for (var i=0;i<check.length;i++) {
-		check[i].onclick =function(){
+		check[i].onclick= function(e){
+			e = e || window.e;
+			//清楚其他的input变为p元素
+			changP();
 			var str = this.innerText;
 			var input = document.createElement("input");
 				input.setAttribute('type','text');
 				input.value = str;
-			this.parentNode.insertBefore(input,this.parentNode.childNodes[1]);
+			this.parentNode.insertBefore(input,this.parentNode.childNodes[2]);
 			this.parentNode.removeChild(this);
+			console.log("变成input");
+			e.stopPropagation();
 		}
 	}
 }
 
-
-// function changP(){
-// 	var input = document.getElementsByClassName("todo-list")[0];
-// }
+//转换成文本标签
+function changP(){
+	var list = document.getElementsByClassName("todo-list")[0];
+	var input = list.getElementsByTagName('input');
+	var inputP = [];
+//获取只是list的input标签
+	for(var i=0;i<input.length;i++){
+		if( input[i].getAttribute('type') == "text" ){
+			inputP.push(input[i]);
+		}
+	}
+	//全部转化成文本标签
+	for(var i=0;i<inputP.length;i++){
+		var the = inputP[i];
+		var str = the.value;
+		var p = document.createElement("p");
+			p.innerText = str;
+			the.parentNode.insertBefore(p,the.parentNode.childNodes[2]);
+			the.parentNode.removeChild(the);
+			
+	}
+	//给新建的p标签绑定click事件
+	changInput();
+	return false;
+}

@@ -68,12 +68,15 @@ li {
   border: 1px dotted #003366;
 }
 .head {
-  display: flex;
+  display: block;
+  margin: 0 auto;
   justify-content: center;
 }
 .head a {
   text-decoration: none;
+  behavior: url(jscript/ie-css3.htc);
   float: left;
+  display: inline-block;
   padding: 5px 10px;
   background-color: #6E8783 ;
   color: #F7F7F7;
@@ -87,6 +90,7 @@ li {
 .main a {
   text-decoration: none;
   border-radius: 10px;
+  behavior: url(jscript/ie-css3.htc);
   display: block;
   width: 300px;
   margin: 10px auto;
