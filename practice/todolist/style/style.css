@@ -2,12 +2,13 @@
 * @Author: Administrator
 * @Date:   2016-07-20 10:33:12
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-07-21 17:29:15
+* @Last Modified time: 2016-07-29 10:07:02
 */
 /*# sourceMappingURL=style.css.map */
 li, ul, dl, dd, body, input, label, p {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Microsoft Yahei'; }
 
 .main-body {
   width: 990px;
@@ -48,9 +49,11 @@ li, ul, dl, dd, body, input, label, p {
   margin-bottom: 5px;
   position: relative;
   vertical-align: middle;
+  background-color: #fff;
   transition: all 0.3s ease-out 0s; }
   .todo-list li:hover {
-    background-color: #eee; }
+    background-color: #fff;
+    border: 1px solid #666; }
     .todo-list li:hover .li-close {
       display: block;
       background-color: #CC3333;
@@ -71,7 +74,8 @@ li, ul, dl, dd, body, input, label, p {
     height: 30px;
     width: 70%;
     outline: none;
-    font-size: 20px; }
+    font-size: 20px;
+    background-color: inherit; }
 .todo-list .li-close {
   display: none;
   width: 30px;

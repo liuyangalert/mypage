@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-07-20 11:39:26
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-07-25 17:56:21
+* @Last Modified time: 2016-07-29 10:35:37
 */
 
 'use strict';
@@ -11,17 +11,16 @@ linedel();
 closeclick();
 changInput();
 changP();
-
 function addevent(element,type,handler){
 	if(element.addEventListener){
-		element.addeventListener(type,handler,flase);
+		element.addEventListener(type,handler,true);
 	} else if(element.attachEvent){
 		element.attachEvent('on'+type,handler);
 	} else{
 		element['on'+type] = handler;
 	}
 }
-function addevent(element,type,handler){
+function removeevent(element,type,handler){
 	if(element.removeEventListener){
 		element.removeEventListener(type,handler,flase);
 	} else if(element.detachEvent){
@@ -30,10 +29,6 @@ function addevent(element,type,handler){
 		element['on'+type] = null;
 	}
 }
-
-addevent('document','click',function(){
-	changeP();
-});
 //创建add list任务
 function addlist(){
 	var task = document.getElementsByClassName("todo-input")[0];
@@ -70,8 +65,6 @@ function addlist(){
 				}
 
 			}
-
-			
 		}
 	}
 }
@@ -104,8 +97,8 @@ function linedel(){
 				this.parentNode.style.textDecoration = "line-through";
 				this.parentNode.style.backgroundColor = "#eee";
 
-			} else if( !this.checked ){
-				this.parentNode.style.textDecoration = "none";
+			} else{
+				this.parentNode.style.textDecoration = "inherit";
 				this.parentNode.style.backgroundColor = "#fff";
 			}
 		}
@@ -146,6 +139,7 @@ function changP(){
 			inputP.push(input[i]);
 		}
 	}
+
 	//全部转化成文本标签
 	for(var i=0;i<inputP.length;i++){
 		var the = inputP[i];
@@ -156,6 +150,8 @@ function changP(){
 			the.parentNode.removeChild(the);
 			
 	}
+
+
 	//给新建的p标签绑定click事件
 	changInput();
 	return false;

@@ -1,0 +1,47 @@
+/*
+* @Author: Administrator
+* @Date:   2016-07-28 11:36:24
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-07-28 14:01:32
+*/
+body,li,ul,p,h1,h2,h3,h4,h5,h6,dl,dd,dt{
+	margin:0;
+	padding:0;
+	color:#000;
+	font-size:14px;
+	background-color:#ffffff;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+li{
+	list-style:none;
+}
+::selection{
+	background-color:#FF9966;
+}
+.clear{zoom:1;}
+.clear::after{
+	content:'';
+	overflow:hidden;
+	clear:both;
+	height:0px;
+	display:block;
+}
+.header{
+	width:100%;
+	border-bottom:1px solid #ddd;
+}
+.head{
+	width:1000px;
+	margin:0 auto;
+	li{
+		float:left;
+		display:block;
+		padding:10px 20px;
+		&:hover{
+		background-color:#eee;
+		}
+	}
+}
