@@ -8,7 +8,8 @@ body, li, ul, p, h1, h2, h3, h4, h5, h6, dl, dd, dt {
   margin: 0;
   padding: 0;
   color: #000;
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: 'Microsoft Yahei'; }
 
 a {
   text-decoration: none;
@@ -46,16 +47,37 @@ li {
   .head .skin {
     cursor: pointer; }
 
-.main .search {
+.main {
   width: 1000px;
-  margin: 0 auto;
-  text-align: center; }
-  .main .search input {
-    width: 300px;
-    margin: 0 auto;
-    padding: 5px 20px; }
-  .main .search button {
-    width: 100px;
-    padding: 10px 20px; }
+  margin: 10px auto; }
+  .main .list-wrap {
+    position: relative;
+    height: 200px;
+    width: 1000px;
+    border: 1px solid #ddd; }
+  .main .main-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    background-color: #ddd;
+    line-height: 35px;
+    text-indent: 2em; }
+    .main .main-title:hover {
+      color: #333; }
+  .main .main-list {
+    position: absolute;
+    top: 40px;
+    left: 0; }
+  .main .main-list li {
+    float: left;
+    width: 125px;
+    overflow: hidden;
+    line-height: 30px;
+    text-align: center; }
+    .main .main-list li:hover {
+      background-color: #eee; }
+    .main .main-list li a:hover {
+      text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */

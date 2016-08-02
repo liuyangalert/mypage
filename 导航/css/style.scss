@@ -9,6 +9,7 @@ body,li,ul,p,h1,h2,h3,h4,h5,h6,dl,dd,dt{
 	padding:0;
 	color:#000;
 	font-size:14px;
+	font-family:'Microsoft Yahei';
 }
 a{
 	text-decoration:none;
@@ -50,18 +51,45 @@ li{
 }
 
 .main{
-	.search{
+	width:1000px;
+	margin:10px auto;
+
+	.list-wrap{
+		position:relative;
+		height:200px;
 		width:1000px;
-		margin:0 auto;
+		border: 1px solid #ddd;
+	}
+
+	.main-title{
+		position:absolute;
+		top:0;
+		left:0;
+		width:1000px;
+		background-color:#ddd;
+		line-height:35px;
+		text-indent:2em;
+		&:hover{
+			color:#333;
+		}
+
+	}
+	.main-list{
+		position:absolute;
+		top:40px;
+		left:0;
+	}
+	.main-list li{
+		float:left;
+		width:125px;
+		overflow:hidden;
+		line-height:30px;
 		text-align:center;
-	input{
-		width:300px;
-		margin:0 auto;
-		padding:5px 20px;
-	}
-	button{
-		width:100px;
-		padding:10px 20px;
-	}
+		&:hover{
+			background-color:#eee;
+		}
+		a:hover{
+			text-decoration:underline;
+		}
 	}
 }

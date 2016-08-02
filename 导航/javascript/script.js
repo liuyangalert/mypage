@@ -42,9 +42,13 @@ function skin(){
 
 		if(control){
 			document.getElementsByClassName('header')[0].style.borderBottomColor = '#99CC99';
+			document.getElementsByClassName('main-title')[0].style.backgroundColor = '#99CC99';
+			document.getElementsByClassName('list-wrap')[0].style.borderColor = '#99CC99';
 			control = false;
 		} else{
 			document.getElementsByClassName('header')[0].style.borderBottomColor = '#ddd';
+			document.getElementsByClassName('main-title')[0].style.backgroundColor = '#ddd';
+			document.getElementsByClassName('list-wrap')[0].style.borderColor = '#ddd';
 			control = true;
 		}
 
