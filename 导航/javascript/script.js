@@ -34,3 +34,21 @@ function timer(){
 	},500)
 }
 
+skin();
+function skin(){
+	var skins = document.getElementsByClassName('skin')[0];
+	var control = true;
+	skins.onclick = function(){
+
+		if(control){
+			document.getElementsByClassName('header')[0].style.borderBottomColor = '#99CC99';
+			control = false;
+		} else{
+			document.getElementsByClassName('header')[0].style.borderBottomColor = '#ddd';
+			control = true;
+		}
+
+		
+
+	}
+}

@@ -9,7 +9,6 @@ body,li,ul,p,h1,h2,h3,h4,h5,h6,dl,dd,dt{
 	padding:0;
 	color:#000;
 	font-size:14px;
-	background-color:#ffffff;
 }
 a{
 	text-decoration:none;
@@ -43,5 +42,26 @@ li{
 		&:hover{
 		background-color:#eee;
 		}
+	}
+
+	.skin{
+		cursor:pointer;
+	}
+}
+
+.main{
+	.search{
+		width:1000px;
+		margin:0 auto;
+		text-align:center;
+	input{
+		width:300px;
+		margin:0 auto;
+		padding:5px 20px;
+	}
+	button{
+		width:100px;
+		padding:10px 20px;
+	}
 	}
 }
