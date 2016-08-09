@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+
+		.main{
+			width:320px ;
+			height: 405px;
+			position: relative;
+		}
+		.wrap{
+			width: 260px;
+			height:100px;
+			background-color: rgba(255,255,255,0.8);
+			text-align: center;
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			margin-left: -130px;
+			transition: all 0.3s;
+		}
+		.bord{
+			position: absolute;
+			width: 0;
+			height: 0;
+			background-color: #666;
+			
+		}
+		.top{
+			left: 0;
+			top: 0;
+			height: 2px;
+			transition: all 0.2s;
+		}
+		.right{
+			top: 0;
+			right: 0;
+			width: 2px;
+			transition: all 0.2s 0.2s;
+		}
+		.bottom{
+			right: 0;
+			bottom: 0;
+			height: 2px;
+			transition: all 0.2s 0.4s;
+		}
+		.left{
+			bottom: 0;
+			left: 0;
+			width: 2px;
+			transition: all 0.2s 0.6s;
+		}
+
+
+		.text{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width:120px;
+			height: 35px;
+			line-height: 35px;
+			margin-left: -60px;
+			margin-top: -17px;
+			color: #fff;
+			font-size: 15px;
+			background-color: #333;
+			cursor: pointer;
+		}
+		.text:hover{
+			background-color: rgba(255,0,51,1);
+		}
+		.main:hover .wrap{
+			top: 65%;
+		}
+		.wrap:hover .top{
+			width: 100%;
+		}
+		.wrap:hover .bottom{
+			width: 100%;
+		}
+		.wrap:hover .right{
+			height: 100%;
+		}
+		.wrap:hover .left{
+			height: 100%;
+		}
+
+
+	</style>
+</head>
+<body>
+
+<div class="main">
+	<img src="bg.jpg" alt="">
+	<div class="wrap">
+		<div class="bord top"></div>
+		<div class="bord right"></div>
+		<div class="bord bottom"></div>
+		<div class="bord left"></div>
+	
+		<div class="text">
+			点击进入
+		</div>
+	</div>
+<div>
+</body>
+</html>
