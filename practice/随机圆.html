@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+.wrap{
+	width: 500px;
+	height: 500px;
+	margin: 50px auto;
+	overflow: hidden;
+	border: 1px solid #eee;
+	position: relative;
+	text-align: center;
+}
+.box{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transition: all 0.5s linear;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="wrap">
+	<p>鼠标移上来</p>
+	<div class="box one"></div>
+	<div class="box two"></div>
+	<div class="box three"></div>
+	<div class="box four"></div>
+	<div class="box five"></div>
+	<div class="box six"></div>
+</div>
+
+
+<script>
+
+	function num(){
+		var nums  = Math.floor(Math.random()*350);
+		// console.log(nums);
+		return nums+'px';
+	}
+
+	function run(){
+		var box = document.getElementsByClassName('box');
+		for (var i = 0; i < box.length; i++) {
+			box[i].index = i;
+			box[i].style.top =  num();
+			box[i].style.left =  num();
+			box[i].style.backgroundColor = color();
+			box[i].onmouseover = function(){
+				if(this.style.borderRadius == '50%'){
+					this.style.borderRadius = '0%';
+				} else{
+					this.style.borderRadius = '50%';
+				}
+			}
+			
+		}
+		
+	}
+	var timer;
+	var wrap = document.getElementsByClassName('wrap')[0];
+	
+	wrap.onmouseover = function(e){
+		clearInterval(timer);
+		var  p =wrap.getElementsByTagName('p')[0];
+		if(p) wrap.removeChild(p);
+		
+		
+		timer = setInterval(run,500);
+		e.stopPropagation();
+	}
+	// wrap.onmouseout = function(){
+	// 	clearInterval(timer);
+	// }
+	function color(){
+		var str = '0123456789abcdef';
+		var colors='';
+		while(colors.length<6){
+			colors += str[Math.floor(Math.random()*16)]; 
+		}
+		// console.log('生成的颜色为：'+colors);
+		return '#'+colors;
+	}
+</script>
+	
+</body>
+</html>
