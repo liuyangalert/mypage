@@ -5,11 +5,12 @@
 	<title>3D css</title>
 	<style>
 		.wrap{
-			width:100px;
-			margin:100px auto;
-			perspective: 1000px;
-			transition: all 2s;
+			width:200px;
+			height:200px;
+			margin:300px auto;
 			transform-style: preserve-3d;
+			perspective:1000px;
+			position: relative;
 			animation:round 1s linear 3s infinite;
 		}
 		@keyframes round{
@@ -37,18 +38,6 @@
 		}
 		.wrap:hover .face{
 			background-color:#99CC99;
-		}
-		.wrap:hover{
-			
-			transform: rotate3d(0.5,0.5,0.5,360deg);
-		}
-		.wrap .box{
-			perspective-origin:top left;
-			transform-style:perserve-3d;
-			width:100px;
-			height:100px;
-			position: relative;
-			transition: all 2s;
 		}
 		.top,.left,.right,.bottom,.back,.face{
 			position: absolute;
@@ -107,20 +96,18 @@
 		}
 		@keyframes face{
 			0%,88.6%{transform:rotateX(0deg)  translateZ(0px);}
-			100%{transform:rotateX(0deg)  translateZ(100px);}
+			100%{transform: translateZ(100px);}
 		}
 	</style>
 </head>
 <body>
 	<div class="wrap">
-		<div class="box">
 			<div class="top">top</div>
 			<div class="right">right</div>
 			<div class="left">left</div>
 			<div class="bottom">bottom</div>
 			<div class="back">back</div>
 			<div class="face">face</div>
-		</div>
 	</div>
 </body>
 </html>
