@@ -1,0 +1,41 @@
+
+.wrap{
+	position: relative;
+	width: 463px;
+	height: 550px;
+	overflow: hidden;
+	float:left;
+	margin-right:10px;
+}
+.title{
+	position: absolute;
+	top:400px;
+	left:20px;
+	color: #333333;
+	font-size: 30px;
+	transition: all 0.3s;
+}
+.wrap img{
+	transition: all 0.3s;
+	transform: scale(1.1);
+}
+.content{
+	position: absolute;
+	top:440px;
+	left:20px;
+	color: #666;
+	letter-spacing: 1px;
+	opacity:0;
+	transition: all 0.3s;
+}
+	
+.wrap:hover .title{
+	top: 370px;
+}
+.wrap:hover .content{
+	top: 420px;
+	opacity:1;
+}
+.wrap:hover img{
+	transform: scale(1);
+}

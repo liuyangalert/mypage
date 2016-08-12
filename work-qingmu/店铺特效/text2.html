@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<style>
+ul,li,body{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.menu{
+    width:990px;
+    position:relative;
+}
+.menu a{
+    display:inline-block;
+    text-align:center;
+    float:left;
+    width:25%;
+    height:30px;
+    line-height:30px;
+    color:#333;
+    background-color:#eee;
+    cursor:pointer;
+    transition:all 1s ease 0s;
+}
+.menu a:hover{
+    background-color:#666;
+}
+.ad{
+    display:none;
+    position:absolute;
+    transition:all 1s ease 0s;
+    top:30px;
+    left:0;
+}
+.ad1{
+    display:none;
+}
+.ad li{
+    transition:all 1s ease 0s;
+    background-color:#ccc;
+    float:left;
+    width:237.5px;
+    height:200px;
+    border:1px solid #ccc;
+    margin:5px;
+    text-align:center;
+    line-height:200px;
+}
+.ad li:first-child{
+    margin-left:0px;
+}
+.ad li:last-child{
+    margin-right:0px;
+}
+.ad2 li{
+    background-color:red;
+}
+.ad3 li{
+    background-color:blue;
+}
+.ad4 li{
+    background-color:green;
+}
+.menu1:hover .ad{
+    display:block;
+    z-index:2;
+}
+.menu2:hover .ad{
+    display:block;
+    z-index:2;
+}
+.menu3:hover .ad{
+    display:block;
+    z-index:2;
+}
+.menu4:hover .ad{
+    display:block;
+    z-index:2;
+}
+
+#ad1:target{
+    display:block;
+}
+#ad2:target{
+    display:block;
+}
+#ad3:target{
+    display:block;
+}
+#ad4:target{
+    display:block;
+}
+</style>
+</head>
+
+<body>
+
+
+<ul class="menu">
+    <li class="menu1"><a href="#ad1">菜单1</a>
+        <ul class="ad ad1" id="ad1">
+            <li>ad1</li>
+            <li>ad1</li>
+            <li>ad1</li>
+            <li>ad1</li>
+        </ul></li>
+    <li class="menu2"><a href="#ad2">菜单2</a>
+        <ul class="ad ad2" id="ad2">
+            <li>ad2</li>
+            <li>ad2</li>
+            <li>ad2</li>
+            <li>ad2</li>
+        </ul></li>
+    <li class="menu3"><a href="#ad3">菜单3</a>
+        <ul class="ad ad3" id="ad3">
+            <li>ad3</li>
+            <li>ad3</li>
+            <li>ad3</li>
+            <li>ad3</li>
+        </ul>
+        </li>
+    <li class="menu4"><a href="#ad4">菜单4</a>
+        <ul class="ad ad4" id="ad4">
+            <li>ad4</li>
+            <li>ad4</li>
+            <li>ad4</li>
+            <li>ad4</li>
+        </ul>
+    </li> 
+</ul>
+
+
+
+
+
+
+</body>
+</html>

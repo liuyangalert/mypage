@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		.menu-7-22{
+			width:990px;
+			margin:20px auto;
+
+		}
+		.menu-7-22 a{
+			display:block;
+			float:left;
+			text-decoration:none;
+			color:#fff;
+			padding:5px 10px;
+			background-color:#333;
+			position:relative;
+			transition:all 0.5s ease ;
+		}
+		.menu-7-22 a::before,.menu-7-22 a::after{
+			content:'';
+			position:absolute;
+			width:0%;
+			height:2px;
+			background-color:#333;
+			transition:all 0.5s ease 0.5s;
+		}
+		.menu-7-22 a::before{
+			top:0px;
+			left:0;
+		}
+		.menu-7-22 a::after{
+			bottom:0px;
+			right:0;
+		}
+		.menu-7-22 a:hover::before,.menu-7-22 a:hover::after{
+			width:100%;
+		}
+		.menu-7-22 a:hover{
+			color:#000;
+			background-color:#eee;
+		}
+
+	</style>
+</head>
+<body>
+	
+
+
+	<div class="menu-7-22">
+		<a href="">首页</a>
+		<a href="">所有宝贝</a>
+		<a href="">热销</a>
+		<a href="">新品</a>
+	</div>
+</body>
+</html>
