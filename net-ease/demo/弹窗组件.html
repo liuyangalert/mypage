@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹窗组demo</title>
+<style>
+	body{
+		margin: 0;
+		font-family: '微软雅黑';
+		font-size: 16px;
+	}
+	.tq-model{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.2);
+	}
+	.tq-model-wrap{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 500px;
+		height: 250px;
+		border: 1px solid #666;
+		background-color: #eee;
+	}
+	.tq-model-title{
+		position: absolute;
+		width: 100%;
+		height: 40px;
+		text-align: left;
+		text-indent: 1em;
+		letter-spacing: 2px;
+		line-height: 40px;
+		color: #fff;
+		background-color: #009966;
+	}
+	.tq-model-close{
+		position: absolute;
+		top: 0;
+		right: 20px;
+	}
+	.tq-model-footer{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 100%;
+		height: 40px;
+	}
+	.tq-model-content{
+		position: absolute;
+		top: 40px;
+		left: 0;
+		padding:30px;
+		box-sizing: border-box;
+	}
+	.tq-model-true,.tq-model-cancel{
+		cursor: pointer;
+		width: 50%;
+		float: left;
+		text-align: center;
+		line-height: 40px;
+		background-color:#99CC99 ;
+		box-sizing: border-box;
+	}
+	.tq-model-true{
+		border-right: 1px solid #336699;
+	}
+	.tq-model-close{
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+	<button>show</button>
+	<button>show2</button>
+<script>
+var btn = document.getElementsByTagName('button')[0];
+var btn2 = document.getElementsByTagName('button')[1];
+	btn.onclick = function(){
+		var show = new tq();
+		show.ModelShow('111111111111');
+	}
+	btn2.onclick = function(){
+		var show = new tq();
+		show.ModelShow('2222222222');
+	}
+//创建一个tq的函数，因为我叫taoqun
+function tq(){}
+//添加原型方法
+tq.prototype={
+	// ModelShow方法，传入一个需要弹出提示的字符串
+	ModelShow : function(str){
+		//html模板
+		var completeStr ='<div class="tq-model">\
+							<div class="tq-model-wrap">\
+								<div class="tq-model-title">提醒<span class="tq-model-close">X</span></div>\
+								<div class="tq-model-content">'+str+'</div>\
+								<div class="tq-model-footer">\
+									<div class="tq-model-true">确定</div>\
+									<div class="tq-model-cancel">取消</div>\
+								</div>\
+							</div>\
+						</div>';
+		// 在页面中创建生成模板				
+		var div = document.createElement('div');
+		// 生成一个随机的id
+		var id = 'tq-model-'+parseInt(Math.random()*101090);
+			div.id = id;
+			div.innerHTML = completeStr;
+		document.body.appendChild(div);
+		//获取模板中按钮
+		var control = document.getElementById(id);
+		var tqTrue = control.getElementsByClassName('tq-model-true')[0];
+		var tqFalse = control.getElementsByClassName('tq-model-cancel')[0];
+		var close = control.getElementsByClassName('tq-model-close')[0];
+		//给控制按钮添加监听事件
+		tqTrue.addEventListener('click',function(){
+			console.log('yes');
+			document.body.removeChild(div);
+			return true;
+		});
+		tqFalse.addEventListener('click',function(){
+			console.log('cancel');
+			document.body.removeChild(div);
+			return false;
+		});
+		close.addEventListener('click',function(){
+			console.log('cancel');
+			document.body.removeChild(div);
+			return false;
+		});
+	}
+}
+</script>
+</body>
+</html>
