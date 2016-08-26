@@ -43,6 +43,7 @@ tq.prototype.ModelShow = function(str){
         return false;
     });
 },
+//添加监听事件
 tq.prototype.addEvent = function(element,type,handler){
     if(element.addEventListener){
         return element.addEventListener(type,handler,false);
@@ -52,6 +53,7 @@ tq.prototype.addEvent = function(element,type,handler){
         return element['on'+type] = handler;
     }
 },
+//移除监听事件
 tq.prototype.removeEvent = function(element,type,handler){
     if(element.removeEventListener){
         return element.removeEventListener(type,handler,false);
@@ -61,16 +63,23 @@ tq.prototype.removeEvent = function(element,type,handler){
         return element['on'+type] = null;
     }
 },
+//轮播事件左右上下移动，传入一个对象，对象中按照关键词绑定
 tq.prototype.showcarousel = function(obj){
+    //获取自定义的属性，若无则使用默认属性
     var Nobj = {};
+    Nobj.wrap = obj.wrap || 'tq-carousel';
     Nobj.next = obj.nextClassName || 'tq-next';
     Nobj.prev = obj.prevClassName || 'tq-prev';
-    Nobj.nav = obj.navClassName || 'active';
-    Nobj.style = obj.style || 'scrollX';
+    Nobj.nav = obj.navClassName || 'tq-carousel-nav';
+    Nobj.scrollStyle = obj.scrollStyle || 'scrollX';
+    Nobj.Imgs = obj.imgs || 'tq-carousel-img';
+    Nobj.selected = obj.navSelected || 'actives';
 
     var _this = this;
-    var carousel = document.getElementsByClassName('tq-carousel')[0];
-    var carouselImgs = carousel.getElementsByClassName('tq-carousel-img')[0];
+    var carousel = document.getElementsByClassName(Nobj.wrap)[0];
+    var carouselImgs = carousel.getElementsByClassName(Nobj.Imgs)[0];
+    var navWrap = carousel.getElementsByClassName(Nobj.nav)[0];
+    var navs = navWrap.getElementsByTagName('li');
     var Width = carouselImgs.offsetWidth;
     var Height = carouselImgs.offsetHeight;
     var Imgs = carouselImgs.getElementsByTagName('div');
@@ -82,20 +91,20 @@ tq.prototype.showcarousel = function(obj){
     function controlIndex(index){
           index = Windex(index);
           carouselImgs.setAttribute('control',index);
-          return index = carouselImgs.getAttribute('control');
+          return index;
     }
+
     //判断索引值
     function Windex(index){
         return (index>0 && index<Imgs.length)?index:index<0?Imgs.length-1:index>Imgs.length-1?0:index;
     }
-    //初始化，设置轮播图全部都归位,默认x轴
+
+    //判断X Y轴移动 调用轮播图滚动函数，
     function runImg(index,pattern,control){
         var Ocss;
-        index  = parseInt(index);
         var next = 0,nextHeight = 0,nextOPa = 0;
         if(control == false){
             next = index + 1;
-            console.log(next);
             next = Windex(next);
             
         }else{
@@ -111,9 +120,9 @@ tq.prototype.showcarousel = function(obj){
             case 'fade':
                    
                 break;
-            default:;
         }
 
+        //图片轮播函数
         function scroolx(Ocss,Number){
             for (var i = 0; i < Imgs.length; i++) {
                 Imgs[i].style[Ocss] = Number + 'px';
@@ -151,18 +160,37 @@ tq.prototype.showcarousel = function(obj){
             }
             
         }
+
+       
+
+    }
+    //绑定导航栏功能
+    navControl();
+    function navControl(){
+        for (var i = 0; i < navs.length; i++) {
+            navs[i].index = i;
+            _this.addEvent(navs[i],'click',function(){
+                console.log(this.index);
+                for (var i = 0; i < navs.length; i++) {
+                    navs[i].className = '';
+                }
+                this.className += ' ' + Nobj.selected;
+                runImg(this.index,Nobj.scrollStyle);
+            });
+        }
     }
 
+   
     //绑定上下点击事件
     _this.addEvent(next,'click',function(){
         index++;
         index = controlIndex(index);
-        runImg(index,'scrollY');
+        runImg(index,Nobj.scrollStyle);
     });
 
     _this.addEvent(prev,'click',function(){
         index--;
         index = controlIndex(index);
-        runImg(index,'scrollY',false);
+        runImg(index,Nobj.scrollStyle,false);
     });
 }

@@ -1,7 +1,7 @@
 @charset "utf-8";
 //定义变量
-$control:50px;
-$tipHeight:50px;
+$tqCarouselControl:50px;
+$tqTipsRound:20px;
 .wrap{
 	margin:50px 500px;
 	width:500px;
@@ -15,7 +15,7 @@ $tipHeight:50px;
 	.tq-prev,.tq-next{
 		position:absolute;
 		top:0;
-		width:$control;
+		width:$tqCarouselControl;
 		height:100%;
 		text-align:center;
 		background-color:#fff;
@@ -61,23 +61,28 @@ $tipHeight:50px;
 		}
 	}
 	.tq-carousel-nav{
-		z-index:99;
+		width:100%;	
+		z-index:9;
 		position:absolute;
-		bottom:0;
+		bottom:10px;
 		left:0;
 		right:0;
 		margin:0 auto;
-		&>div{
-			width:33.33%;
-			height:$tipHeight;
-			line-height:$tipHeight;
+		text-align:center;
+		& li{
+			display:inline-block;
+			width:$tqTipsRound;
+			height:$tqTipsRound;
+			line-height:$tqTipsRound;
+			border-radius:50%;
 			background-color:#99CC99;
-			float:left;
-			text-align:center;
 			cursor:pointer;
 			&:hover{
 				background-color:#009966;
 			}
+		}
+		.actives{
+			background-color:#009966;
 		}
 	}
 }

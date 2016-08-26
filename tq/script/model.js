@@ -1,10 +1,14 @@
 //轮播的类名
 var obj = {
-	ele:'wrap',
-	control:0,
+	wrap:'tq-carousel',
+	imgs:'tq-carousel-img',
 	nextClassName:'tq-next',
 	prevClassName:'tq-prev',
-	style:'scrollX',
+	navClassName:'tq-carousel-nav',
+	navSelected:'actives',
+	scrollStyle:'scrollX',
+	
+
 };
 var test = new tq();
 test.showcarousel(obj);
