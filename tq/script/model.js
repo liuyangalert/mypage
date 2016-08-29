@@ -6,7 +6,7 @@ var obj = {
 	prevClassName:'tq-prev',
 	navClassName:'tq-carousel-nav',
 	navSelected:'actives',
-	scrollStyle:'scrollX',
+	scrollStyle:'fade',
 	
 
 };

@@ -1,88 +1,9 @@
 @charset "utf-8";
 //定义变量
-$tqCarouselControl:50px;
-$tqTipsRound:20px;
+
 .wrap{
-	margin:50px 500px;
-	width:500px;
-	height:300px;
+	margin:50px auto;
+	width:971px;
+	height:455px;
 }
-.tq-carousel{
-	width:100%;
-	height:100%;
-	overflow:hidden;
-	position:relative;
-	.tq-prev,.tq-next{
-		position:absolute;
-		top:0;
-		width:$tqCarouselControl;
-		height:100%;
-		text-align:center;
-		background-color:#fff;
-		opacity:0;
-		z-index:99;
-		cursor:pointer;
-	}
-	.tq-prev{
-		left:0;
-	}
-	.tq-next{
-		right:0;
-	}
-	&:hover .tq-prev,&:hover .tq-next{
-			background-color:#fff;
-			opacity:0.2;
-		}
-	.tq-carousel-img{
-		position:absolute;
-		top:0;
-		left:0;
-		right:0;
-		bottom:0;
-		overflow:hidden;
-		.one,.two,.three{
-			width:100%;
-			height:100%;
-			position:absolute;
-			top:0;
-			left:0;
-			text-align:center;
-			color:#fff;
-			font-size:30px;
-		}
-		.one{
-			background-color:#FF6666;
-		}
-		.two{
-			background-color:#99CC66;
-		}
-		.three{
-			background-color:#333399;
-		}
-	}
-	.tq-carousel-nav{
-		width:100%;	
-		z-index:9;
-		position:absolute;
-		bottom:10px;
-		left:0;
-		right:0;
-		margin:0 auto;
-		text-align:center;
-		& li{
-			display:inline-block;
-			width:$tqTipsRound;
-			height:$tqTipsRound;
-			line-height:$tqTipsRound;
-			border-radius:50%;
-			background-color:#99CC99;
-			cursor:pointer;
-			&:hover{
-				background-color:#009966;
-			}
-		}
-		.actives{
-			background-color:#009966;
-		}
-	}
-}
+

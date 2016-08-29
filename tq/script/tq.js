@@ -5,7 +5,7 @@ function tq(){}
 // ModelShow方法，传入一个需要弹出提示的字符串
 tq.prototype.ModelShow = function(str){
     //html模板
-    var completeStr ='<div class="tq-model-wrap">\
+    var templateStr ='<div class="tq-model-wrap">\
                             <div class="tq-model-title">提醒<span class="tq-model-close">X</span></div>\
                             <div class="tq-model-content">'+str+'</div>\
                             <div class="tq-model-footer">\
@@ -19,7 +19,7 @@ tq.prototype.ModelShow = function(str){
     var id = 'tq-model-'+parseInt(Math.random()*101090);
     div.id = id;
     div.className = 'tq-model';
-    div.innerHTML = completeStr;
+    div.innerHTML = templateStr;
     document.body.appendChild(div);
     //获取模板中按钮
     var control = document.getElementById(id);
@@ -96,13 +96,16 @@ tq.prototype.showcarousel = function(obj){
 
     //判断索引值
     function Windex(index){
-        return (index>0 && index<Imgs.length)?index:index<0?Imgs.length-1:index>Imgs.length-1?0:index;
+        return (index>=0 && index<Imgs.length)?index:index<0?Imgs.length-1:index>Imgs.length-1?0:index;
     }
 
     //判断X Y轴移动 调用轮播图滚动函数，
     function runImg(index,pattern,control){
         var Ocss;
         var next = 0,nextHeight = 0,nextOPa = 0;
+        //清除定时器
+        clearInterval(timer);
+        
         if(control == false){
             next = index + 1;
             next = Windex(next);
@@ -110,6 +113,7 @@ tq.prototype.showcarousel = function(obj){
         }else{
             next = Windex(index-1);
         }
+        
         switch(pattern){
             case 'scrollY':
                 scroolx('top',Height); 
@@ -118,16 +122,17 @@ tq.prototype.showcarousel = function(obj){
                 scroolx('left',Width); 
                 break;
             case 'fade':
-                   
+                fade('opacity'); 
                 break;
         }
 
         //图片轮播函数
         function scroolx(Ocss,Number){
+            //默认遍历所有图片到最左侧
             for (var i = 0; i < Imgs.length; i++) {
                 Imgs[i].style[Ocss] = Number + 'px';
+            
             }
-            clearInterval(timer);
             var nextNumber = 0;
             if(control == false){
                 Imgs[next].style[Ocss] = nextNumber + 'px';
@@ -161,16 +166,42 @@ tq.prototype.showcarousel = function(obj){
             
         }
 
-       
-
+        function fade(Ocss){
+            for(var i=0;i<Imgs.length;i++){
+                Imgs[i].style[Ocss] = 0;
+            }
+            var nextNumber = 0;
+            Imgs[next].style[Ocss] = 1;
+            Imgs[index].style[Ocss] = 0;
+            timer = setInterval(function(){
+                if(nextNumber < 100){
+                     nextNumber += 10;
+                    Imgs[next].style[Ocss] = 1 - nextNumber/100;
+                    Imgs[index].style[Ocss] = nextNumber/100;
+                }else{
+                    nextNumber = 100;
+                    Imgs[next].style[Ocss] = 1 - nextNumber/100;
+                    Imgs[index].style[Ocss] = nextNumber/100;
+                }
+               
+            },50);
+        }
     }
+
     //绑定导航栏功能
     navControl();
-    function navControl(){
+    function navControl(number){
+        if( number != undefined ){
+            for (var i = 0; i < navs.length; i++) {
+                navs[i].className = '';
+            }
+            console.log(number);
+            navs[number].className += ' '+ Nobj.selected;
+        } 
+
         for (var i = 0; i < navs.length; i++) {
             navs[i].index = i;
             _this.addEvent(navs[i],'click',function(){
-                console.log(this.index);
                 for (var i = 0; i < navs.length; i++) {
                     navs[i].className = '';
                 }
