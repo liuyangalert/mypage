@@ -87,16 +87,14 @@ tq.prototype.showcarousel = function(obj){
     var prev = carousel.getElementsByClassName(Nobj.prev)[0];
     var index=0;
     var timer = null;
-    //初始化，设置属性，轮播现在是第几个
-    function controlIndex(index){
-          index = Windex(index);
-          carouselImgs.setAttribute('control',index);
-          return index;
-    }
+    var timers = null;
 
-    //判断索引值
+
+    //判断索引值并设置父元素属性索引
     function Windex(index){
-        return (index>=0 && index<Imgs.length)?index:index<0?Imgs.length-1:index>Imgs.length-1?0:index;
+        index = (index>=0 && index<Imgs.length)?index:index<0?Imgs.length-1:index>Imgs.length-1?0:index;
+        carouselImgs.setAttribute('control',index);
+        return index;
     }
 
     //判断X Y轴移动 调用轮播图滚动函数，
@@ -105,7 +103,16 @@ tq.prototype.showcarousel = function(obj){
         var next = 0,nextHeight = 0,nextOPa = 0;
         //清除定时器
         clearInterval(timer);
-        
+
+        //给导航栏增加效果
+        if( index != undefined ){
+            for (var i = 0; i < navs.length; i++) {
+                navs[i].className = '';
+            }
+            navs[index].className += ' '+ Nobj.selected;
+        } 
+
+        //判断左右键 next prev
         if(control == false){
             next = index + 1;
             next = Windex(next);
@@ -114,6 +121,7 @@ tq.prototype.showcarousel = function(obj){
             next = Windex(index-1);
         }
         
+        //判断移动轮播模式
         switch(pattern){
             case 'scrollY':
                 scroolx('top',Height); 
@@ -126,7 +134,7 @@ tq.prototype.showcarousel = function(obj){
                 break;
         }
 
-        //图片轮播函数
+        //图片轮播左右上下函数
         function scroolx(Ocss,Number){
             //默认遍历所有图片到最左侧
             for (var i = 0; i < Imgs.length; i++) {
@@ -139,7 +147,7 @@ tq.prototype.showcarousel = function(obj){
                 Imgs[index].style[Ocss] = '-' + Number+'px';
                  timer = setInterval(function(){
                     if(nextNumber < Number){
-                        nextNumber +=10;
+                        nextNumber +=Number/10;
                         Imgs[next].style[Ocss] = nextNumber + 'px';
                         Imgs[index].style[Ocss] = '-' + (Number - nextNumber)+'px';
                    }else{
@@ -153,7 +161,7 @@ tq.prototype.showcarousel = function(obj){
                 Imgs[index].style[Ocss] = Number+'px';
                 timer = setInterval(function(){
                     if(nextNumber < Number){
-                        nextNumber +=10;
+                        nextNumber +=Number/10;
                         Imgs[next].style[Ocss] = '-' + nextNumber + 'px';
                         Imgs[index].style[Ocss] = Number - nextNumber+'px';
                    }else{
@@ -161,11 +169,12 @@ tq.prototype.showcarousel = function(obj){
                         Imgs[next].style[Ocss] = '-' + nextNumber + 'px';
                         Imgs[index].style[Ocss] = Number - nextNumber+'px' ;
                    }
-                },20)
+                },50)
             }
             
         }
 
+        //图片轮播透明函数
         function fade(Ocss){
             for(var i=0;i<Imgs.length;i++){
                 Imgs[i].style[Ocss] = 0;
@@ -188,17 +197,9 @@ tq.prototype.showcarousel = function(obj){
         }
     }
 
-    //绑定导航栏功能
+    //绑定导航栏功能，点击导航栏切换
     navControl();
-    function navControl(number){
-        if( number != undefined ){
-            for (var i = 0; i < navs.length; i++) {
-                navs[i].className = '';
-            }
-            console.log(number);
-            navs[number].className += ' '+ Nobj.selected;
-        } 
-
+    function navControl(){
         for (var i = 0; i < navs.length; i++) {
             navs[i].index = i;
             _this.addEvent(navs[i],'click',function(){
@@ -206,22 +207,41 @@ tq.prototype.showcarousel = function(obj){
                     navs[i].className = '';
                 }
                 this.className += ' ' + Nobj.selected;
-                runImg(this.index,Nobj.scrollStyle);
+                index = this.index;
+                runImg(index,Nobj.scrollStyle);
             });
         }
     }
 
+    //自动轮播函数
+    ImgGo();
+    function ImgGo(){
+        //鼠标移上去清除轮播
+        timers  = setInterval(function(){
+                index++;
+                index = Windex(index);
+                runImg(index,Nobj.scrollStyle);
+        },2000);
+    }
    
-    //绑定上下点击事件
+    //绑定控制点击事件
     _this.addEvent(next,'click',function(){
         index++;
-        index = controlIndex(index);
+        index = Windex(index);
         runImg(index,Nobj.scrollStyle);
     });
 
     _this.addEvent(prev,'click',function(){
         index--;
-        index = controlIndex(index);
+        index = Windex(index);
         runImg(index,Nobj.scrollStyle,false);
+    });
+
+     _this.addEvent(carousel,'mouseover',function(){
+            clearInterval(timers);
+    });
+
+    _this.addEvent(carousel,'mouseout',function(){
+        ImgGo();
     });
 }
