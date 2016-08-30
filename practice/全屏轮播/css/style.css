@@ -1,0 +1,96 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.one, .two, .three, .four {
+  width: 50%;
+  height: 50%;
+  position: absolute; }
+  .one > div, .two > div, .three > div, .four > div {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .one > div img, .two > div img, .three > div img, .four > div img {
+      opacity: 1; }
+    .one > div:hover img, .two > div:hover img, .three > div:hover img, .four > div:hover img {
+      transition: all 0.5s linear;
+      transform: scale(2);
+      opacity: 0; }
+
+.one {
+  top: 0;
+  left: 0;
+  background-color: #f06060; }
+
+.two {
+  top: 0;
+  left: 50%;
+  background-color: #fa987d; }
+
+.three {
+  top: 50%;
+  left: 0;
+  background-color: #72cca7; }
+
+.four {
+  top: 50%;
+  left: 50%;
+  background-color: #10a296; }
+
+@media screen and (max-width: 990px) {
+  .one, .two, .three, .four {
+    width: 100%;
+    height: 25%;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px #666; }
+    .one > div, .two > div, .three > div, .four > div {
+      width: 20%;
+      max-width: 140px;
+      min-width: 80px;
+      height: 50%;
+      max-height: 140px;
+      min-height: 80px;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .one > div img, .two > div img, .three > div img, .four > div img {
+        width: 100%;
+        position: absolute; }
+      .one > div:hover img, .two > div:hover img, .three > div:hover img, .four > div:hover img {
+        transition: none;
+        opacity: 1; } }
+@media screen and (max-height: 500px) {
+  .one, .two, .three, .four {
+    width: 25%;
+    height: 100%;
+    position: static;
+    float: left; }
+    .one > div, .two > div, .three > div, .four > div {
+      width: 50%;
+      max-width: 140px;
+      min-width: 80px;
+      height: 50%;
+      top: 50%;
+      left: 50%;
+      max-height: 140px;
+      min-height: 80px;
+      position: relative;
+      transform: translate(-50%, -50%); }
+      .one > div:hover img, .two > div:hover img, .three > div:hover img, .four > div:hover img {
+        width: 100%;
+        transition: none;
+        transform: none;
+        opacity: 1; } }
+@media screen and (max-height: 320px) and (max-width: 300px) {
+  img {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
