@@ -5,14 +5,7 @@ function tq(){}
 // ModelShow方法，传入一个需要弹出提示的字符串
 tq.prototype.ModelShow = function(str){
     //html模板
-    var templateStr ='<div class="tq-model-wrap">\
-                            <div class="tq-model-title">提醒<span class="tq-model-close">X</span></div>\
-                            <div class="tq-model-content">'+str+'</div>\
-                            <div class="tq-model-footer">\
-                                <div class="tq-model-true">确定</div>\
-                                <div class="tq-model-cancel">取消</div>\
-                            </div>\
-                        </div>';
+    var templateStr ='<div class="tq-model-wrap"><div class="tq-model-title">提醒<span class="tq-model-close">X</span></div><div class="tq-model-content">'+str+'</div><div class="tq-model-footer"><div class="tq-model-true">确定</div><div class="tq-model-cancel">取消</div></div></div>';
     // 在页面中创建生成模板
     var div = document.createElement('div');
     // 生成一个随机的id
@@ -42,7 +35,7 @@ tq.prototype.ModelShow = function(str){
         document.body.removeChild(div);
         return false;
     });
-},
+};
 //添加监听事件
 tq.prototype.addEvent = function(element,type,handler){
     if(element.addEventListener){
@@ -50,9 +43,9 @@ tq.prototype.addEvent = function(element,type,handler){
     }else if(element.attachEvent){
         return element.attachEvent('on'+type,handler);
     }else{
-        return element['on'+type] = handler;
+        return (element['on'+type]=handler);
     }
-},
+};
 //移除监听事件
 tq.prototype.removeEvent = function(element,type,handler){
     if(element.removeEventListener){
@@ -60,9 +53,9 @@ tq.prototype.removeEvent = function(element,type,handler){
     }else if(element.detachEvent){
         return element.detachEvent('on'+type,handler);
     }else{
-        return element['on'+type] = null;
+        return (element['on'+type] = null);
     }
-},
+};
 //轮播事件左右上下移动，传入一个对象，对象中按照关键词绑定
 tq.prototype.showcarousel = function(obj){
     //获取自定义的属性，若无则使用默认属性
@@ -105,32 +98,32 @@ tq.prototype.showcarousel = function(obj){
         clearInterval(timer);
 
         //给导航栏增加效果
-        if( index != undefined ){
+        if( index !== undefined ){
             for (var i = 0; i < navs.length; i++) {
                 navs[i].className = '';
             }
             navs[index].className += ' '+ Nobj.selected;
-        } 
+        }
 
         //判断左右键 next prev
-        if(control == false){
+        if(control === false){
             next = index + 1;
             next = Windex(next);
-            
+
         }else{
             next = Windex(index-1);
         }
-        
+
         //判断移动轮播模式
         switch(pattern){
             case 'scrollY':
-                scroolx('top',Height); 
+                scroolx('top',Height);
                 break;
             case 'scrollX':
-                scroolx('left',Width); 
+                scroolx('left',Width);
                 break;
             case 'fade':
-                fade('opacity'); 
+                fade('opacity');
                 break;
         }
 
@@ -139,10 +132,10 @@ tq.prototype.showcarousel = function(obj){
             //默认遍历所有图片到最左侧
             for (var i = 0; i < Imgs.length; i++) {
                 Imgs[i].style[Ocss] = Number + 'px';
-            
+
             }
             var nextNumber = 0;
-            if(control == false){
+            if(control === false){
                 Imgs[next].style[Ocss] = nextNumber + 'px';
                 Imgs[index].style[Ocss] = '-' + Number+'px';
                  timer = setInterval(function(){
@@ -155,7 +148,7 @@ tq.prototype.showcarousel = function(obj){
                         Imgs[next].style[Ocss] = nextNumber + 'px';
                         Imgs[index].style[Ocss] = '-' +(Number - nextNumber)+'px' ;
                    }
-                },20)
+                },20);
             }else{
                 Imgs[next].style[Ocss] = nextNumber + 'px';
                 Imgs[index].style[Ocss] = Number+'px';
@@ -169,9 +162,9 @@ tq.prototype.showcarousel = function(obj){
                         Imgs[next].style[Ocss] = '-' + nextNumber + 'px';
                         Imgs[index].style[Ocss] = Number - nextNumber+'px' ;
                    }
-                },50)
+                },50);
             }
-            
+
         }
 
         //图片轮播透明函数
@@ -192,7 +185,7 @@ tq.prototype.showcarousel = function(obj){
                     Imgs[next].style[Ocss] = 1 - nextNumber/100;
                     Imgs[index].style[Ocss] = nextNumber/100;
                 }
-               
+
             },50);
         }
     }
@@ -202,14 +195,16 @@ tq.prototype.showcarousel = function(obj){
     function navControl(){
         for (var i = 0; i < navs.length; i++) {
             navs[i].index = i;
-            _this.addEvent(navs[i],'click',function(){
-                for (var i = 0; i < navs.length; i++) {
-                    navs[i].className = '';
-                }
-                this.className += ' ' + Nobj.selected;
-                index = this.index;
-                runImg(index,Nobj.scrollStyle);
-            });
+            _this.addEvent(navs[i],'click', clearClass);
+        }
+
+        function clearClass(obj){
+          for (var i = 0; i < navs.length; i++) {
+              navs[i].className = '';
+          }
+          this.className += ' ' + Nobj.selected;
+          index = this.index;
+          runImg(index,Nobj.scrollStyle);
         }
     }
 
@@ -223,7 +218,7 @@ tq.prototype.showcarousel = function(obj){
                 runImg(index,Nobj.scrollStyle);
         },2000);
     }
-   
+
     //绑定控制点击事件
     _this.addEvent(next,'click',function(){
         index++;
@@ -244,4 +239,4 @@ tq.prototype.showcarousel = function(obj){
     _this.addEvent(carousel,'mouseout',function(){
         ImgGo();
     });
-}
+};

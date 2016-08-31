@@ -1,0 +1,1 @@
+var obj={wrap:"tq-carousel",imgs:"tq-carousel-img",nextClassName:"tq-next",prevClassName:"tq-prev",navClassName:"tq-carousel-nav",navSelected:"actives",scrollStyle:"scrollX"},test=new tq;test.showcarousel(obj);

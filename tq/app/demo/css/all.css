@@ -1,3 +1,8 @@
+.wrap {
+  margin: 50px auto;
+  width: 971px;
+  height: 455px; }
+
 body {
   margin: 0;
   font-family: 'Microsoft Yahei';
@@ -135,5 +140,3 @@ body {
         background-color: #009966; }
     .tq-carousel .tq-carousel-nav .actives {
       background-color: #009966; }
-
-/*# sourceMappingURL=tq-style.css.map */
