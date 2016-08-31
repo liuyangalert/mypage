@@ -7,8 +7,12 @@ var obj = {
 	navClassName:'tq-carousel-nav',
 	navSelected:'actives',
 	scrollStyle:'scrollX',
-	
+
 
 };
 var test = new tq();
 test.showcarousel(obj);
+var btn = document.getElementsByTagName('button')[0];
+test.addEvent(btn,'click',function(){
+	test.ModelShow('aaa');
+});
