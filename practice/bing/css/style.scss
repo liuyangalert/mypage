@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body{
+  margin:0;
+  background: url(http://s.cn.bing.net/az/hprichbg/rb/MoscowSkyline_ZH-CN10266976296_1920x1080.jpg) no-repeat top center;
+}
+body,html{
+  width:100%;
+  height:100%;
+}
+
+$search:50px;
+.search{
+  width:500px;
+  margin:100px auto 0;
+  input{
+    margin:0;
+    padding:0;
+    outline:0;
+    line-height:$search;
+    height:$search;
+    border:none;
+    vertical-align:middle;
+  }
+  input[type="text"]{
+    wodth:400px;
+    text-indent:10px;
+    font-size:25px;
+    height:$search;
+  }
+  input[type="button"]{
+    width:100px;
+    font-size:15px;
+    height:$search;
+    cursor:pointer;
+    &:hover{
+      background-color:#2d80e6;
+      color:#fff;
+    }
+  }
+}
