@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf379c0c-fe65-47b4-bf90-e99093fc2e29" name="Default" comment="add bing">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net-ease/big-work/css/model.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net-ease/big-work/css/reset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net-ease/big-work/css/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net-ease/big-work/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net-ease/big-work/js/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net-ease/big-work/js/tool.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/net-ease/big-work/lib/md5.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tq/app/demo/js/model.js" afterPath="$PROJECT_DIR$/tq/app/demo/js/model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/index.html" afterPath="$PROJECT_DIR$/net-ease/index.html" />
     </list>
     <ignored path="mypage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +23,7 @@
     <favorites_list name="mypage" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,6 +60,7 @@
         <option value="$PROJECT_DIR$/net-ease/big-work/css/model.scss" />
         <option value="$PROJECT_DIR$/net-ease/big-work/css/style.scss" />
         <option value="$PROJECT_DIR$/net-ease/big-work/js/script.js" />
+        <option value="$PROJECT_DIR$/net-ease/index.html" />
       </list>
     </option>
   </component>
@@ -131,6 +125,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,94 +265,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net-ease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="big-work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net-ease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="big-work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net-ease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="big-work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net-ease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="big-work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -505,6 +415,7 @@
       <workItem from="1472876166710" duration="22681000" />
       <workItem from="1472914910065" duration="7234000" />
       <workItem from="1472955173715" duration="22517000" />
+      <workItem from="1473004670983" duration="73000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1470132393768</created>
@@ -524,7 +435,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71684000" />
+    <option name="totallyTimeSpent" value="71757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -534,20 +445,20 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20168954" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -573,13 +484,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/practice/banner-carousel/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practice/banner-margin/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -668,13 +572,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tq/css/style.css" />
     <entry file="file://$PROJECT_DIR$/css/test.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/test.css">
@@ -731,7 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="502" column="24" selection-start-line="502" selection-start-column="19" selection-end-line="502" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,13 +665,13 @@
     <entry file="file://$PROJECT_DIR$/net-ease/big-work/css/style.css.css.map" />
     <entry file="file://$PROJECT_DIR$/net-ease/big-work/index.html___jb_tmp___" />
     <entry file="file://$PROJECT_DIR$/net-ease/big-work/css/style.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/net-ease/big-work/css/style.css">
@@ -789,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="173" selection-start-line="0" selection-start-column="173" selection-end-line="0" selection-end-column="173" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,29 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="130" column="14" selection-start-line="130" selection-start-column="14" selection-end-line="130" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!block;n#getCookieObj#0;n#getCookieObj#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#addEvent#0;n#addEvent#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#removeEvent#0;n#removeEvent#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#getajax#0;n#getajax#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#carousel#0;n#carousel#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <element signature="e#5459#5505#0" expanded="false" />
-            <element signature="e#5558#5593#0" expanded="false" />
-            <element signature="n#!!block;n#runImg#0;n#!!block;n#carousel#0;n#carousel#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#timerRun#0;n#!!block;n#carousel#0;n#carousel#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#imgLngth#0;n#!!block;n#carousel#0;n#carousel#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#navLive#0;n#!!block;n#carousel#0;n#carousel#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#spanColor#0;n#!!block;n#carousel#0;n#carousel#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#spanControl#0;n#!!block;n#carousel#0;n#carousel#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <marker date="1472999288249" expanded="true" signature="2959:2997" placeholder="..." />
-            <marker date="1472999288249" expanded="true" signature="2959:3086" placeholder="..." />
-            <marker date="1472999288249" expanded="true" signature="2959:3280" placeholder="..." />
-            <marker date="1472999288249" expanded="false" signature="2959:3319" placeholder="..." />
-            <marker date="1472999288249" expanded="true" signature="2998:3036" placeholder="..." />
-            <marker date="1472999288249" expanded="true" signature="2998:3046" placeholder="..." />
-            <marker date="1472999288249" expanded="true" signature="2998:3066" placeholder="..." />
-            <marker date="1472999288249" expanded="true" signature="2998:3086" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -871,12 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="559">
           <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding>
-            <element signature="e#148#228#0" expanded="false" />
-            <element signature="n#!!block;n#tipTrue#0" expanded="false" />
-            <element signature="n#!!block;n#passOnline#0" expanded="false" />
-            <element signature="e#1781#1935#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -884,10 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#129#323#0" expanded="false" />
-            <element signature="e#335#397#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -895,20 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="285" column="20" selection-start-line="285" selection-start-column="20" selection-end-line="285" selection-end-column="20" />
-          <folding>
-            <element signature="e#28#97#0" expanded="false" />
-            <element signature="e#109#245#0" expanded="false" />
-            <element signature="e#259#304#0" expanded="false" />
-            <element signature="e#394#551#0" expanded="false" />
-            <element signature="e#560#755#0" expanded="false" />
-            <element signature="e#766#1581#0" expanded="false" />
-            <element signature="e#1593#2252#0" expanded="false" />
-            <element signature="e#2265#2719#0" expanded="false" />
-            <element signature="e#2734#4049#0" expanded="false" />
-            <element signature="e#4059#4709#0" expanded="false" />
-            <element signature="e#4108#4319#0" expanded="false" />
-            <element signature="e#4335#4707#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -920,6 +772,16 @@
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net-ease/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
