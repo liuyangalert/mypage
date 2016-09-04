@@ -1,0 +1,23 @@
+@charset "UTF-8";
+//变量 设置宽度
+$wrapWidth:1206px;
+.link{
+  color:#21a557;
+  &:hover{
+    text-decoration:underline;
+  }
+}
+.close-tip{
+  display: inline-block;
+  width:10px;
+  height:10px;
+  vertical-align:middle;
+  background-image:url(../images/net-icon.png);
+  background-position:-2px -5px;
+  background-repeat:no-repeat;
+}
+.autocenter{
+  width:$wrapWidth;
+  margin:0 auto;
+  position: relative;
+}

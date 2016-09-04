@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'HSGB';
+  src: url("fonts/Hiragino Sans GB W3.otf"); }
+.header-tip {
+  width: 100%;
+  font-size: 12px;
+  font-family: '微软雅黑';
+  line-height: 22px;
+  background-color: #f3f3f3; }
+  .header-tip p {
+    overflow: hidden; }
+
+.no-tip-angin {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.header-top {
+  padding: 35px 0;
+  height: 20px;
+  vertical-align: middle; }
+  .header-top .logo span.icon {
+    display: inline-block;
+    width: 72px;
+    height: 20px;
+    vertical-align: middle;
+    background: url("../images/net-icon.png") no-repeat 0px -42px; }
+  .header-top .title {
+    display: inline;
+    position: relative;
+    bottom: -4px;
+    color: #333333;
+    font-family: 'HSGB';
+    font-size: 22px;
+    ling-height: 20px;
+    margin-left: 13px;
+    margin-right: 30px; }
+  .header-top .guanzhu .attention {
+    display: inline-block;
+    width: 54px;
+    height: 21px;
+    margin-right: 15px;
+    border-radius: 3px;
+    background-color: #21a557;
+    text-align: center;
+    line-height: 21px;
+    color: #fff;
+    font-size: 12px;
+    vertical-align: middle;
+    font-family: '宋体','SimSun';
+    cursor: pointer; }
+    .header-top .guanzhu .attention:hover {
+      background-color: #2fb556; }
+    .header-top .guanzhu .attention .icon {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 5px;
+      background: url("../images/net-icon.png") -19px -6px;
+      vertical-align: middle; }
+  .header-top .guanzhu .fans {
+    display: inline-block;
+    color: #666666;
+    font-size: 12px;
+    vertical-align: middle;
+    font-family: '宋体','SimSun'; }
+    .header-top .guanzhu .fans span {
+      padding-left: 3px; }
+  .header-top .guanzhu2 {
+    padding: 4px 7px;
+    border: 1px solid #efefef; }
+    .header-top .guanzhu2 .attention {
+      background: none;
+      color: #333333;
+      position: relative;
+      margin-right: 8px;
+      cursor: not-allowed; }
+      .header-top .guanzhu2 .attention .icon {
+        background: url("../images/net-icon.png") -37px -7px; }
+      .header-top .guanzhu2 .attention:hover {
+        background: none; }
+    .header-top .guanzhu2 .attention:after {
+      content: "";
+      position: absolute;
+      background-color: #cccccc;
+      right: 0;
+      top: 5px;
+      width: 1px;
+      height: 10px; }
+    .header-top .guanzhu2 .fans {
+      color: #999999; }
+      .header-top .guanzhu2 .fans span {
+        display: none; }
+      .header-top .guanzhu2 .fans:hover {
+        color: #21a557;
+        text-decoration: underline; }
+  .header-top .nav-right {
+    float: right; }
+    .header-top .nav-right a {
+      float: left;
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 30px;
+      font-family: HSGB; }
+      .header-top .nav-right a:hover {
+        color: #21a557; }
+    .header-top .nav-right .search {
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      margin: 0;
+      background: url("../images/net-icon.png") no-repeat -64px -2px; }
+      .header-top .nav-right .search:hover {
+        background: url("../images/net-icon.png") no-repeat -91px -2px; }
+
+.login-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99; }
+  .login-wrap .login-modal {
+    width: 388px;
+    height: 288px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px 50px 38px 40px;
+    background-color: #fff;
+    opacity: 1;
+    box-sizing: border-box; }
+  .login-wrap .login-title {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: '微软雅黑', 'Microsoft YaHei';
+    color: #444444; }
+  .login-wrap .login-close {
+    display: inline-block;
+    width: 23px;
+    height: 22px;
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    cursor: pointer;
+    background: url("../images/net-icon.png") no-repeat -106px -41px; }
+  .login-wrap input {
+    width: 291px;
+    height: 43px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "微软雅黑",'microsoft yahei'; }
+  .login-wrap input[type='text'] {
+    margin: 15px 0 0 1px;
+    border: 1px solid #dfdfdf;
+    text-indent: 10px; }
+  .login-wrap input[type='submit'] {
+    margin-top: 30px;
+    background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#2fb555), to(#128e29));
+    background: -webkit-linear-gradient(315deg, #2fb555, #128e29);
+    color: #fff;
+    cursor: pointer;
+    border-right: 2px solid #d5e3da;
+    border-bottom: 2px solid #d5e3da; }
+
+.carousel {
+  width: 1652px;
+  height: 460px; }
+  .carousel .carousel-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pisition: absolute;
+    top: 0;
+    left: 0; }
+    .carousel .carousel-img > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .carousel .carousel-nav {
+    z-index: 3;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center; }
+    .carousel .carousel-nav span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #000;
+      margin: 0 5px;
+      cursor: pointer; }
+    .carousel .carousel-nav .selected {
+      background-color: #fff; }
+
+.content-nav {
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between; }
+  .content-nav .content-nav-wrap {
+    width: 360px; }
+  .content-nav .img-wrap {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+    border-radius: 50%;
+    background: url("../images/net-icon.png") #39a030 no-repeat 0 -82px; }
+  .content-nav .openclass {
+    background-position: 20px -62px; }
+  .content-nav .cloudClassroom {
+    background-position: -53px -62px; }
+  .content-nav .mooc {
+    background-position: -127px -62px; }
+  .content-nav .centent {
+    width: 240px;
+    padding: 0 15px;
+    overflow: hidden;
+    font-family: "微软雅黑", 'microsoft yahei'; }
+    .content-nav .centent h4 {
+      font-size: 20px;
+      line-height: 20px;
+      color: #333333;
+      margin-bottom: 15px; }
+    .content-nav .centent p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #666666;
+      margin-bottom: 34px; }
+    .content-nav .centent a.link {
+      color: #39a030; }
+
+/*# sourceMappingURL=style.css.map */
