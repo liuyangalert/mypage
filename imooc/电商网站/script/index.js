@@ -37,14 +37,14 @@ function banner_show () {
 	});
 	var timer = setInterval(function(){
 					num++;
-					
+
 					if( num>(Oindex.length-1)){
 						num = 0;
 					}
 					if( num<0){
 						num=Oindex.length-1;
 					}
-					
+
 					$("#banner").animate({
 						left:-Owidth*num+"px",
 					},300)
@@ -90,12 +90,12 @@ function content_ad(id){
 				$(id).children(".content_left_ad").children("li").eq(this.index).animate({"left":"0px","z-index":"-1"},300);
 				$(x).css('z-index','396');
 			}
-			
-			
+
+
 		});
-		
+
 	}
-		
+
 }
 function top1(){
 	 var s = $(".top_btn")[0];
@@ -107,8 +107,8 @@ function top1(){
 	 		$(s).hide();
 		 }
 	 	}
-	 	,300) 
-	 s.onclick=function(){ 
+	 	,300)
+	 s.onclick=function(){
 	 	$("body").animate({scrollTop:0},500);
 	 }
 }
@@ -120,11 +120,11 @@ function immm(cls){
 		$(this).stop();
 		$(this).animate({
 			left:lf+5+"px"
-		},300); 
+		},300);
 	},function(){
 		$(this).stop();
 		$(this).animate({
 			left:lf
-		},300); 
+		},300);
 	});
 }
