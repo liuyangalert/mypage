@@ -85,6 +85,8 @@ a {
 }
 .footer {
   margin-top: 50px;
+  background-color: #ce1029;
+  color: #fff;
 }
 .footer p {
   padding: 5px 10px;

@@ -4,6 +4,10 @@
     <option name="PER_PROJECT_SETTINGS">
       <value />
     </option>
+<<<<<<< HEAD
     <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />
+=======
+    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default (1)" />
+>>>>>>> aa67644d46fda557f0f2432f4cfb8150471bd2c6
   </component>
 </project>
