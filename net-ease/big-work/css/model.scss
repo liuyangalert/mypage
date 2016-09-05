@@ -1,6 +1,10 @@
 @charset "UTF-8";
 //变量 设置宽度
 $wrapWidth:1206px;
+@font-face{
+  font-family:'HSGB';
+  src:url("fonts/Hiragino Sans GB W3.otf");
+}
 .link{
   color:#21a557;
   &:hover{

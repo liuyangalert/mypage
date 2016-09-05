@@ -74,3 +74,16 @@ tq.carousel({
     selectedClass:'selected',
 });
 //轮播结束
+
+tq.getajax({
+    url:'http://study.163.com/webDev/couresByCategory.htm',
+    data:{
+        pageNo:2,
+        psize:2,
+        type:10
+    },
+    success:function(data){
+        console.log(data);
+    }
+
+});
