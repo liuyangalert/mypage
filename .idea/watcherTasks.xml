@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <TaskOptions isEnabled="true">
-<<<<<<< HEAD
       <option name="arguments" value="--no-cache --update $FileName$:$FileNameWithoutExtension$.css" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" value="Compiles .scss files into .css files" />
@@ -22,8 +21,6 @@
       <envs />
     </TaskOptions>
     <TaskOptions isEnabled="true">
-=======
->>>>>>> aa67644d46fda557f0f2432f4cfb8150471bd2c6
       <option name="arguments" value="--no-color $FileName$" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" value="Compiles .less files into .css files" />
@@ -48,27 +45,5 @@
       <option name="workingDir" value="$FileDir$" />
       <envs />
     </TaskOptions>
-<<<<<<< HEAD
-=======
-    <TaskOptions isEnabled="true">
-      <option name="arguments" value="--no-cache --update $FileName$:$FileNameWithoutExtension$.css" />
-      <option name="checkSyntaxErrors" value="true" />
-      <option name="description" value="Compiles .scss files into .css files" />
-      <option name="exitCodeBehavior" value="ERROR" />
-      <option name="fileExtension" value="scss" />
-      <option name="immediateSync" value="true" />
-      <option name="name" value="SCSS" />
-      <option name="output" value="$FileNameWithoutExtension$.css" />
-      <option name="outputFilters">
-        <array />
-      </option>
-      <option name="outputFromStdout" value="false" />
-      <option name="program" value="C:/Ruby22/bin/sass.bat" />
-      <option name="scopeName" value="Project Files" />
-      <option name="trackOnlyRoot" value="true" />
-      <option name="workingDir" value="$FileDir$" />
-      <envs />
-    </TaskOptions>
->>>>>>> aa67644d46fda557f0f2432f4cfb8150471bd2c6
   </component>
 </project>

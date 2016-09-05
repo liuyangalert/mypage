@@ -45,8 +45,8 @@ function passOnline(){
         url:'http://study.163.com/webDev/login.htm',
         type:'GET',
         data:{
-            userName:hex_md5(cookie.userName),
-            password:hex_md5(cookie.password)
+            userName:cookie.userName,
+            password:cookie.password
         },
         success:function(data){
             if(data == 1){
