@@ -5,6 +5,16 @@ $wrapWidth:1206px;
   font-family:'HSGB';
   src:url("fonts/Hiragino Sans GB W3.otf");
 }
+.clearfix{
+  zoom:1;
+  &:after{
+    content:'';
+    display:block;
+    height:0;
+    overflow:hidden;
+    clear:both;
+  }
+}
 .link{
   color:#21a557;
   &:hover{
