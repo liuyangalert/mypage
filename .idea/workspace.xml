@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="745d8413-2135-48ba-a43f-2c12d7a0e8ea" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jscript/Jscript.js" afterPath="$PROJECT_DIR$/jscript/Jscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/css/model.css" afterPath="$PROJECT_DIR$/net-ease/big-work/css/model.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/css/model.css.map" afterPath="$PROJECT_DIR$/net-ease/big-work/css/model.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/css/model.scss" afterPath="$PROJECT_DIR$/net-ease/big-work/css/model.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/css/style.css" afterPath="$PROJECT_DIR$/net-ease/big-work/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/css/style.css.map" afterPath="$PROJECT_DIR$/net-ease/big-work/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/css/style.scss" afterPath="$PROJECT_DIR$/net-ease/big-work/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/index.html" afterPath="$PROJECT_DIR$/net-ease/big-work/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/todolist/index.html" afterPath="$PROJECT_DIR$/practice/todolist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/bing/css/style.css" afterPath="$PROJECT_DIR$/practice/bing/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/bing/css/style.css.map" afterPath="$PROJECT_DIR$/practice/bing/css/style.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/bing/css/style.scss" afterPath="$PROJECT_DIR$/practice/bing/css/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/bing/index.html" afterPath="$PROJECT_DIR$/practice/bing/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/bing/js/script.js" afterPath="$PROJECT_DIR$/practice/bing/js/script.js" />
     </list>
     <ignored path="mypage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,6 +41,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/jscript/Jscript.js" />
         <option value="$PROJECT_DIR$/practice/todolist/index.html" />
+        <option value="$PROJECT_DIR$/practice/bing/css/style.scss" />
+        <option value="$PROJECT_DIR$/practice/bing/js/script.js" />
+        <option value="$PROJECT_DIR$/practice/bing/index.html" />
       </list>
     </option>
   </component>
@@ -85,6 +83,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -117,10 +117,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,11 +260,12 @@
       <updated>1473126230097</updated>
       <workItem from="1473126234556" duration="3440000" />
       <workItem from="1473144411771" duration="1056000" />
+      <workItem from="1473147347749" duration="3797000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4496000" />
+    <option name="totallyTimeSpent" value="8293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -303,7 +364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -311,7 +371,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
           <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -319,6 +378,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/bing/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/bing/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/bing/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1189">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
           <folding />
         </state>
       </provider>
