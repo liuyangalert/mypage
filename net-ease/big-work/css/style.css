@@ -244,6 +244,23 @@
   display: flex;
   justify-content: space-between; }
 
+.classcontent {
+  margin-top: 80px;
+  position: relative; }
+  .classcontent .title li {
+    width: 200px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    font: 20px/22px '微软雅黑';
+    line-height: 50px;
+    color: #fff;
+    background-color: #39a030;
+    box-shadow: 1px 1px 1px #d4d3d3; }
+  .classcontent li.two {
+    color: #333;
+    background-color: #fff; }
+
 .footer {
   width: 100%;
   height: 262px;

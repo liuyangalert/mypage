@@ -1,9 +1,5 @@
 
-(function(){
-	wd();
-})();
-
-
+wd();
 function wd(){
 	var wdt =document.getElementById("wd");
 		wdt.innerText = window.screen.width;
