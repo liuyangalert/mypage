@@ -75,60 +75,55 @@ tq.carousel({
     selectedClass:'selected',
 });
 //轮播结束
+
 // 初始化获取课程,绑定设计和语言
     var classcontent = document.getElementsByClassName('classcontent')[0];
     var design = classcontent.querySelector('.design');
     var language = classcontent.querySelector('.language');
     var content = classcontent.querySelector('.content');
     var totalPage = classcontent.querySelector('.totalPage');
-    var type = 20;
+    var prev =  classcontent.querySelector('.pageprev');
+    var next =  classcontent.querySelector('.pagenext');
 
     function removeClass(obj){
         design.className = design.className.replace('two','');
         language.className = language.className.replace('two','');
         obj.className += ' '+ 'two';
     }
-    rungo({});
-    function rungo(obj){
-        obj.pageNo = obj.pageNo || 1;
-        obj.psize = obj.psize || 20;
-        obj.type = obj.type || 10;
-        tq.getajax({
-            url:'http://study.163.com/webDev/couresByCategory.htm',
-            data:obj,
-            success:function(data){
-                content.innerHTML = '';
-                for(var i=0;i<data.list.length;i++){
-                    var obj = data.list[i];
-                    var li = document.createElement('li');
-                    var temple = '<img src="'+obj['bigPhotoUrl']+'">'+'<p class="cont-title">'+obj['name']+'</p>'+'<p class="classify">'+obj['provider']+'</p>'+'<span class="fans">'+obj['learnerCount']+'</span>'+'<p class="price">'+obj['price']+'</p>';
-                    li.innerHTML = temple;
-                    content.appendChild(li);
-                }
-                totalPage.innerHTML = '';
-                for(var j=1;j<data.pagination.totlePageCount && j<30;j++){
-                    var a = document.createElement('a');
-                    if(data.pagination.pageIndex == j) a.className = 'active';
-                        a.innerText = j;
-                    pagContorl(a,type);
-                    totalPage.appendChild(a);
-                }
-            }
-        });
-    }
+    contentReset(1,10);
     tq.addEvent(design,'click',function(){
         removeClass(this);
-        type = 10;
-        rungo({type:type,pageNo:1});
+        contentReset(1,10);
     });
     tq.addEvent(language,'click',function(){
         removeClass(this);
-        type = 20;
-        rungo({type:type,pageNo:1});
+        contentReset(1,20);
     });
-    function pagContorl(ele,type){
-            tq.addEvent(ele,'click',function(){
-                rungo({pageNo:parseInt(ele.innerText),type:type});
-            });
-    }
+
+   function contentReset(pageNo,type){
+        tq.getajax({
+            url:'http://study.163.com/webDev/couresByCategory.htm',
+            type:'get',
+            data:{
+                pageNo:pageNo,
+                psize:20,
+                type:type,
+            },
+            success:downcontent,
+        });
+
+       function downcontent(data){
+           tq.downContent({
+               list:data.list,
+               wrap:content,
+               pageNotes:totalPage,
+               pagination:data.pagination.totlePageCount,
+               pageNo:data.pagination.pageIndex,
+               next:next,
+               prev:prev,
+               type:type,
+               fn:contentReset,
+           });
+       }
+   }
 

@@ -17,7 +17,7 @@ var tq = {
         return cookie;
     },
     //查询cookie 返回true or false
-    searchCookie:function (name,value){
+    searchCookie :function (name,value){
         var objCookie = tq.getCookieObj();
         return (objCookie[name] == value) ? true :false;
     },
@@ -214,6 +214,87 @@ var tq = {
                     runImg(this.index);
                 });
             }
+        }
+    },
+
+    //获取课程列表
+    downContent : function(obj){
+        obj.list = obj.list;//内容列表
+        obj.wrap = obj.wrap; //内容父元素
+        obj.pageNotes = obj.pageNotes; //分页父元素
+        obj.pagination = obj.pagination; //分页总页数
+        obj.pageNo = obj.pageNo; //当前页数
+        obj.next = obj.next; //下一页元素
+        obj.prev = obj.prev; //上一页元素
+        obj.fn = obj.fn;
+        obj.type = obj.type;
+
+        console.log(obj.pageNo);
+       obj.next.onclick=function(){
+            rungo(obj.pageNo,'next');
+        };
+       obj.prev.onclick=function(){
+            rungo(obj.pageNo,'prev');
+        };
+        //内容模板
+        obj.wrap.innerHTML = '';
+        for(var i=0;i<obj.list.length;i++){
+            var li = obj.list[i];
+            var ContentTemplate ='<li><div class="imgs"><img src="'+li.bigPhotoUrl+'"></div>'+
+                '<p class="cont-title">'+li.name+'</p><p class="classify">'+
+                li.provider+'</p><span class="fans">'+li.learnerCount+
+                '</span><p class="price">'+li.price+'</p></li>';
+            obj.wrap.innerHTML += ContentTemplate;
+        }
+
+
+        //分页模板 start
+        obj.pageNotes.innerHTML ='';
+        var b;
+        if(obj.pagination <=9) b = obj.pagination;
+        if(obj.pagination >9 ) b = 5;
+        for(var i=1;i<b;i++){
+            var a = document.createElement('a');
+                a.innerText = i;
+                if(i == obj.pageNo ){a.className = 'active'}
+                tq.addEvent(a,'click',function(){
+                    rungo(this.innerText)
+                });
+            obj.pageNotes.appendChild(a);
+        }
+
+        //当页数大于9时，进行切割
+        if(obj.pageNo >9){
+            var span = document.createElement('span');
+            span.innerHTML = "...";
+            obj.pageNotes.appendChild(span);
+            for(var i=obj.pageNo-1;i<obj.pageNo+2;i++){
+                var a9 = document.createElement('a');
+                    a9.innerText = i;
+                if(i == obj.pageNo) a9.className ='active';
+                tq.addEvent(a9,'click',function(){
+                    rungo(this.innerText)
+                });
+                obj.pageNotes.appendChild(a9);
+
+            }
+            var spans = document.createElement('span');
+            spans.innerHTML = "...";
+            obj.pageNotes.appendChild(spans);
+
+            var a3 = document.createElement('a');
+                a3.innerText = obj.pagination;
+            obj.pageNotes.appendChild(a3);
+        }
+        //分页模板end
+
+        //绑定上下翻页事件
+        function rungo(index,type){
+            if(type == 'next') index++;
+            if(type == 'prev') index--;
+            if(index > obj.pagination) return;
+            if(index < 1) return;
+            obj.fn(index,obj.type);
         }
     }
 };
