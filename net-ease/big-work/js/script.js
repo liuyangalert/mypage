@@ -46,8 +46,8 @@
             url:'http://study.163.com/webDev/login.htm',
             type:'GET',
             data:{
-                userName:cookie.userName,
-                password:cookie.password
+                userName:hex_md5(cookie.userName),
+                password:hex_md5(cookie.password),
             },
             success:function(data){
                 if(data == 1){
@@ -77,6 +77,7 @@ tq.carousel({
 //轮播结束
 
 // 初始化获取课程,绑定设计和语言
+(function(){
     var classcontent = document.getElementsByClassName('classcontent')[0];
     var design = classcontent.querySelector('.design');
     var language = classcontent.querySelector('.language');
@@ -100,7 +101,7 @@ tq.carousel({
         contentReset(1,20);
     });
 
-   function contentReset(pageNo,type){
+    function contentReset(pageNo,type){
         tq.getajax({
             url:'http://study.163.com/webDev/couresByCategory.htm',
             type:'get',
@@ -112,18 +113,20 @@ tq.carousel({
             success:downcontent,
         });
 
-       function downcontent(data){
-           tq.downContent({
-               list:data.list,
-               wrap:content,
-               pageNotes:totalPage,
-               pagination:data.pagination.totlePageCount,
-               pageNo:data.pagination.pageIndex,
-               next:next,
-               prev:prev,
-               type:type,
-               fn:contentReset,
-           });
-       }
-   }
+        function downcontent(data){
+            tq.downContent({
+                list:data.list,
+                wrap:content,
+                pageNotes:totalPage,
+                pagination:data.pagination.totlePageCount,
+                pageNo:data.pagination.pageIndex,
+                next:next,
+                prev:prev,
+                type:type,
+                fn:contentReset,
+            });
+        }
+    }
+})();
+
 
