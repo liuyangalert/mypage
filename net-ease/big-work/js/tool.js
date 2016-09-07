@@ -130,8 +130,8 @@ var tq = {
                     success:obj.success
             };
             tq.getajax(obj);
-            document.cookie = 'userName=' + userName;
-            document.cookie = 'password=' + password;
+            document.cookie = 'userName=' + md5_userName;
+            document.cookie = 'password=' + md5_password;
             body.removeChild(form);
         })
     },
@@ -216,7 +216,6 @@ var tq = {
             }
         }
     },
-
     //获取课程列表
     downContent : function(obj){
         obj.list = obj.list;//内容列表
@@ -296,6 +295,43 @@ var tq = {
             if(index < 1) return;
             obj.fn(index,obj.type);
         }
+    },
+    //视频弹窗组件
+    showVideo:function(src){
+        var template = '<div class="video-wrap">\
+            <div class="video-content">\
+            <h5>请观看下面的视频</h5><span class="wrap-close"></span>\
+            <video controls autoplay src="'+src+'"></video>\
+            </div></div>';
+        var div = document.createElement('div');
+            div.innerHTML = template;
+        document.querySelector('body').appendChild(div);
+        var close = div.querySelector('.wrap-close');
+            tq.addEvent(close,'click',function(){
+                document.querySelector('body').removeChild(div);
+        });
+    },
+    // 热门推荐
+    recommend:function(obj){
+        obj.wrap = obj.wrap;
+        obj.list = obj.list;
+
+        obj.wrap.innerHTML = '';
+        var li,template;
+        for(var i=0;i<obj.list.length;i++){
+            li = obj.list[i];
+            template = '<li class="right-li clearfix">\
+            <img src="'+li.bigPhotoUrl+'" alt="">\
+            <div class="right-li-title">\
+            <h6>'+li.name+'</h6>\
+            <span>'+li.learnerCount+'</span>\
+            </div></li>';
+            obj.wrap.innerHTML += template;
+
+        }
+
+
+
     }
 };
 

@@ -53,9 +53,9 @@
       display: inline-block;
       width: 8px;
       height: 8px;
+      line-height: 8px;
       margin-right: 5px;
-      background: url("../images/net-icon.png") -19px -6px;
-      vertical-align: middle; }
+      background: url("../images/net-icon.png") -19px -6px; }
   .header-top .guanzhu .fans {
     display: inline-block;
     color: #666666;
@@ -110,60 +110,6 @@
       background: url("../images/net-icon.png") no-repeat -64px -2px; }
       .header-top .nav-right .search:hover {
         background: url("../images/net-icon.png") no-repeat -91px -2px; }
-
-.login-wrap {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99; }
-  .login-wrap .login-modal {
-    width: 388px;
-    height: 288px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 25px 50px 38px 40px;
-    background-color: #fff;
-    opacity: 1;
-    box-sizing: border-box; }
-  .login-wrap .login-title {
-    font-size: 18px;
-    line-height: 28px;
-    font-family: '微软雅黑', 'Microsoft YaHei';
-    color: #444444; }
-  .login-wrap .login-close {
-    display: inline-block;
-    width: 23px;
-    height: 22px;
-    position: absolute;
-    top: 3px;
-    right: 1px;
-    cursor: pointer;
-    background: url("../images/net-icon.png") no-repeat -106px -41px; }
-  .login-wrap input {
-    width: 291px;
-    height: 43px;
-    box-sizing: border-box;
-    border: none;
-    font-size: 16px;
-    line-height: 28px;
-    font-family: "微软雅黑",'microsoft yahei'; }
-  .login-wrap input[type='text'] {
-    margin: 15px 0 0 1px;
-    border: 1px solid #dfdfdf;
-    text-indent: 10px; }
-  .login-wrap input[type='submit'] {
-    margin-top: 30px;
-    background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#2fb555), to(#128e29));
-    background: -webkit-linear-gradient(315deg, #2fb555, #128e29);
-    color: #fff;
-    cursor: pointer;
-    border-right: 2px solid #d5e3da;
-    border-bottom: 2px solid #d5e3da; }
 
 .carousel {
   width: 1652px;
@@ -272,12 +218,13 @@
       background-color: #39a030; }
   .classcontent .content-left {
     width: 960px;
+    float: left;
+    margin-right: 21px;
     overflow: hidden; }
     .classcontent .content-left .content {
       display: flex;
       flex-flow: wrap;
-      margin-top: 28px;
-      margin-bottom: 20px; }
+      margin-top: 28px; }
     .classcontent .content-left .content li {
       width: 223px;
       border: 1px solid #e6e6e6;
@@ -321,16 +268,17 @@
         padding-right: 5px;
         text-indent: 15px;
         line-height: 16px;
-        font-size: 8px;
+        font-size: 12px;
         border-radius: 3px;
-        background: url("../images/net-icon.png") no-repeat -155px -2px;
+        background: url("../images/net-icon.png") no-repeat -155px -3px;
         border: 1px solid #999;
         margin: 0 0 10px 5px; }
       .classcontent .content-left .content li .price {
         color: #ff3f00;
         line-height: 12px; }
     .classcontent .content-left .pagination {
-      float: right; }
+      float: right;
+      margin: 10px 0  120px 0; }
       .classcontent .content-left .pagination a, .classcontent .content-left .pagination .pageprev, .classcontent .content-left .pagination .pagenext {
         display: inline-block;
         width: 20px;
@@ -349,11 +297,77 @@
         width: 30px;
         color: #fff;
         background-color: #9dd8b1; }
+  .classcontent .content-right {
+    float: left;
+    width: 225px;
+    overflow: hidden;
+    font: 16px/22px '微软雅黑'; }
+    .classcontent .content-right .right-video-wrap {
+      width: 100%;
+      border: 1px solid #ecebeb;
+      border-top: none;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      box-shadow: 1px 1px 2px #ecebeb; }
+      .classcontent .content-right .right-video-wrap h4 {
+        padding: 20px;
+        border-bottom: 1px solid #dddddd; }
+      .classcontent .content-right .right-video-wrap .right-video {
+        padding: 20px;
+        box-sizing: border-box; }
+        .classcontent .content-right .right-video-wrap .right-video p {
+          font-size: 12px; }
+        .classcontent .content-right .right-video-wrap .right-video video {
+          width: 100%;
+          margin-top: 9px;
+          cursor: pointer; }
+    .classcontent .content-right .right-ranking {
+      width: 100%;
+      border: 1px solid #ecebeb;
+      border-top: none;
+      box-sizing: border-box; }
+      .classcontent .content-right .right-ranking h4 {
+        padding: 20px;
+        border-bottom: 1px solid #eee; }
+      .classcontent .content-right .right-ranking .right-lists {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box; }
+      .classcontent .content-right .right-ranking .right-li {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex; }
+        .classcontent .content-right .right-ranking .right-li:last-child {
+          margin-bottom: 0; }
+        .classcontent .content-right .right-ranking .right-li img {
+          float: left;
+          width: 50px;
+          height: 50px;
+          overflow: hidden;
+          margin-right: 12px; }
+        .classcontent .content-right .right-ranking .right-li .right-li-title {
+          float: left;
+          overflow: hidden; }
+        .classcontent .content-right .right-ranking .right-li h6 {
+          width: 123px;
+          font-size: 14px;
+          line-height: 16.8px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-break: break-all;
+          white-space: nowrap; }
+        .classcontent .content-right .right-ranking .right-li span {
+          display: inline-block;
+          height: 10px;
+          background: url("../images/net-icon.png") no-repeat -158px -5px;
+          font-size: 10px;
+          line-height: 10px;
+          text-indent: 12px;
+          color: #999999; }
 
 .footer {
   width: 100%;
   height: 262px;
-  margin-top: 120px;
   background-color: #2c3339;
   overflow: hidden;
   padding: 100px 0 0 0;

@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="745d8413-2135-48ba-a43f-2c12d7a0e8ea" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/css/model.css" afterPath="$PROJECT_DIR$/net-ease/big-work/css/model.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/css/model.css.map" afterPath="$PROJECT_DIR$/net-ease/big-work/css/model.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/css/model.scss" afterPath="$PROJECT_DIR$/net-ease/big-work/css/model.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/css/style.css" afterPath="$PROJECT_DIR$/net-ease/big-work/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/css/style.css.map" afterPath="$PROJECT_DIR$/net-ease/big-work/css/style.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/css/style.scss" afterPath="$PROJECT_DIR$/net-ease/big-work/css/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/index.html" afterPath="$PROJECT_DIR$/net-ease/big-work/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/js/script.js" afterPath="$PROJECT_DIR$/net-ease/big-work/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/js/tool.js" afterPath="$PROJECT_DIR$/net-ease/big-work/js/tool.js" />
     </list>
     <ignored path="mypage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +45,11 @@
         <option value="$PROJECT_DIR$/practice/bing/css/style.scss" />
         <option value="$PROJECT_DIR$/practice/bing/js/script.js" />
         <option value="$PROJECT_DIR$/practice/bing/index.html" />
-        <option value="$PROJECT_DIR$/net-ease/big-work/css/model.scss" />
-        <option value="$PROJECT_DIR$/net-ease/big-work/css/style.scss" />
-        <option value="$PROJECT_DIR$/net-ease/big-work/js/tool.js" />
         <option value="$PROJECT_DIR$/net-ease/big-work/index.html" />
+        <option value="$PROJECT_DIR$/net-ease/big-work/js/tool.js" />
         <option value="$PROJECT_DIR$/net-ease/big-work/js/script.js" />
+        <option value="$PROJECT_DIR$/net-ease/big-work/css/style.scss" />
+        <option value="$PROJECT_DIR$/net-ease/big-work/css/model.scss" />
       </list>
     </option>
   </component>
@@ -51,10 +59,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="128" />
-    <option name="y" value="32" />
-    <option name="width" value="1157" />
-    <option name="height" value="872" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -82,103 +90,10 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net-ease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net-ease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="big-work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net-ease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="big-work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mypage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net-ease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="big-work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,11 +189,12 @@
       <workItem from="1473165385162" duration="13613000" />
       <workItem from="1473213226410" duration="18386000" />
       <workItem from="1473239154208" duration="598000" />
+      <workItem from="1473255312093" duration="10506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41253000" />
+    <option name="totallyTimeSpent" value="51759000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -290,14 +206,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="128" y="32" width="1157" height="872" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18141198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21536796" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21436115" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -311,22 +227,22 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13382508" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21536796" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -372,13 +288,29 @@
             <element signature="n#!!block;n#removeEvent#0;n#removeEvent#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#getajax#0;n#getajax#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
             <element signature="e#1819#2013#0" expanded="false" />
-            <element signature="n#!!block;n#showLogin#0;n#showLogin#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#carousel#0;n#carousel#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#runImg#0;n#!!block;n#carousel#0;n#carousel#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#downContent#0;n#downContent#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <element signature="e#9087#9897#0" expanded="false" />
-            <marker date="1473236274427" expanded="true" signature="2960:3320" placeholder="..." />
-            <marker date="1473236274427" expanded="true" signature="2999:3300" placeholder="..." />
+            <element signature="e#9094#9904#0" expanded="false" />
+            <element signature="n#!!block;n#showVideo#0;n#showVideo#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#recommend#0;n#recommend#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
+            <marker date="1473265460577" expanded="true" signature="2960:3320" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="2999:3300" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10322" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10385" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10429" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10430" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10431" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10435" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10447" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10467" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10473" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10323:10385" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="11094:11118" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="11094:11292" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="11187:11205" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="11187:11241" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="11187:11287" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -430,24 +362,25 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net-ease/big-work/css/model.scss">
+    <entry file="file://$PROJECT_DIR$/net-ease/big-work/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net-ease/big-work/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="342" column="23" selection-start-line="342" selection-start-column="23" selection-end-line="342" selection-end-column="23" />
+        <state relative-caret-position="252">
+          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+          <folding>
+            <element signature="e#26#513#0" expanded="false" />
+            <element signature="e#304#511#0" expanded="false" />
+            <element signature="e#2028#2182#0" expanded="false" />
+            <element signature="e#2223#3831#0" expanded="false" />
+            <element signature="e#3848#3995#0" expanded="false" />
+            <element signature="e#4213#4746#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/net-ease/big-work/js/tool.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+        <state relative-caret-position="1025">
+          <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
           <folding>
             <element signature="n#!!block;n#getCookieObj#0;n#getCookieObj#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#searchCookie#0;n#searchCookie#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
@@ -455,40 +388,95 @@
             <element signature="n#!!block;n#removeEvent#0;n#removeEvent#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#getajax#0;n#getajax#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
             <element signature="e#1819#2013#0" expanded="false" />
-            <element signature="n#!!block;n#showLogin#0;n#showLogin#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#carousel#0;n#carousel#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#runImg#0;n#!!block;n#carousel#0;n#carousel#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
             <element signature="n#!!block;n#downContent#0;n#downContent#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
-            <element signature="e#9087#9897#0" expanded="false" />
-            <marker date="1473236274427" expanded="true" signature="2960:3320" placeholder="..." />
-            <marker date="1473236274427" expanded="true" signature="2999:3300" placeholder="..." />
+            <element signature="e#9094#9904#0" expanded="false" />
+            <element signature="n#!!block;n#showVideo#0;n#showVideo#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#recommend#0;n#recommend#0;n#!!block;n#tq#0;n#!!top" expanded="false" />
+            <marker date="1473265460577" expanded="true" signature="2960:3320" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="2999:3300" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10322" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10385" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10429" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10430" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10431" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10435" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10447" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10467" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10282:10473" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="10323:10385" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="11094:11118" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="11094:11292" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="11187:11205" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="11187:11241" placeholder="..." />
+            <marker date="1473265460577" expanded="true" signature="11187:11287" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net-ease/big-work/js/script.js">
+    <entry file="file://$PROJECT_DIR$/net-ease/big-work/css/model.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+        <state relative-caret-position="306">
+          <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
           <folding>
-            <element signature="e#26#513#0" expanded="false" />
-            <element signature="e#304#511#0" expanded="false" />
-            <element signature="e#553#2014#0" expanded="false" />
-            <element signature="e#2046#2200#0" expanded="false" />
-            <element signature="e#2241#3849#0" expanded="false" />
+            <element signature="e#199#290#0" expanded="false" />
+            <element signature="e#298#364#0" expanded="false" />
+            <element signature="e#375#571#0" expanded="false" />
+            <element signature="e#583#645#0" expanded="false" />
+            <element signature="e#796#1033#0" expanded="false" />
+            <element signature="e#1049#1162#0" expanded="false" />
+            <element signature="e#1177#1382#0" expanded="false" />
+            <element signature="e#1390#1558#0" expanded="false" />
+            <element signature="e#1579#1661#0" expanded="false" />
+            <element signature="e#2016#2686#0" expanded="false" />
+            <element signature="e#2150#2357#0" expanded="false" />
+            <element signature="e#2374#2559#0" expanded="false" />
+            <element signature="e#2564#2634#0" expanded="false" />
+            <element signature="e#2642#2684#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net-ease/big-work/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="318" column="11" selection-start-line="318" selection-start-column="11" selection-end-line="318" selection-end-column="11" />
+          <folding>
+            <element signature="e#30#166#0" expanded="false" />
+            <element signature="e#180#225#0" expanded="false" />
+            <element signature="e#2647#3297#0" expanded="false" />
+            <element signature="e#3310#4175#0" expanded="false" />
+            <element signature="e#4187#4256#0" expanded="false" />
+            <element signature="e#4321#4399#0" expanded="false" />
+            <element signature="e#4412#4843#0" expanded="false" />
+            <element signature="e#5588#5887#0" expanded="false" />
+            <element signature="e#5905#5915#0" expanded="false" />
+            <element signature="e#5931#5963#0" expanded="false" />
+            <element signature="e#5975#6344#0" expanded="false" />
+            <element signature="e#6357#6416#0" expanded="false" />
+            <element signature="e#6438#6975#0" expanded="false" />
+            <element signature="e#7277#7350#0" expanded="false" />
+            <element signature="e#7804#7886#0" expanded="false" />
+            <element signature="e#7902#8759#0" expanded="false" />
+            <element signature="e#7994#8032#0" expanded="false" />
+            <element signature="e#8044#8179#0" expanded="false" />
+            <element signature="e#8203#8263#0" expanded="false" />
+            <element signature="e#8274#8490#0" expanded="false" />
+            <element signature="e#8783#9721#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/net-ease/big-work/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
+        <state relative-caret-position="2">
+          <caret line="81" column="39" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>

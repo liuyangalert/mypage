@@ -46,8 +46,8 @@
             url:'http://study.163.com/webDev/login.htm',
             type:'GET',
             data:{
-                userName:hex_md5(cookie.userName),
-                password:hex_md5(cookie.password),
+                userName:cookie.userName,
+                password:cookie.password,
             },
             success:function(data){
                 if(data == 1){
@@ -129,4 +129,34 @@ tq.carousel({
     }
 })();
 
+(function(){
+    var video = document.querySelector('.right-video video');
+    tq.addEvent(video,'click',function(){
+        tq.showVideo(this.src);
+    });
+})();
+
+(function(){
+var rightWrap = document.querySelector('.right-lists');
+    tq.getajax({
+        url:'http://study.163.com/webDev/hotcouresByCategory.htm',
+        success:hotlist,
+    });
+    function hotlist(data){
+        var bool=true, list;
+        list = data.slice(0, data.length / 2);
+        console.log(list);
+        tq.recommend({wrap: rightWrap, list: list});
+        var timer = setInterval(function () {
+            if (bool) {
+                list = data.slice(0, data.length / 2);
+                bool = false;
+            } else if (!bool) {
+                list = data.slice(data.length / 2, data.length);
+                bool = true;
+            }
+            tq.recommend({wrap: rightWrap, list: list});
+        },30000);
+    }
+})();
 
