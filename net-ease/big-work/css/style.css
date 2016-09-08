@@ -112,8 +112,9 @@
         background: url("../images/net-icon.png") no-repeat -91px -2px; }
 
 .carousel {
-  width: 1652px;
-  height: 460px; }
+  height: 460px;
+  width: 100%;
+  overflow: hidden; }
   .carousel .carousel-img {
     width: 100%;
     height: 100%;
@@ -127,6 +128,9 @@
       left: 0;
       width: 100%;
       height: 100%; }
+      .carousel .carousel-img > div img {
+        margin-left: 50%;
+        transform: translateX(-50%); }
   .carousel .carousel-nav {
     z-index: 3;
     width: 100%;
@@ -151,8 +155,6 @@
   margin: 60px auto;
   display: flex;
   justify-content: space-between; }
-  .content-nav .content-nav-wrap {
-    width: 360px; }
   .content-nav .img-wrap {
     width: 80px;
     height: 80px;
@@ -168,7 +170,6 @@
   .content-nav .mooc {
     background-position: -127px -62px; }
   .content-nav .centent {
-    width: 240px;
     padding: 0 15px;
     overflow: hidden;
     font-family: "微软雅黑", 'microsoft yahei'; }
@@ -185,10 +186,13 @@
     .content-nav .centent a.link {
       color: #39a030; }
 
-.work-life {
-  width: 1616px;
-  display: flex;
-  justify-content: space-between; }
+.work-life-wrap {
+  width: 1616px; }
+  .work-life-wrap .work-life {
+    display: flex;
+    justify-content: space-between; }
+    .work-life-wrap .work-life img {
+      margin-right: 3px; }
 
 .classcontent {
   margin-top: 80px;
@@ -219,7 +223,7 @@
   .classcontent .content-left {
     width: 960px;
     float: left;
-    margin-right: 21px;
+    margin-right: 20px;
     overflow: hidden; }
     .classcontent .content-left .content {
       display: flex;
@@ -231,9 +235,14 @@
       padding: 1px;
       box-sizing: border-box;
       margin: 0 20px 20px 0;
-      overflow: hidden; }
+      overflow: hidden;
+      box-shadow: 0 1px 2px #f1f1f1; }
       .classcontent .content-left .content li:hover {
-        box-shadow: 0 1px 1px #f1f1f1; }
+        box-shadow: 0 2px 3px #f1f1f1; }
+        .classcontent .content-left .content li:hover img {
+          transform: scale(1.1); }
+        .classcontent .content-left .content li:hover .cont-title {
+          color: #21a557; }
       .classcontent .content-left .content li:nth-child(4n) {
         margin-right: 0; }
       .classcontent .content-left .content li .imgs {
@@ -245,8 +254,6 @@
         width: 100%;
         height: 100%;
         transition: all 0.5s; }
-      .classcontent .content-left .content li:hover img {
-        transform: scale(1.1); }
       .classcontent .content-left .content li .cont-title, .classcontent .content-left .content li p {
         margin: 0 5px;
         overflow: hidden;
@@ -405,5 +412,41 @@
       vertical-align: middle;
       margin-left: 10px;
       background: url("../images/net-icon.png") no-repeat -124px -2px; }
+
+@media screen and (max-width: 1205px) {
+  body, html {
+    width: 100%; }
+
+  .autocenter {
+    width: 982px; }
+
+  .classcontent .content-left {
+    width: 737px; }
+    .classcontent .content-left .content li {
+      margin: 0 20px 20px 0; }
+      .classcontent .content-left .content li:nth-child(4n) {
+        margin-right: 20px; }
+      .classcontent .content-left .content li:nth-child(3n) {
+        margin-right: 0; }
+
+  .footer {
+    width: 100%; }
+    .footer .frand-link {
+      width: 120px; }
+
+  .carousel {
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%); }
+
+  .work-life-wrap {
+    width: 100%;
+    overflow: hidden;
+    margin-left: 50%;
+    transform: translateX(-50%); }
+    .work-life-wrap .work-life {
+      width: 1616px;
+      margin-left: 50%;
+      transform: translateX(-50%); } }
 
 /*# sourceMappingURL=style.css.map */

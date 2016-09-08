@@ -138,8 +138,10 @@
 }
 
 .carousel{
-  width:1652px;
   height:460px;
+  width:100%;
+
+  overflow:hidden;
   .carousel-img{
     width:100%;
     height:100%;
@@ -153,6 +155,10 @@
       left:0;
       width:100%;
       height:100%;
+      img{
+        margin-left:50%;
+        transform:translateX(-50%);
+      }
     }
   }
   .carousel-nav{
@@ -182,9 +188,6 @@
   margin:60px auto;
   display:flex;
   justify-content: space-between;
-  .content-nav-wrap{
-    width:360px;
-  }
   .img-wrap{
     width:80px;
     height:80px;
@@ -204,7 +207,6 @@
     background-position: -127px -62px ;
   }
   .centent{
-    width:240px;
     padding:0 15px;
     overflow:hidden;
     font-family: "微软雅黑", 'microsoft yahei';
@@ -226,12 +228,17 @@
 
   }
 }
-
-.work-life{
+.work-life-wrap{
   width:1616px;
-  display:flex;
-  justify-content: space-between;
+  .work-life{
+    display:flex;
+    justify-content: space-between;
+    img{
+      margin-right:3px;
+    }
+  }
 }
+
 .classcontent{
   margin-top: 80px;
   position:relative;
@@ -264,7 +271,7 @@
   .content-left{
     width:960px;
     float:left;
-    margin-right:21px;
+    margin-right:20px;
     overflow:hidden;
     .content{
       display:flex;
@@ -278,8 +285,15 @@
       box-sizing:border-box;
       margin:0 20px 20px 0;
       overflow:hidden;
+      box-shadow:0 1px 2px #f1f1f1;
       &:hover{
-        box-shadow:0 1px 1px #f1f1f1;
+        box-shadow:0 2px 3px #f1f1f1;
+        img{
+          transform:scale(1.1);
+        }
+        .cont-title{
+          color:#21a557;
+        }
       }
       &:nth-child(4n){
         margin-right:0;
@@ -294,9 +308,6 @@
         width:100%;
         height:100%;
         transition:all 0.5s;
-      }
-      &:hover img{
-        transform:scale(1.1);
       }
       .cont-title,p{
         margin:0 5px;
@@ -449,7 +460,6 @@
   }
 }
 
-
 .footer{
   width:100%;
   height:262px;
@@ -495,6 +505,52 @@
       vertical-align: middle;
       margin-left: 10px;
       background:url("../images/net-icon.png") no-repeat -124px -2px;
+    }
+  }
+}
+
+@media screen and (max-width:1205px){
+  body,html{
+    width:100%;
+  }
+  .autocenter{
+    width:982px;
+  }
+  .classcontent {
+    .content-left {
+      width: 737px;
+      .content li {
+          margin:0 20px 20px 0;
+        &:nth-child(4n){
+          margin-right:20px;
+        }
+        &:nth-child(3n){
+          margin-right:0;
+        }
+      }
+
+    }
+  }
+  .footer{
+    width:100%;
+    .frand-link{
+      width:120px;
+    }
+  }
+  .carousel{
+    width:100%;
+    margin-left:50%;
+    transform:translateX(-50%);
+  }
+  .work-life-wrap{
+    width:100%;
+    overflow:hidden;
+    margin-left:50%;
+    transform:translateX(-50%);
+    .work-life{
+      width:1616px;
+      margin-left:50%;
+      transform:translateX(-50%);
     }
   }
 }

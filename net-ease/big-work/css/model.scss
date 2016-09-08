@@ -4,7 +4,7 @@ body,html{
   width:100%;
   height:auto;
 }
-$wrapWidth:1206px;
+$wrapWidth:1205px;
 @font-face{
   font-family:'HSGB';
   src:url("fonts/Hiragino Sans GB W3.otf");
@@ -84,7 +84,7 @@ $wrapWidth:1206px;
     line-height:28px;
     font-family: "微软雅黑",'microsoft yahei';
   }
-  input[type='text']{
+  input[type='text'],input[type='password']{
     margin:15px 0 0 1px;
     border:1px solid #dfdfdf;
     text-indent:10px;
@@ -139,3 +139,4 @@ $wrapWidth:1206px;
     cursor: pointer;
   }
 }
+

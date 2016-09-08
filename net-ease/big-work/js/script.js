@@ -100,14 +100,16 @@ tq.carousel({
         removeClass(this);
         contentReset(1,20);
     });
-
     function contentReset(pageNo,type){
+        var width = document.body.offsetWidth;
+        var psize = 20;
+        if(width<1205){ psize = 15}
         tq.getajax({
             url:'http://study.163.com/webDev/couresByCategory.htm',
             type:'get',
             data:{
                 pageNo:pageNo,
-                psize:20,
+                psize:psize,
                 type:type,
             },
             success:downcontent,

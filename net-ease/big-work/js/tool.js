@@ -94,7 +94,7 @@ var tq = {
             <div class="login-modal">\
             <h5 class="login-title">'+"登录网易云课堂"+'</h5><span class="login-close"></span>\
             <input class="login-username" placeholder="账号" type="text">\
-            <input class="login-password" placeholder="密码" type="text">\
+            <input class="login-password" placeholder="密码" type="password">\
             <input type="submit" value="登录">\
             </div>\
             </div>';
