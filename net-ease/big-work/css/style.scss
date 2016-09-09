@@ -510,13 +510,12 @@
 }
 
 @media screen and (max-width:1205px){
-  body,html{
-    width:100%;
-  }
   .autocenter{
     width:982px;
   }
   .classcontent {
+    min-width:982px;
+    margin:80px auto 0;
     .content-left {
       width: 737px;
       .content li {
@@ -533,20 +532,25 @@
   }
   .footer{
     width:100%;
+    min-width:982px;
+    .foot{
+      width:892px;
+    }
     .frand-link{
       width:120px;
     }
   }
   .carousel{
     width:100%;
-    margin-left:50%;
-    transform:translateX(-50%);
+    min-width:982px;
+    margin:0 auto;
+    overflow:hidden;
   }
   .work-life-wrap{
     width:100%;
+    min-width:982px;
     overflow:hidden;
-    margin-left:50%;
-    transform:translateX(-50%);
+    margin:0 auto;
     .work-life{
       width:1616px;
       margin-left:50%;

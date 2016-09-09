@@ -414,36 +414,40 @@
       background: url("../images/net-icon.png") no-repeat -124px -2px; }
 
 @media screen and (max-width: 1205px) {
-  body, html {
-    width: 100%; }
-
   .autocenter {
     width: 982px; }
 
-  .classcontent .content-left {
-    width: 737px; }
-    .classcontent .content-left .content li {
-      margin: 0 20px 20px 0; }
-      .classcontent .content-left .content li:nth-child(4n) {
-        margin-right: 20px; }
-      .classcontent .content-left .content li:nth-child(3n) {
-        margin-right: 0; }
+  .classcontent {
+    min-width: 982px;
+    margin: 80px auto 0; }
+    .classcontent .content-left {
+      width: 737px; }
+      .classcontent .content-left .content li {
+        margin: 0 20px 20px 0; }
+        .classcontent .content-left .content li:nth-child(4n) {
+          margin-right: 20px; }
+        .classcontent .content-left .content li:nth-child(3n) {
+          margin-right: 0; }
 
   .footer {
-    width: 100%; }
+    width: 100%;
+    min-width: 982px; }
+    .footer .foot {
+      width: 892px; }
     .footer .frand-link {
       width: 120px; }
 
   .carousel {
     width: 100%;
-    margin-left: 50%;
-    transform: translateX(-50%); }
+    min-width: 982px;
+    margin: 0 auto;
+    overflow: hidden; }
 
   .work-life-wrap {
     width: 100%;
+    min-width: 982px;
     overflow: hidden;
-    margin-left: 50%;
-    transform: translateX(-50%); }
+    margin: 0 auto; }
     .work-life-wrap .work-life {
       width: 1616px;
       margin-left: 50%;

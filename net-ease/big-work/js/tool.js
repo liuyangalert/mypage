@@ -1,8 +1,8 @@
 var tq = {
     //解析cookie为对象
     getCookieObj :function(){
-        var cookie = {};
-        var cookieAll = document.cookie;
+        var cookie = {},
+            cookieAll = document.cookie;
         if( cookieAll == '') return cookie;
         var list = cookieAll.split(';');
         for (var i=0;i<list.length;i++){
@@ -86,7 +86,6 @@ var tq = {
           }
         };
     },
-
     //弹窗登录组件
     showLogin:function(obj){
         //添加模板文件
@@ -137,20 +136,19 @@ var tq = {
     },
     //轮播组件
     carousel:function(obj){
-        obj.wrapClass = obj.wrapClass;
-        obj.imgClass = obj.imgClass;
-        obj.navClass = obj.navClass;
-        obj.runTimes = obj.runTimes;
-        obj.showTime = obj.showTime;
+        obj.wrapClass = obj.wrapClass,
+        obj.imgClass = obj.imgClass,
+        obj.navClass = obj.navClass,
+        obj.runTimes = obj.runTimes,
+        obj.showTime = obj.showTime,
         obj.selectedClass = obj.selectedClass;
 
-        var carousel = document.getElementsByClassName(obj.wrapClass)[0];
-        var carouselImg = carousel.querySelector('.'+obj.imgClass);
-        var imgDiv = carouselImg.querySelectorAll('div');
-        var carouselNav = carousel.querySelector('.'+ obj.navClass);
-        var span = carouselNav.getElementsByTagName('span');
-
-        var timer,timerR;
+        var carousel = document.getElementsByClassName(obj.wrapClass)[0],
+            carouselImg = carousel.querySelector('.'+obj.imgClass),
+            imgDiv = carouselImg.querySelectorAll('div'),
+            carouselNav = carousel.querySelector('.'+ obj.navClass),
+            span = carouselNav.getElementsByTagName('span'),
+            timer,timerR;
 
         navLive();
         timerRun();
@@ -218,17 +216,16 @@ var tq = {
     },
     //获取课程列表
     downContent : function(obj){
-        obj.list = obj.list;//内容列表
-        obj.wrap = obj.wrap; //内容父元素
-        obj.pageNotes = obj.pageNotes; //分页父元素
-        obj.pagination = obj.pagination; //分页总页数
-        obj.pageNo = obj.pageNo; //当前页数
-        obj.next = obj.next; //下一页元素
-        obj.prev = obj.prev; //上一页元素
-        obj.fn = obj.fn;
+        obj.list = obj.list,//内容列表
+        obj.wrap = obj.wrap, //内容父元素
+        obj.pageNotes = obj.pageNotes, //分页父元素
+        obj.pagination = obj.pagination, //分页总页数
+        obj.pageNo = obj.pageNo, //当前页数
+        obj.next = obj.next, //下一页元素
+        obj.prev = obj.prev, //上一页元素
+        obj.fn = obj.fn,
         obj.type = obj.type;
 
-        console.log(obj.pageNo);
        obj.next.onclick=function(){
             rungo(obj.pageNo,'next');
         };
@@ -303,6 +300,7 @@ var tq = {
             <h5>请观看下面的视频</h5><span class="wrap-close"></span>\
             <video controls autoplay src="'+src+'"></video>\
             </div></div>';
+
         var div = document.createElement('div');
             div.innerHTML = template;
         document.querySelector('body').appendChild(div);
@@ -311,9 +309,9 @@ var tq = {
                 document.querySelector('body').removeChild(div);
         });
     },
-    // 热门推荐
+    //热门推荐
     recommend:function(obj){
-        obj.wrap = obj.wrap;
+        obj.wrap = obj.wrap,
         obj.list = obj.list;
 
         obj.wrap.innerHTML = '';
@@ -329,9 +327,6 @@ var tq = {
             obj.wrap.innerHTML += template;
 
         }
-
-
-
     }
 };
 
