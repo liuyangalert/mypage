@@ -21,7 +21,7 @@ body, html, .video {
     width: inherit; }
 
 .search {
-  width: 700px;
+  width: 500px;
   margin: 250px auto 0; }
   .search input {
     margin: 0;

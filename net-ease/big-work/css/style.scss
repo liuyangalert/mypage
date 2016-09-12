@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+//不在提醒
 .header-tip{
   width:100%;
   font-size:12px;
@@ -15,6 +15,7 @@
   top:0;
   right:0;
 }
+//头部logo区
 .header-top{
   padding:35px 0;
   height:20px;
@@ -136,7 +137,7 @@
     }
   }
 }
-
+//轮播
 .carousel{
   height:460px;
   width:100%;
@@ -184,6 +185,7 @@
     }
   }
 }
+//内容分类导航
 .content-nav{
   margin:60px auto;
   display:flex;
@@ -228,6 +230,7 @@
 
   }
 }
+//工作环境
 .work-life-wrap{
   width:1616px;
   .work-life{
@@ -238,7 +241,7 @@
     }
   }
 }
-
+//主题内容
 .classcontent{
   margin-top: 80px;
   position:relative;
@@ -459,7 +462,7 @@
 
   }
 }
-
+//尾部 页脚
 .footer{
   width:100%;
   height:262px;
@@ -508,7 +511,7 @@
     }
   }
 }
-
+//响应式后的样式
 @media screen and (max-width:1205px){
   .autocenter{
     width:982px;
