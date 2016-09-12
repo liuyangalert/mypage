@@ -1,6 +1,7 @@
 var tq = {
     //解析cookie为对象
     getCookieObj :function(){
+        "user strict"
         var cookie = {},
             cookieAll = document.cookie;
         if( cookieAll == '') return cookie;
