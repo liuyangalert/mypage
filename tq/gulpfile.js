@@ -12,7 +12,7 @@ var htmlmin = require('gulp-htmlmin');
 
 //设置路径
 var jsSrc = 'app/scripts/**/*.js';
-var scssSrc = 'app/style/scss/**/*.scss';
+var scssSrc = 'app/style/css/**/*.css';
 var cssSrc = 'app/style/css/**/*.css'
 var htmlSrc = 'app/html/**/*.html';
 

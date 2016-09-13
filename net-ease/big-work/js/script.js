@@ -17,6 +17,7 @@
     }
 })();
 // 不在提醒 end
+
 //已关注 start
 (function(){
     var btn = document.querySelector('.guanzhu');
@@ -70,6 +71,7 @@
     });
 })();
 //已关注 end
+
 //轮播
 tq.carousel({
     wrapClass:'carousel', //轮播容器

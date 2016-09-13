@@ -16,7 +16,7 @@ var htmlObj = {
 };
 //设置路径js css html 读取和保存的路径
 var jsSrc = 'source/javascript/**/*.js';
-var sassSrc = 'source/scss/**/*.scss';
+var sassSrc = 'source/css/**/*.css';
 var imgSrc = 'source/images/*';
 var cssSrc = 'source/css/**/*.css'
 var htmlSrc = 'source/html/**/*.html';

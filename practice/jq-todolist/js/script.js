@@ -1,0 +1,12 @@
+$('document').ready(function(){
+    $('.checkbox').click(function(){
+        $('.checkbox').toggleClass('checked');
+        if($('.checkbox').hasClass('checked')){
+            console.log(1);
+            $('.checkbox').parent().find('.task-content').css('text-decoration','line-through');
+        }else{
+            console.log(2);
+            $('.checkbox').parent().find('.task-content').css('text-decoration','none');
+        }
+    });
+});
