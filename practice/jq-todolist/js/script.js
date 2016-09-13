@@ -1,19 +1,19 @@
 $('document').ready(function(){
 
     addfn();
+    // 绑定每条list任务事件
     function addfn(){
-        var taskList = $('.task-list .task');
-        $(taskList).each(function(){
+        $('.task-list .task').each(function(){
 
-            $(this).find('.checkbox').click(function(){
+            $(this).find('.checkbox').unbind().bind('click',function(){
                 $(this).parent().toggleClass('tasked');
             });
 
-            $(this).find('.task-close').bind('click',function(){
+            $(this).find('.task-close').unbind().bind('click',function(){
                 $(this).parent().remove();
             });
 
-            $(this).find('.task-content').bind('keydown',function(event){
+            $(this).find('.task-content').unbind().bind('keydown',function(event){
                 event = event || window.event;
                 if(event.keyCode === 13){
                     $(this).parent().next().find('.task-content').focus();
@@ -23,6 +23,7 @@ $('document').ready(function(){
         });
     }
 
+    //添加list
     function addTask(){
         var str = $('.add-task .input-info').val();
         if(str !== ''){
@@ -32,15 +33,18 @@ $('document').ready(function(){
             <div class="task-content" contenteditable="true">'+str+'</div>\
             </div>');
             $('.task-list').prepend(template);
+            $('.input-info').eq(0).val('');
         }
-        $('.input-info').eq(0).val('');
         addfn();
     }
 
+
+    //绑定点击按钮
     $('.btn-sbt').bind('click',function(){
         addTask();
     });
 
+    //绑定回车键
     $('.add-task .input-info').bind('focus',function(){
         $(this).bind('keyup',function(event){
             event = event || widnow.event;
