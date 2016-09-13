@@ -7,7 +7,6 @@
     <title>jquery todo list</title>
     <link rel="stylesheet" href="lib/BS/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="lib/font-icon/iconfont.css">
 </head>
 <body>
 
@@ -35,12 +34,15 @@
     </div>
 </div>
 
-<div class="container todo-list">
-    <div class="col-lg-5 add-task">
-        <input type="text" class="col-lg-9 input-info" placeholder="添加任务">
-        <input type="button" class="btn btn-success col-lg-3 btn-sbt" value="add">
+<!-- todolist内容 -->
+<div class="todo-list">
+    <!-- 输入框 -->
+    <div class="add-task clearfix">
+        <input type="text" class="input-info" placeholder="添加任务......">
+        <input type="button" class="btn btn-success btn-sbt" value="+">
     </div>
-   <div class="col-lg-8 task-list">
+    <!-- 任务框 -->
+   <div class="task-list">
        <div class="task">
            <span class="checkbox"></span>
            <span class="task-close"></span>
@@ -49,12 +51,12 @@
        <div class="task">
            <span class="checkbox"></span>
            <span class="task-close"></span>
-           <div class="task-content" contenteditable="true">任务一</div>
+           <div class="task-content" contenteditable="true">任务二</div>
        </div>
        <div class="task">
            <span class="checkbox"></span>
            <span class="task-close"></span>
-           <div class="task-content" contenteditable="true">任务一</div>
+           <div class="task-content" contenteditable="true">任务三</div>
        </div>
 
    </div>
