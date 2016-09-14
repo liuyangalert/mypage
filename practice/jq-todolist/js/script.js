@@ -1,21 +1,30 @@
 $('document').ready(function(){
 
+    //初始化绑定事件
     addfn();
     // 绑定每条list任务事件
     function addfn(){
         $('.task-list .task').each(function(){
 
+            //绑定单选框事件
             $(this).find('.checkbox').unbind().bind('click',function(){
                 $(this).parent().toggleClass('tasked');
             });
 
+            //绑定关闭按钮
             $(this).find('.task-close').unbind().bind('click',function(){
-                $(this).parent().remove();
+                $(this).parent().fadeOut(200,function(){
+                    $(this).remove();
+                });
             });
 
+            //绑定回车事件 回车到下一个 最后一个则为第一个 循环
             $(this).find('.task-content').unbind().bind('keydown',function(event){
                 event = event || window.event;
                 if(event.keyCode === 13){
+                    if($(this).parent().get(0) === $(this).parent().parent().children().last().get(0)){
+                        $(this).parent().parent().children().first().find('.task-content').focus();
+                    }
                     $(this).parent().next().find('.task-content').focus();
                     return false;
                 }
@@ -53,6 +62,5 @@ $('document').ready(function(){
             }
         })
     })
-
 
 });
