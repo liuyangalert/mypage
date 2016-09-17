@@ -101,7 +101,7 @@
   .task-list .tasked .task-content {
     text-decoration: line-through; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .todo-list {
     width: 100%; } }
 
