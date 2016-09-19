@@ -1,5 +1,5 @@
 
-wd();
+
 function wd(){
 	var wdt =document.getElementById("wd");
 		wdt.innerText = window.screen.width;
@@ -17,3 +17,4 @@ function wd(){
     }
 	 chrome.innerText=B_name;
 }
+wd();
