@@ -4,6 +4,11 @@
     <list default="true" id="745d8413-2135-48ba-a43f-2c12d7a0e8ea" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/index.html" afterPath="$PROJECT_DIR$/net-ease/big-work/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/js/script.js" afterPath="$PROJECT_DIR$/net-ease/big-work/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net-ease/big-work/js/tool.js" afterPath="$PROJECT_DIR$/net-ease/big-work/js/tool.js" />
@@ -11,6 +16,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/bing/css/style.css" afterPath="$PROJECT_DIR$/practice/bing/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/bing/css/style.scss" afterPath="$PROJECT_DIR$/practice/bing/css/style.scss" />
 >>>>>>> 2b2ea7b09d7818af5a48fc9fe212c8b0bb96d166
+<<<<<<< HEAD
+>>>>>>> 5520fc3aff57c607bba48ed3153b3913cc93ab6e
+=======
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
     </list>
     <ignored path="mypage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,6 +40,12 @@
   </component>
   <component name="FileEditorManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+    <leaf />
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -140,6 +155,10 @@
       </file>
     </leaf>
 >>>>>>> 2b2ea7b09d7818af5a48fc9fe212c8b0bb96d166
+<<<<<<< HEAD
+>>>>>>> 5520fc3aff57c607bba48ed3153b3913cc93ab6e
+=======
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -210,9 +229,19 @@
     <panes>
 <<<<<<< HEAD
       <pane id="Scratches" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <pane id="Scratches" />
       <pane id="Scope" />
 =======
 >>>>>>> 2b2ea7b09d7818af5a48fc9fe212c8b0bb96d166
+>>>>>>> 5520fc3aff57c607bba48ed3153b3913cc93ab6e
+=======
+      <pane id="Scope" />
+=======
+>>>>>>> 2b2ea7b09d7818af5a48fc9fe212c8b0bb96d166
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -221,6 +250,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+<<<<<<< HEAD
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+=======
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="mypage" />
@@ -316,6 +350,10 @@
       <pane id="Scope" />
       <pane id="Scratches" />
 >>>>>>> 2b2ea7b09d7818af5a48fc9fe212c8b0bb96d166
+<<<<<<< HEAD
+>>>>>>> 5520fc3aff57c607bba48ed3153b3913cc93ab6e
+=======
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,7 +363,7 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="nodejs_interpreter_path" value="C:\Program Files\nodejs\node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/resume" />
   </component>
   <component name="RunManager" selected="Node.js.script.js">
     <configuration default="false" name="script.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="script.js" working-dir="$PROJECT_DIR$/net-ease/big-work/js">
@@ -426,16 +464,35 @@
       <workItem from="1473525947766" duration="556000" />
       <workItem from="1473526871129" duration="15000" />
       <workItem from="1473529377647" duration="88000" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <workItem from="1473571919310" duration="956000" />
+      <workItem from="1473611299636" duration="32000" />
+=======
 >>>>>>> 2b2ea7b09d7818af5a48fc9fe212c8b0bb96d166
+>>>>>>> 5520fc3aff57c607bba48ed3153b3913cc93ab6e
+=======
+>>>>>>> 2b2ea7b09d7818af5a48fc9fe212c8b0bb96d166
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="67343000" />
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
     <option name="totallyTimeSpent" value="67279000" />
 =======
     <option name="totallyTimeSpent" value="66355000" />
 >>>>>>> 2b2ea7b09d7818af5a48fc9fe212c8b0bb96d166
+<<<<<<< HEAD
+>>>>>>> 5520fc3aff57c607bba48ed3153b3913cc93ab6e
+=======
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -448,28 +505,38 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
 <<<<<<< HEAD
+<<<<<<< HEAD
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21145834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1886196" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21145834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> 2b2ea7b09d7818af5a48fc9fe212c8b0bb96d166
+<<<<<<< HEAD
+>>>>>>> 5520fc3aff57c607bba48ed3153b3913cc93ab6e
+=======
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21330518" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21330518" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -508,6 +575,20 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/practice/bing/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/bing/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1125,9 +1206,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/bing/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/practice/bing/index.html">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="180">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
         <state relative-caret-position="493">
           <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding>
@@ -1154,15 +1242,24 @@
         <state relative-caret-position="378">
           <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding />
+>>>>>>> 5520fc3aff57c607bba48ed3153b3913cc93ab6e
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/bing/index.html">
+    <entry file="file://$PROJECT_DIR$/practice/bing/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="378">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+=======
         <state relative-caret-position="180">
           <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
           <folding />
 >>>>>>> 2b2ea7b09d7818af5a48fc9fe212c8b0bb96d166
+<<<<<<< HEAD
+>>>>>>> 5520fc3aff57c607bba48ed3153b3913cc93ab6e
+=======
+>>>>>>> 0490cbbf4f24e17df66b8eec5ec19b58f0087ee1
         </state>
       </provider>
     </entry>

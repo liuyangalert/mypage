@@ -1,11 +1,8 @@
 $('document').ready(function(){
-
-    //初始化绑定事件
     addfn();
     // 绑定每条list任务事件
     function addfn(){
         $('.task-list .task').each(function(){
-
             //绑定单选框事件
             $(this).find('.checkbox').unbind().bind('click',function(){
                 $(this).parent().toggleClass('tasked');
@@ -62,5 +59,4 @@ $('document').ready(function(){
             }
         })
     })
-
 });
